@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <rect width="32" height="32" rx="6" fill="#142520"/>
   <path d="M16 4 19.5 13 29 16 19.5 19 16 28 12.5 19 3 16 12.5 13Z" fill="#f3efe4"/>
+</svg> -->
+
+<svg viewBox="0 0 32 32">
+  <!-- Background Card Container -->
+  <rect width="32" height="32" rx="6" fill="#142520"/>
+  <!-- Your Centered Logo Favicon -->
+  <image href="assets/wandersnepal-favicon.png" x="4" y="4" width="24" height="24"/>
 </svg>
