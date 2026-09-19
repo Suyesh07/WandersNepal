@@ -3,28 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Nepal Travel Guide & Route Planner — Wanders Nepal</title>
+    <title>Nepal Travel Guide, Trekking Routes & Itineraries — Wanders Nepal</title>
     <meta
       name="description"
-      content="Independent destination guides, trekking routes, itineraries and practical advice for exploring Nepal beyond the obvious."
+      content="Independent Nepal travel guide and route planner. Explore authentic trekking trails, custom itineraries, permits, and practical advice for traveling Nepal beyond the obvious."
     />
-    <link rel="canonical" href="https://www.wandersnepal.com/" />
-    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://wandersnepal.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <!-- Open Graph / Social Meta -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Wanders Nepal" />
     <meta
       property="og:title"
-      content="Nepal, beyond the obvious — Wanders Nepal"
+      content="Nepal Travel Guide, Trekking Routes & Itineraries — Wanders Nepal"
     />
     <meta
       property="og:description"
-      content="Independent destination guides, trekking routes, itineraries and practical advice for exploring Nepal beyond the obvious."
+      content="Discover authentic Nepal: honest route guides, comprehensive trekking advice, and cultural itineraries curated for independent travelers."
     />
-    <meta property="og:url" content="https://www.wandersnepal.com/" />
+    <meta property="og:url" content="https://wandersnepal.com/" />
     <meta
       property="og:image"
-      content="https://www.elsewherenepal.com/assets/nepal-everest.jpg"
+      content="https://wandersnepal.com/assets/nepal-everest.jpg"
     />
+    <meta property="og:image:alt" content="Everest Region trekking panorama in Nepal" />
+    
+    <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nepal Travel Guide & Route Planner — Wanders Nepal" />
+    <meta name="twitter:description" content="Independent destination guides, trekking routes, itineraries and practical advice for exploring Nepal beyond the obvious." />
+    <meta name="twitter:image" content="https://wandersnepal.com/assets/nepal-everest.jpg" />
+
     <link rel="icon" href="/assets/wandersnepal-favicon.png" type="image/png" />
     <meta name="theme-color" content="#142520" />
     <link rel="preload" as="image" href="/assets/nepal-kathmandu.webp" />
@@ -35,24 +45,63 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/style.css" />
+
+    <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "Organization",
+            "@type": "TravelAgency",
+            "@id": "https://wandersnepal.com/#agency",
             "name": "Wanders Nepal",
-            "url": "https://www.wandersnepal.com/"
+            "url": "https://wandersnepal.com/",
+            "logo": "https://wandersnepal.com/assets/wanders-nepal-logo-dark-v2.png",
+            "image": "https://wandersnepal.com/assets/nepal-everest.jpg",
+            "description": "Independent Nepal destination guides, trekking route planning, and curated travel itineraries.",
+            "areaServed": "Nepal",
+            "priceRange": "$$"
           },
           {
             "@type": "WebSite",
+            "@id": "https://wandersnepal.com/#website",
             "name": "Wanders Nepal",
-            "url": "https://www.wandersnepal.com/",
+            "url": "https://wandersnepal.com/",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://www.wandersnepal.com/search?q={search_term_string}",
+              "target": "https://wandersnepal.com/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://wandersnepal.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When is the best time to visit and trek in Nepal?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The primary trekking seasons are autumn (October to November) for clear mountain skies and stable weather, and spring (March to May) for mild temperatures and blooming rhododendrons. Winter brings clear views but cold nights at high altitude, while monsoon season (June to September) is ideal for rain-shadow regions like Upper Mustang and Dolpo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a licensed guide to trek in Nepal?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, under official Nepal Tourism Board regulations, solo foreign trekkers are required to hire a licensed guide for most national parks and restricted mountain conservation areas to ensure safety, local community support, and environmental conservation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What permits are required for trekking in Nepal?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most routes require a TIMS card (Trekkers' Information Management System) and regional entry permits (such as the Sagarmatha National Park Permit for Everest or the ACAP permit for Annapurna). Restricted regions like Upper Mustang and Manaslu require special Department of Immigration permits arranged through authorized agencies."
+                }
+              }
+            ]
           }
         ]
       }
@@ -66,7 +115,7 @@
         ><img
           class="brand-logo brand-logo-dark"
           src="/assets/wanders-nepal-logo-dark-v2.png"
-          alt="Wanders Nepal"
+          alt="Wanders Nepal - Independent Nepal Travel Guide"
           width="512"
           height="349" /><img
           class="brand-logo brand-logo-light"
@@ -117,7 +166,7 @@
       <section
         class="journey"
         id="journey"
-        aria-label="Nepal, beyond the obvious — an animated journey"
+        aria-label="Nepal, beyond the obvious — an interactive journey across the Himalayas"
       >
         <div class="journey-sticky">
           <div class="journey-backgrounds" aria-hidden="true">
@@ -167,9 +216,8 @@
             <p>Wanders presents</p>
             <h1>Nepal, beyond<br /><em>the obvious.</em></h1>
             <span class="hero-support"
-              >Destination guides, routes, itineraries and practical travel
-              advice for exploring Nepal with more context and less
-              guesswork.</span
+              >Independent destination guides, Himalayan trekking routes, and practical travel
+              insights curated to help you explore Nepal with confidence, depth, and zero guesswork.</span
             >
           </div>
           <div class="journey-panel" aria-live="polite">
@@ -254,21 +302,26 @@
           <div class="journey-scroll"><span></span> Scroll to travel</div>
         </div>
       </section>
+
       <section class="home-search">
-        <h2>Where do you want to go?</h2>
+        <h2>Where do you want to explore in Nepal?</h2>
         <button class="search-launch" type="button" data-search-open>
-          <span>Search destinations, treks, routes…</span
-          ><svg viewBox="0 0 24 24" aria-hidden="true">
+          <span>Search destinations, treks, itineraries, permits…</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="10.7" cy="10.7" r="6.8" />
             <path d="m16 16 5 5" />
           </svg>
         </button>
       </section>
+
       <section class="section">
         <div class="section-head">
           <div>
             <p class="kicker">Discover by feeling</p>
-            <h2>Choose your Nepal.</h2>
+            <h2>Choose your Nepal journey.</h2>
+            <p class="section-lede">
+              From high Himalayan passes and quiet alpine lakes to ancient heritage alleyways and subtropical wildlife reserves.
+            </p>
           </div>
         </div>
         <div class="choice-grid">
@@ -313,17 +366,17 @@
           >
         </div>
       </section>
+
       <section class="section">
         <div class="section-head">
           <div>
-            <p class="kicker">Exactly twenty starting points</p>
-            <h2>Start somewhere.</h2>
+            <p class="kicker">Regional destinations</p>
+            <h2>Start somewhere remarkable.</h2>
             <p class="section-lede">
-              A deliberate first collection of major hubs—developed for
-              planning, not padded for search.
+              A carefully developed collection of 20 essential travel hubs and mountain valleys—designed for real trip planning, not keyword stuffing.
             </p>
           </div>
-          <a class="text-link" href="/destinations">View all destinations →</a>
+          <a class="text-link" href="/destinations">View all 20 destinations →</a>
         </div>
         <div class="destination-grid">
           <a
@@ -336,7 +389,7 @@
                 type="image/webp" />
               <img
                 src="/assets/nepal-kathmandu.jpg"
-                alt="Kathmandu Valley travel guide"
+                alt="Kathmandu Valley historic architecture and Durbar Square"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -345,8 +398,7 @@
               <p>Bagmati · Living heritage</p>
               <h3>Kathmandu Valley</h3>
               <small
-                >Three historic cities, layered neighbourhoods and living
-                ritual—best understood one courtyard at a time.</small
+                >Three historic royal cities, intricate Newar courtyards, and everyday spiritual rituals—best explored slowly on foot.</small
               >
             </div></a
           ><a
@@ -357,7 +409,7 @@
               ><source srcset="/assets/nepal-pokhara.webp" type="image/webp" />
               <img
                 src="/assets/nepal-pokhara.jpg"
-                alt="Pokhara travel guide"
+                alt="Phewa Lake and Machapuchare mountain peak in Pokhara"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -366,8 +418,7 @@
               <p>Gandaki · Lakes & adventure</p>
               <h3>Pokhara</h3>
               <small
-                >A lakeside city where Himalayan mornings open into ridge walks,
-                paddling, neighbourhood food and unhurried afternoons.</small
+                >Nepal’s lakeside adventure gateway where quiet mornings open into ridge trails, boating, mountain vistas, and laid-back evenings.</small
               >
             </div></a
           ><a
@@ -378,7 +429,7 @@
               ><source srcset="/assets/nepal-everest.webp" type="image/webp" />
               <img
                 src="/assets/nepal-everest.jpg"
-                alt="Everest Region travel guide"
+                alt="Hiking trail through Sherpa village in Everest Region"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -387,8 +438,7 @@
               <p>Koshi · High Himalaya</p>
               <h3>Everest Region</h3>
               <small
-                >The Khumbu is not one viewpoint but a lived mountain landscape
-                of Sherpa villages, monasteries and high valleys.</small
+                >The legendary Khumbu: home to Mount Everest, ancient monastery traditions, stone-walled Sherpa settlements, and soaring peaks.</small
               >
             </div></a
           ><a
@@ -401,7 +451,7 @@
                 type="image/webp" />
               <img
                 src="/assets/nepal-annapurna.jpg"
-                alt="Annapurna Region travel guide"
+                alt="Annapurna mountain range view above rhododendron forests"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -410,29 +460,27 @@
               <p>Gandaki · Village trekking</p>
               <h3>Annapurna Region</h3>
               <small
-                >A web of trails links subtropical valleys, rhododendron forest,
-                Gurung villages and the high desert beyond Thorong La.</small
+                >A classic network of teahouse paths traversing subtropical farmland, Gurung settlements, and high-altitude mountain sanctuaries.</small
               >
             </div></a
           ><a
             class="destination-card reveal"
             href="/destinations/chitwan"
-            data-filter-value="madhesh–bagmati"
+            data-filter-value="madhesh-bagmati"
             ><picture
               ><source srcset="/assets/nepal-chitwan.webp" type="image/webp" />
               <img
                 src="/assets/nepal-chitwan.jpg"
-                alt="Chitwan travel guide"
+                alt="Wildlife safari and dense jungle landscape in Chitwan National Park"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">05</span>
             <div class="destination-card-copy">
-              <p>Madhesh–Bagmati lowlands · Wildlife & Tharu culture</p>
+              <p>Madhesh–Bagmati · Wildlife & Tharu culture</p>
               <h3>Chitwan</h3>
               <small
-                >Riverine forest and tall grasslands reveal a lowland Nepal of
-                rhinos, birds, gharials and Tharu heritage.</small
+                >Dense riverine jungles and grasslands home to one-horned rhinos, Royal Bengal tigers, rich birdlife, and indigenous Tharu heritage.</small
               >
             </div></a
           ><a
@@ -443,7 +491,7 @@
               ><source srcset="/assets/nepal-lumbini.webp" type="image/webp" />
               <img
                 src="/assets/nepal-lumbini.jpg"
-                alt="Lumbini travel guide"
+                alt="Maya Devi Temple and sacred gardens at Lumbini"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -452,8 +500,7 @@
               <p>Lumbini Province · Sacred heritage</p>
               <h3>Lumbini</h3>
               <small
-                >The birthplace of the Buddha is a quiet landscape of
-                archaeology, gardens and living monastic traditions.</small
+                >The UNESCO World Heritage birthplace of the Buddha: a tranquil sanctuary of ancient monasteries, reflection pools, and world peace gardens.</small
               >
             </div></a
           ><a
@@ -464,7 +511,7 @@
               ><source srcset="/assets/nepal-mustang.webp" type="image/webp" />
               <img
                 src="/assets/nepal-mustang.jpg"
-                alt="Upper Mustang travel guide"
+                alt="Walled city of Lo Manthang in Upper Mustang"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -473,8 +520,7 @@
               <p>Gandaki · Restricted high desert</p>
               <h3>Upper Mustang</h3>
               <small
-                >A trans-Himalayan world of walled settlements, cave complexes,
-                wind-carved cliffs and Tibetan Buddhist culture.</small
+                >A trans-Himalayan Tibetan kingdom preserved behind red cliffs, medieval walled villages, ancient sky caves, and deep canyons.</small
               >
             </div></a
           ><a
@@ -485,17 +531,16 @@
               ><source srcset="/assets/nepal-rara.webp" type="image/webp" />
               <img
                 src="/assets/nepal-rara.jpg"
-                alt="Rara Lake travel guide"
+                alt="Tranquil blue waters of Rara Lake surrounded by pine forest"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">08</span>
             <div class="destination-card-copy">
-              <p>Karnali · Remote lake & forest</p>
+              <p>Karnali · Remote alpine lake</p>
               <h3>Rara Lake</h3>
               <small
-                >Nepal’s largest lake rests among pine ridges in Karnali, far
-                beyond the country’s familiar travel corridors.</small
+                >Nepal’s deepest natural lake, surrounded by fragrant juniper forests and alpine meadows far off the beaten commercial path.</small
               >
             </div></a
           ><a
@@ -506,7 +551,7 @@
               ><source srcset="/assets/nepal-everest.webp" type="image/webp" />
               <img
                 src="/assets/nepal-everest.jpg"
-                alt="Langtang travel guide"
+                alt="Langtang Valley mountain landscape"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -515,8 +560,7 @@
               <p>Bagmati Himal · Accessible mountain valley</p>
               <h3>Langtang</h3>
               <small
-                >A compact Himalayan valley north of Kathmandu, rebuilt through
-                community effort and best travelled with time to listen.</small
+                >A resilient Himalayan valley north of Kathmandu featuring Tamang heritage, yak pastures, and dramatic glacier headwalls.</small
               >
             </div></a
           ><a
@@ -529,7 +573,7 @@
                 type="image/webp" />
               <img
                 src="/assets/nepal-annapurna.jpg"
-                alt="Manaslu travel guide"
+                alt="Mount Manaslu and surrounding restricted circuit trail"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -538,19 +582,18 @@
               <p>Gandaki Himal · Restricted circuit</p>
               <h3>Manaslu</h3>
               <small
-                >A demanding circuit follows the Budhi Gandaki from warm valleys
-                to Tibetan-influenced villages and Larkya La.</small
+                >A challenging, uncrowded circuit tracing wild river gorges around the world's eighth-highest mountain and over Larkya La pass.</small
               >
             </div></a
           ><a
             class="destination-card reveal"
             href="/destinations/gosaikunda"
-            data-filter-value="langtang,"
+            data-filter-value="bagmati"
             ><picture
               ><source srcset="/assets/nepal-rara.webp" type="image/webp" />
               <img
                 src="/assets/nepal-rara.jpg"
-                alt="Gosaikunda travel guide"
+                alt="Sacred Gosaikunda alpine lake"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -559,8 +602,7 @@
               <p>Langtang, Bagmati · Sacred alpine lakes</p>
               <h3>Gosaikunda</h3>
               <small
-                >A chain of sacred alpine lakes sits above forest and Tamang
-                villages on a high route between Langtang and Helambu.</small
+                >A chain of holy high-altitude glacial tarns nestled at 4,380m, cherished by pilgrims and high-pass trekkers alike.</small
               >
             </div></a
           ><a
@@ -571,40 +613,38 @@
               ><source srcset="/assets/nepal-pokhara.webp" type="image/webp" />
               <img
                 src="/assets/nepal-pokhara.jpg"
-                alt="Bandipur travel guide"
+                alt="Traditional Newar houses on cobblestone streets in Bandipur"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">12</span>
             <div class="destination-card-copy">
-              <p>Gandaki hills · Historic hill town</p>
+              <p>Gandaki hills · Preserved hill bazaar</p>
               <h3>Bandipur</h3>
               <small
-                >A preserved hill bazaar turns the Kathmandu–Pokhara journey
-                into a place worth pausing.</small
+                >A pedestrianized living museum of 18th-century Newar architecture perched on a ridge with sweeping mountain horizons.</small
               >
             </div></a
           ><a
             class="destination-card reveal"
             href="/destinations/nagarkot"
-            data-filter-value="kathmandu"
+            data-filter-value="bagmati"
             ><picture
               ><source
                 srcset="/assets/nepal-kathmandu.webp"
                 type="image/webp" />
               <img
                 src="/assets/nepal-kathmandu.jpg"
-                alt="Nagarkot travel guide"
+                alt="Himalayan sunrise viewpoint from Nagarkot"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">13</span>
             <div class="destination-card-copy">
-              <p>Kathmandu Valley rim · Himalayan viewpoints</p>
+              <p>Kathmandu Valley rim · Himalayan sunrise</p>
               <h3>Nagarkot</h3>
               <small
-                >A forested ridge gives the Kathmandu Valley breathing room—and,
-                in clear weather, a long Himalayan horizon.</small
+                >A pine-covered ridge escape offering uninterrupted panoramic views spanning eight Himalayan ranges on clear mornings.</small
               >
             </div></a
           ><a
@@ -615,17 +655,16 @@
               ><source srcset="/assets/nepal-lumbini.webp" type="image/webp" />
               <img
                 src="/assets/nepal-lumbini.jpg"
-                alt="Janakpur travel guide"
+                alt="Janaki Mandir palace temple in Janakpur"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">14</span>
             <div class="destination-card-copy">
-              <p>Madhesh · Mithila culture & pilgrimage</p>
+              <p>Madhesh · Mithila culture & arts</p>
               <h3>Janakpur</h3>
               <small
-                >A sacred city of bright temple architecture, Mithila painting
-                and the living story of Sita.</small
+                >The vibrant spiritual heart of Mithila civilization, celebrated for the palatial Janaki Mandir and exquisite folk art traditions.</small
               >
             </div></a
           ><a
@@ -636,38 +675,36 @@
               ><source srcset="/assets/nepal-chitwan.webp" type="image/webp" />
               <img
                 src="/assets/nepal-chitwan.jpg"
-                alt="Ilam travel guide"
+                alt="Lush rolling tea estates in Ilam eastern Nepal"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">15</span>
             <div class="destination-card-copy">
-              <p>Koshi hills · Tea country</p>
+              <p>Koshi hills · Rolling tea estates</p>
               <h3>Ilam</h3>
               <small
-                >Green ridges, tea gardens and misty market towns introduce
-                Nepal’s quieter eastern hills.</small
+                >Misty hillsides, terraced tea plantations, and cool mountain paths in the peaceful, under-explored eastern corner of Nepal.</small
               >
             </div></a
           ><a
             class="destination-card reveal"
             href="/destinations/muktinath"
-            data-filter-value="mustang,"
+            data-filter-value="gandaki"
             ><picture
               ><source srcset="/assets/nepal-mustang.webp" type="image/webp" />
               <img
                 src="/assets/nepal-mustang.jpg"
-                alt="Muktinath travel guide"
+                alt="Muktinath temple against dry mountain backdrop"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">16</span>
             <div class="destination-card-copy">
-              <p>Mustang, Gandaki · Pilgrimage & high desert</p>
+              <p>Mustang, Gandaki · Sacred pilgrimage</p>
               <h3>Muktinath</h3>
               <small
-                >A sacred Himalayan site brings Hindu and Buddhist traditions
-                together above the Kali Gandaki valley.</small
+                >A venerated temple complex sitting at 3,710m where sacred springs, eternal flames, and high desert winds meet.</small
               >
             </div></a
           ><a
@@ -680,38 +717,36 @@
                 type="image/webp" />
               <img
                 src="/assets/nepal-kathmandu.jpg"
-                alt="Tansen / Palpa travel guide"
+                alt="Historic cobblestone streets in Tansen Palpa"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">17</span>
             <div class="destination-card-copy">
-              <p>Lumbini hills · Hill town & craft</p>
+              <p>Lumbini hills · Historic artisan town</p>
               <h3>Tansen / Palpa</h3>
               <small
-                >A steep, lived-in hill town of courtyards, metalwork, woven
-                dhaka and far-reaching ridge views.</small
+                >A hillside settlement famed for handwoven Dhaka textiles, historic Magar culture, and peaceful views across the Madi Valley.</small
               >
             </div></a
           ><a
             class="destination-card reveal"
             href="/destinations/khaptad"
-            data-filter-value="far"
+            data-filter-value="sudurpashchim"
             ><picture
               ><source srcset="/assets/nepal-rara.webp" type="image/webp" />
               <img
                 src="/assets/nepal-rara.jpg"
-                alt="Khaptad travel guide"
+                alt="Rolling green moors of Khaptad National Park"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">18</span>
             <div class="destination-card-copy">
-              <p>Far West · High meadows & forest</p>
+              <p>Far West · High moors & meditation</p>
               <h3>Khaptad</h3>
               <small
-                >Rolling high meadows, forest and sacred places form one of
-                far-west Nepal’s least hurried landscapes.</small
+                >Rolling sub-alpine plateaus, dense fir forests, and tranquil meditation hermitages in western Nepal’s quietest national park.</small
               >
             </div></a
           ><a
@@ -722,17 +757,16 @@
               ><source srcset="/assets/nepal-everest.webp" type="image/webp" />
               <img
                 src="/assets/nepal-everest.jpg"
-                alt="Kanchenjunga travel guide"
+                alt="Wild rugged trail leading to Mount Kanchenjunga base camp"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">19</span>
             <div class="destination-card-copy">
-              <p>Koshi Himal · Remote high trekking</p>
+              <p>Koshi Himal · Wilderness trekking</p>
               <h3>Kanchenjunga</h3>
               <small
-                >Long approaches and vast valleys lead toward the world’s
-                third-highest mountain in Nepal’s far east.</small
+                >Long expedition-style approaches toward the world’s third-highest summit through pristine forests and remote mountain hamlets.</small
               >
             </div></a
           ><a
@@ -743,33 +777,36 @@
               ><source srcset="/assets/nepal-rara.webp" type="image/webp" />
               <img
                 src="/assets/nepal-rara.jpg"
-                alt="Dolpo / Phoksundo travel guide"
+                alt="Deep turquoise waters of Shey Phoksundo Lake"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
             ><span class="index">20</span>
             <div class="destination-card-copy">
-              <p>Karnali Himal · Remote lake & trans-Himalaya</p>
+              <p>Karnali Himal · Trans-Himalayan wilderness</p>
               <h3>Dolpo / Phoksundo</h3>
               <small
-                >Turquoise Phoksundo and the austere valleys beyond open one of
-                Nepal’s most remote journeys.</small
+                >Spectacular turquoise alpine waters and ancient Bon monasteries in Nepal’s rawest, most isolated trans-Himalayan expanse.</small
               >
             </div></a
           >
         </div>
       </section>
+
       <section class="section section-mist">
         <div class="section-head">
           <div>
-            <p class="kicker">Actual journeys</p>
-            <h2>Take the long way round.</h2>
+            <p class="kicker">Tested trekking routes</p>
+            <h2>Classic mountain routes & overland journeys.</h2>
+            <p class="section-lede">
+              Practical point-to-point itineraries planned with mandatory acclimatization days, elevation profiles, and realistic trail timing.
+            </p>
           </div>
           <a class="text-link" href="/routes">Explore all routes →</a>
         </div>
         <div class="card-grid">
           <a class="route-card reveal" href="/routes/kathmandu-chitwan-pokhara"
-            ><p class="card-label">7–10 days · Easy</p>
+            ><p class="card-label">7–10 days · Easy · Cultural & Wildlife</p>
             <h3>Kathmandu → Chitwan → Pokhara</h3>
             <div class="route-line-mini">
               <span>Kathmandu</span><span>Chitwan</span><span>Pokhara</span>
@@ -778,7 +815,7 @@
           ><a
             class="route-card reveal"
             href="/routes/kathmandu-bandipur-pokhara"
-            ><p class="card-label">5–8 days · Easy</p>
+            ><p class="card-label">5–8 days · Easy · Heritage Trail</p>
             <h3>Kathmandu → Bandipur → Pokhara</h3>
             <div class="route-line-mini">
               <span>Kathmandu</span><span>Dumre</span><span>Bandipur</span
@@ -788,7 +825,7 @@
           ><a
             class="route-card reveal"
             href="/routes/kathmandu-pokhara-ghandruk"
-            ><p class="card-label">7–10 days · Moderate</p>
+            ><p class="card-label">7–10 days · Moderate · Foothill Trek</p>
             <h3>Kathmandu → Pokhara → Ghandruk</h3>
             <div class="route-line-mini">
               <span>Kathmandu</span><span>Pokhara</span><span>Ghandruk</span
@@ -796,7 +833,7 @@
             </div>
             <span class="card-arrow">↗</span></a
           ><a class="route-card reveal" href="/routes/everest-base-camp"
-            ><p class="card-label">14–18 days door to door · Challenging</p>
+            ><p class="card-label">14–18 days · Challenging · High Altitude</p>
             <h3>Everest Base Camp Route</h3>
             <div class="route-line-mini">
               <span>Kathmandu</span><span>Lukla</span><span>Namche Bazaar</span
@@ -804,7 +841,7 @@
             </div>
             <span class="card-arrow">↗</span></a
           ><a class="route-card reveal" href="/routes/annapurna-circuit"
-            ><p class="card-label">14–20 days · Challenging</p>
+            ><p class="card-label">14–20 days · Challenging · Mountain Pass</p>
             <h3>Annapurna Circuit Route</h3>
             <div class="route-line-mini">
               <span>Kathmandu</span><span>Besisahar</span><span>Manang</span
@@ -812,7 +849,7 @@
             </div>
             <span class="card-arrow">↗</span></a
           ><a class="route-card reveal" href="/routes/mustang-route"
-            ><p class="card-label">10–16 days · Moderate to challenging</p>
+            ><p class="card-label">10–16 days · Moderate · Trans-Himalaya</p>
             <h3>The Mustang Route</h3>
             <div class="route-line-mini">
               <span>Pokhara</span><span>Jomsom</span><span>Kagbeni</span
@@ -822,45 +859,49 @@
           >
         </div>
       </section>
+
       <section class="section">
         <div class="section-head">
           <div>
-            <p class="kicker">Plan by time</p>
-            <h2>How much time do you have?</h2>
+            <p class="kicker">Plan by duration</p>
+            <h2>How much time do you have in Nepal?</h2>
+            <p class="section-lede">
+              Match your available days to honest routes that allow proper acclimatization without spending your entire holiday stuck in transit.
+            </p>
           </div>
         </div>
         <div class="time-grid">
           <a class="time-card reveal" href="/itineraries/3-days"
-            ><strong>3 days</strong><span>A quick Nepal escape</span
+            ><strong>3 days</strong><span>Valley heritage & sunrise ridges</span
             ><span>↗</span></a
           ><a class="time-card reveal" href="/itineraries/5-days"
-            ><strong>5 days</strong><span>Mountains + culture</span
+            ><strong>5 days</strong><span>Pokhara + Kathmandu highlights</span
             ><span>↗</span></a
           ><a class="time-card reveal" href="/itineraries/7-days"
-            ><strong>7 days</strong><span>Classic Nepal</span><span>↗</span></a
+            ><strong>7 days</strong><span>Classic Nepal golden triangle</span><span>↗</span></a
           ><a class="time-card reveal" href="/itineraries/10-days"
-            ><strong>10 days</strong><span>Nepal beyond the highlights</span
+            ><strong>10 days</strong><span>Short Himalayan treks + safari</span
             ><span>↗</span></a
           ><a class="time-card reveal" href="/itineraries/14-days"
-            ><strong>14 days</strong><span>A deeper Nepal journey</span
+            ><strong>14 days</strong><span>Everest or Annapurna Circuit journeys</span
             ><span>↗</span></a
           ><a class="time-card reveal" href="/itineraries/21-days"
-            ><strong>21 days</strong><span>Take the long way round</span
+            ><strong>21 days</strong><span>Deep wilderness & remote circuits</span
             ><span>↗</span></a
           >
         </div>
       </section>
+
       <section class="section section-dark">
         <div class="section-head">
           <div>
-            <p class="kicker">Trekking</p>
-            <h2>Walk deeper into Nepal.</h2>
+            <p class="kicker">Trekking regions</p>
+            <h2>Walk deeper into the high Himalayas.</h2>
             <p class="section-lede">
-              Choose the region first. Then match altitude, duration and trail
-              conditions to your experience.
+              Choose the region first. Then balance altitude, physical demand, accommodation style, and teahouse trail conditions.
             </p>
           </div>
-          <a class="text-link" href="/trekking">See all treks →</a>
+          <a class="text-link" href="/trekking">Compare all trekking regions →</a>
         </div>
         <div class="destination-grid">
           <a class="destination-card reveal" href="/destinations/everest-region"
@@ -868,7 +909,7 @@
               ><source srcset="/assets/nepal-everest.webp" type="image/webp" />
               <img
                 src="/assets/nepal-everest.jpg"
-                alt="Everest trekking region"
+                alt="Everest trekking trails and alpine valleys"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -876,7 +917,7 @@
             <div class="destination-card-copy">
               <p>Trekking region</p>
               <h3>Everest</h3>
-              <small>High valleys, Sherpa culture and iconic routes.</small>
+              <small>High valleys, Sherpa hospitality, Gokyo Lakes, and classic Base Camp routes.</small>
             </div></a
           ><a
             class="destination-card reveal"
@@ -887,7 +928,7 @@
                 type="image/webp" />
               <img
                 src="/assets/nepal-annapurna.jpg"
-                alt="Annapurna trekking region"
+                alt="Annapurna region hiking scenery"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -896,7 +937,7 @@
               <p>Trekking region</p>
               <h3>Annapurna</h3>
               <small
-                >Village trails, sanctuary walks and the full circuit.</small
+                >Warm village hospitality, dramatic mountain amphitheatres, and high-pass circuits.</small
               >
             </div></a
           ><a class="destination-card reveal" href="/destinations/langtang"
@@ -904,7 +945,7 @@
               ><source srcset="/assets/nepal-everest.webp" type="image/webp" />
               <img
                 src="/assets/nepal-everest.jpg"
-                alt="Langtang trekking region"
+                alt="Langtang valley peaks"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -912,7 +953,7 @@
             <div class="destination-card-copy">
               <p>Trekking region</p>
               <h3>Langtang</h3>
-              <small>A compact mountain valley reached by road.</small>
+              <small>A scenic mountain valley reached by road, rich in Tamang hospitality.</small>
             </div></a
           ><a class="destination-card reveal" href="/destinations/manaslu"
             ><picture
@@ -921,7 +962,7 @@
                 type="image/webp" />
               <img
                 src="/assets/nepal-annapurna.jpg"
-                alt="Manaslu trekking region"
+                alt="Manaslu remote mountain circuit"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -929,14 +970,14 @@
             <div class="destination-card-copy">
               <p>Trekking region</p>
               <h3>Manaslu</h3>
-              <small>A serious restricted circuit over Larkya La.</small>
+              <small>A rigorous restricted circuit crossing Larkya La pass along the Tibetan border.</small>
             </div></a
           ><a class="destination-card reveal" href="/destinations/upper-mustang"
             ><picture
               ><source srcset="/assets/nepal-mustang.webp" type="image/webp" />
               <img
                 src="/assets/nepal-mustang.jpg"
-                alt="Mustang trekking region"
+                alt="Upper Mustang arid cliffs and trail"
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
@@ -945,57 +986,89 @@
               <p>Trekking region</p>
               <h3>Mustang</h3>
               <small
-                >Wind, high desert and living trans-Himalayan culture.</small
+                >Trans-Himalayan landscapes, centuries-old monasteries, and dry summer trekking.</small
               >
             </div></a
           >
         </div>
       </section>
+
       <section class="editorial-split">
         <div class="editorial-image">
           <picture
             ><source srcset="/assets/nepal-kathmandu.webp" type="image/webp" />
             <img
               src="/assets/nepal-kathmandu.jpg"
-              alt="Heritage architecture in Kathmandu Valley"
+              alt="Intricate wood carvings and heritage architecture in Kathmandu Valley"
               width="1600"
               height="1067"
               loading="lazy"
           /></picture>
         </div>
         <div class="editorial-copy">
-          <p class="kicker">People, food, festivals, heritage</p>
-          <h2>Nepal is more than mountains.</h2>
+          <p class="kicker">People, food, festivals, living heritage</p>
+          <h2>Nepal is far more than mountains.</h2>
           <p>
-            Travel makes more sense when the landscape comes with language,
-            ritual, migration, craft and a meal.
+            Travel makes deeper sense when the mountain landscapes are connected with living language, daily rituals, shared meals, local tea houses, and the warmth of diverse ethnic communities.
           </p>
           <div class="topic-links">
-            <a href="/culture#people">People</a><a href="/culture#food">Food</a
-            ><a href="/culture#festivals">Festivals</a
-            ><a href="/culture#heritage">Heritage</a>
+            <a href="/culture#people">People & Communities</a>
+            <a href="/culture#food">Nepali Food & Dal Bhat</a>
+            <a href="/culture#festivals">Living Festivals</a>
+            <a href="/culture#heritage">Valley Heritage</a>
           </div>
-          <a class="text-link" href="/culture">Explore culture →</a>
+          <a class="text-link" href="/culture">Explore Nepal's living culture →</a>
         </div>
       </section>
+
+      <!-- Practical Field Advice Section -->
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Before you land</p>
+            <h2>Practical advice from local trails.</h2>
+            <p class="section-lede">
+              Simple, transparent principles that make traveling across Nepal easier, safer, and far more rewarding.
+            </p>
+          </div>
+        </div>
+        <div class="reason-grid review-principles">
+          <div class="info-card">
+            <span>Health & Safety</span><strong>Acclimatize deliberately</strong>
+            <p>Altitude illness does not respect fitness. Never gain more than 300–500m of sleeping elevation per day above 3,000 meters, and plan built-in rest days.</p>
+          </div>
+          <div class="info-card">
+            <span>Cash & Connectivity</span><strong>Carry physical currency</strong>
+            <p>Beyond Pokhara and Kathmandu, mountain ATMs are often offline or empty. Carry sufficient Nepali rupees in cash for teahouses, showers, and charging fees.</p>
+          </div>
+          <div class="info-card">
+            <span>Buffer Time</span><strong>Expect mountain weather</strong>
+            <p>Flights into Lukla, Jomsom, and Juphal are frequently delayed by cloud cover. Always build at least one buffer day before your international departure.</p>
+          </div>
+        </div>
+      </section>
+
       <section class="section">
         <div class="section-head">
           <div>
             <p class="kicker">A shared responsibility</p>
-            <h2>Travel well. Leave less behind.</h2>
+            <h2>Travel thoughtfully. Leave less behind.</h2>
             <p class="section-lede">
-              Refill water, keep distance from wildlife, hire fairly, ask before
-              photographing and let sacred places remain sacred.
+              Filter drinking water to cut single-use plastic, support family-run homestays, compensate guides and porters fairly, ask before photographing people, and let sacred high-altitude paths remain clean.
             </p>
           </div>
-          <a class="button" href="/responsible-travel">Travel responsibly</a>
+          <a class="button" href="/responsible-travel">Read our responsible travel code</a>
         </div>
       </section>
+
       <section class="section section-mist">
         <div class="section-head">
           <div>
-            <p class="kicker">From Wanders</p>
-            <h2>Latest guides.</h2>
+            <p class="kicker">Practical resources</p>
+            <h2>Essential Nepal travel guides.</h2>
+            <p class="section-lede">
+              Updated ground insights on entry rules, trail costs, transportation logistics, and seasonal weather trends.
+            </p>
           </div>
           <a class="text-link" href="/travel-guide">All travel guides →</a>
         </div>
@@ -1004,16 +1077,14 @@
             ><p class="card-label">Start here</p>
             <h3>Nepal Travel Guide</h3>
             <p>
-              The practical framework for planning when to go, how to move, what
-              to budget and how to travel responsibly.
+              The foundational framework for choosing destinations, seasonal planning, realistic budgets, and responsible packing.
             </p>
             <span class="card-arrow">↗</span></a
           ><a class="guide-card reveal" href="/travel-guide/nepal-travel-cost"
             ><p class="card-label">Budget</p>
-            <h3>Nepal Travel Cost</h3>
+            <h3>Nepal Travel & Trekking Cost</h3>
             <p>
-              A transparent way to estimate daily costs without pretending one
-              number fits every region.
+              A transparent breakdown of daily costs for teahouse food, permits, local transport, accommodation, and mountain gear hire.
             </p>
             <span class="card-arrow">↗</span></a
           ><a
@@ -1022,48 +1093,70 @@
             ><p class="card-label">Seasons</p>
             <h3>Best Time to Visit Nepal</h3>
             <p>
-              Month-by-month planning for visibility, heat, monsoon, festivals
-              and trekking conditions.
+              A realistic month-by-month guide covering mountain visibility, monsoon rain shadows, festive autumns, and winter passes.
             </p>
             <span class="card-arrow">↗</span></a
           ><a
             class="guide-card reveal"
             href="/travel-guide/nepal-transportation"
-            ><p class="card-label">Getting around</p>
-            <h3>Nepal Transportation</h3>
+            ><p class="card-label">Logistics</p>
+            <h3>Nepal Transportation Guide</h3>
             <p>
-              How to compare flights, tourist buses, local buses, jeeps, taxis
-              and private vehicles.
+              How to navigate domestic flights, tourist coaches, local shared jeeps, and private vehicle transfers between hubs.
             </p>
             <span class="card-arrow">↗</span></a
           ><a class="guide-card reveal" href="/travel-guide/nepal-visa"
             ><p class="card-label">Entry</p>
-            <h3>Nepal Visa</h3>
+            <h3>Nepal Tourist Visa on Arrival</h3>
             <p>
-              A plain-language planning guide with links to official immigration
-              information.
+              Clear instructions on requirements, online pre-arrival forms, current fees, and immigration procedures at Tribhuvan International Airport.
             </p>
             <span class="card-arrow">↗</span></a
           ><a class="guide-card reveal" href="/travel-guide/nepal-currency"
-            ><p class="card-label">Money</p>
-            <h3>Nepal Currency & Money</h3>
+            ><p class="card-label">Payments</p>
+            <h3>Nepal Currency, ATMs & Payments</h3>
             <p>
-              Cash, cards, ATMs, exchange and practical payment planning across
-              Nepal.
+              What you need to know about Nepali Rupees, cash exchange tips, card acceptability, and ATM withdrawal limits in Nepal.
             </p>
             <span class="card-arrow">↗</span></a
           >
         </div>
       </section>
+
+      <!-- Search & Intent FAQ Section -->
+      <section class="section" id="faq-section">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Frequently asked questions</p>
+            <h2>Planning your trip to Nepal.</h2>
+            <p class="section-lede">
+              Answers to the most common practical questions about safety, permits, trail seasons, and local customs.
+            </p>
+          </div>
+        </div>
+        <div class="reason-grid review-principles">
+          <div class="info-card">
+            <span>Seasons</span><strong>When is the best time to visit?</strong>
+            <p>October to November offers the clearest mountain panoramas. March to May brings warm weather and blooming hills. For summer visits (June–August), rain-shadow regions like Mustang and Dolpo remain dry and ideal.</p>
+          </div>
+          <div class="info-card">
+            <span>Regulations</span><strong>Do I need a trekking guide?</strong>
+            <p>Yes. In line with official safety and conservation mandates, international trekkers require a certified local guide for national park and restricted mountain trails across Nepal.</p>
+          </div>
+          <div class="info-card">
+            <span>Preparation</span><strong>How fit do I need to be?</strong>
+            <p>Foothill walks and short treks suit anyone of moderate fitness. High-pass circuits (like Thorong La or Cho La) demand good stamina, steady pacing, and disciplined acclimatization schedules.</p>
+          </div>
+        </div>
+      </section>
+
       <section class="section section-mist reviews-home">
         <div class="section-head">
           <div>
             <p class="kicker">Traveler reviews</p>
-            <h2>Real trips. Useful feedback.</h2>
+            <h2>Real journeys. Unfiltered feedback.</h2>
             <p class="section-lede">
-              Share what worked, what changed and what future travelers should
-              know. Every submission is moderated; paid or invented reviews are
-              never published.
+              Share what worked, unexpected trail conditions, and what future travelers should know. Every submission is human-moderated; sponsored or automated reviews are never published.
             </p>
           </div>
           <a class="text-link" href="/reviews">Share your experience →</a>
@@ -1072,25 +1165,26 @@
           <div class="info-card">
             <span>Trip context</span
             ><strong>Route, timing and travel style</strong>
-            <p>Useful reviews explain when and how the trip happened.</p>
+            <p>Useful reviews explain when the trek took place, trail conditions, and packing realities.</p>
           </div>
           <div class="info-card">
             <span>Independent</span><strong>No paid placement</strong>
-            <p>Commercial relationships cannot purchase a positive review.</p>
+            <p>Commercial affiliations never influence our ratings, editorial opinions, or advice.</p>
           </div>
           <div class="info-card">
-            <span>Moderated</span><strong>Checked before publishing</strong>
-            <p>Submissions may be edited for clarity, never for sentiment.</p>
+            <span>Moderated</span><strong>Carefully verified</strong>
+            <p>Every field report is checked for genuine traveler context before publishing.</p>
           </div>
         </div>
       </section>
+
       <section class="newsletter">
         <div>
           <p class="kicker">Monthly field notes</p>
           <h2>Get Nepal Route Notes</h2>
         </div>
         <div>
-          <p>Monthly routes, seasonal advice and places worth taking slowly.</p>
+          <p>Curated seasonal routes, trail permit updates, and practical mountain advice delivered once a month.</p>
           <form
             class="newsletter-form"
             name="newsletter"
@@ -1103,64 +1197,74 @@
             <p hidden>
               <label>Leave this field empty<input name="bot-field" /></label>
             </p>
-            <label class="sr-only" for="newsletter-email">Your email</label
+            <label class="sr-only" for="newsletter-email">Your email address</label
             ><input
               id="newsletter-email"
               name="email"
               type="email"
               required
               autocomplete="email"
-              placeholder="Your email"
+              placeholder="Your email address"
             /><button type="submit">Subscribe ↗</button>
           </form>
-          <small>No spam. Unsubscribe any time.</small>
+          <small>No spam. Unsubscribe at any time with one click.</small>
         </div>
       </section>
     </main>
+
     <footer class="site-footer">
       <div class="footer-top">
         <a class="footer-logo" href="/" aria-label="Wanders Nepal home"
           ><img
             src="/assets/wanders-nepal-logo-dark-v2.png"
-            alt="Wanders Nepal"
+            alt="Wanders Nepal logo"
             width="512"
             height="349"
           /><small>Discover Nepal beyond the obvious.</small></a
         >
         <div class="footer-groups">
           <div class="footer-group">
-            <strong>Explore</strong><a href="/destinations">Destinations</a
-            ><a href="/trekking">Trekking</a><a href="/routes">Routes</a
-            ><a href="/itineraries">Itineraries</a
-            ><a href="/experiences">Experiences</a>
+            <strong>Explore</strong>
+            <a href="/destinations">Destinations</a>
+            <a href="/trekking">Trekking</a>
+            <a href="/routes">Routes</a>
+            <a href="/itineraries">Itineraries</a>
+            <a href="/experiences">Experiences</a>
           </div>
           <div class="footer-group">
-            <strong>Plan</strong><a href="/travel-guide">Travel guide</a
-            ><a href="/travel-guide/nepal-transportation">Transport</a
-            ><a href="/tools/nepal-trip-cost">Cost calculator</a
-            ><a href="/travel-guide/nepal-packing-list">Packing</a
-            ><a href="/travel-guide/nepal-visa">Visa</a>
+            <strong>Plan</strong>
+            <a href="/travel-guide">Travel Guide</a>
+            <a href="/travel-guide/nepal-transportation">Transport</a>
+            <a href="/tools/nepal-trip-cost">Cost Calculator</a>
+            <a href="/travel-guide/nepal-packing-list">Packing List</a>
+            <a href="/travel-guide/nepal-visa">Visa Rules</a>
           </div>
           <div class="footer-group">
-            <strong>Discover</strong><a href="/culture">Culture</a
-            ><a href="/culture#food">Food</a><a href="/wildlife">Wildlife</a
-            ><a href="/responsible-travel">Responsible travel</a>
+            <strong>Discover</strong>
+            <a href="/culture">Culture</a>
+            <a href="/culture#food">Food & Cuisine</a>
+            <a href="/wildlife">Wildlife Safaris</a>
+            <a href="/responsible-travel">Responsible Travel</a>
           </div>
           <div class="footer-group">
-            <strong>Wanders</strong><a href="/about">About</a
-            ><a href="/reviews">Reviews</a
-            ><a href="/editorial-policy">Editorial policy</a
-            ><a href="/contact">Contact</a><a href="/corrections">Corrections</a
-            ><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+            <strong>Wanders</strong>
+            <a href="/about">About Us</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/editorial-policy">Editorial Policy</a>
+            <a href="/contact">Contact</a>
+            <a href="/corrections">Corrections</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>Independent Nepal travel planning</span
-        ><span>Last site update: September 2026</span
-        ><span>© 2026 Wanders Nepal</span>
+        <span>Independent Nepal travel planning & trekking advice</span>
+        <span>Last site update: September 2026</span>
+        <span>© 2026 Wanders Nepal. All rights reserved.</span>
       </div>
     </footer>
+
     <dialog
       class="search-dialog"
       id="site-search"
@@ -1186,11 +1290,11 @@
               name="q"
               type="search"
               autocomplete="off"
-              placeholder="Pokhara, Everest, 7 day itinerary…"
+              placeholder="Pokhara, Everest, Annapurna, 7 day itinerary…"
             />
           </div>
           <p class="search-hint" id="search-count" aria-live="polite">
-            Type to search every guide. Press Esc to close.
+            Type to search every route and destination guide. Press Esc to close.
           </p>
           <div class="popular-searches" aria-label="Popular searches">
             <button type="button">Pokhara</button
@@ -1204,6 +1308,7 @@
         </form>
       </div>
     </dialog>
+
     <script>
       window.ELSEWHERE_JOURNEY = [
         {

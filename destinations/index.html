@@ -2,39 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Destinations — Wanders Nepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Nepal Destinations Guide: 20 Regions & Mountain Hubs — Wanders Nepal</title>
     <meta
       name="description"
-      content="Start with one of twenty major destination hubs, then connect it to a route, trek or realistic itinerary."
+      content="Comprehensive destination guides across Nepal. Practical logistics, elevation profiles, permit costs, and local insights for Kathmandu, Everest, Annapurna, Mustang, and beyond."
     />
-    <link rel="canonical" href="https://www.wandersnepal.com/destinations" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:type" content="article" />
+    <link rel="canonical" href="https://wandersnepal.com/destinations" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Open Graph Meta -->
+    <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Wanders Nepal" />
-    <meta property="og:title" content="Destinations — Wanders Nepal" />
+    <meta property="og:title" content="Nepal Destinations Guide: 20 Regions & Mountain Hubs — Wanders Nepal" />
     <meta
       property="og:description"
-      content="Start with one of twenty major destination hubs, then connect it to a route, trek or realistic itinerary."
+      content="Honest, practical field guides to Nepal's diverse geographical zones—from high Himalayan passes to low subtropical grasslands."
     />
-    <meta
-      property="og:url"
-      content="https://www.wandersnepal.com/destinations"
-    />
-    <meta
-      property="og:image"
-      content="https://www.wandersnepal.com/assets/nepal-rara.jpg"
-    />
+    <meta property="og:url" content="https://wandersnepal.com/destinations" />
+    <meta property="og:image" content="https://wandersnepal.com/assets/nepal-everest.jpg" />
+    <meta property="og:image:alt" content="Nepal Himalayan mountain ranges and trekking destination hubs" />
+
+    <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Destinations — Wanders Nepal" />
-    <meta
-      name="twitter:description"
-      content="Start with one of twenty major destination hubs, then connect it to a route, trek or realistic itinerary."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.wandersnepal.com/assets/nepal-rara.jpg"
-    />
+    <meta name="twitter:title" content="Nepal Destinations Guide — Wanders Nepal" />
+    <meta name="twitter:description" content="Detailed travel advice, altitude profiles, and routes for 20 destinations across Nepal." />
+    <meta name="twitter:image" content="https://wandersnepal.com/assets/nepal-everest.jpg" />
+
     <link rel="icon" href="/assets/wandersnepal-favicon.png" type="image/png" />
     <meta name="theme-color" content="#142520" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,37 +38,74 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/style.css" />
+
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "Article",
-            "headline": "Destinations",
-            "description": "Start with one of twenty major destination hubs, then connect it to a route, trek or realistic itinerary.",
-            "url": "https://www.wandersnepal.com/destinations",
-            "image": "https://www.wandersnepal.com/assets/nepal-rara.jpg",
-            "dateModified": "2026-09-10",
-            "author": {
-              "@type": "Organization",
-              "name": "Wanders Nepal editorial desk"
-            },
-            "publisher": { "@type": "Organization", "name": "Wanders Nepal" }
+            "@type": "TravelAgency",
+            "@id": "https://wandersnepal.com/#agency",
+            "name": "Wanders Nepal",
+            "url": "https://wandersnepal.com/",
+            "logo": "https://wandersnepal.com/assets/wanders-nepal-logo-dark-v2.png"
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://wandersnepal.com/destinations/#webpage",
+            "url": "https://wandersnepal.com/destinations",
+            "name": "Nepal Destinations & Regional Hubs — Wanders Nepal",
+            "description": "Directory of 20 regional destinations and trekking hubs throughout Nepal.",
+            "isPartOf": {
+              "@id": "https://wandersnepal.com/#agency"
+            }
           },
           {
             "@type": "BreadcrumbList",
+            "@id": "https://wandersnepal.com/destinations/#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.wandersnepal.com/"
+                "item": "https://wandersnepal.com/"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Destinations",
-                "item": "https://www.wandersnepal.com/destinations"
+                "item": "https://wandersnepal.com/destinations"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://wandersnepal.com/destinations/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Which regions in Nepal are suitable for beginners?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For first-time visitors seeking rich cultural heritage and comfortable foothill walking, the Kathmandu Valley rim, Pokhara lakefront, Bandipur, and short Annapurna foothill treks (such as Ghorepani Poon Hill or Ghandruk) provide moderate altitudes, excellent teahouses, and easy road connectivity."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between open and restricted trekking regions?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Open regions (like Everest and Annapurna) require standard conservation permits and TIMS cards. Restricted regions (like Upper Mustang, Manaslu, Dolpo, and Kanchenjunga) require special Department of Immigration permits, a minimum of two registered trekkers, and an accredited government-certified Nepali mountain guide."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How should I plan travel between major destinations in Nepal?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The primary overland artery links Kathmandu, Chitwan, and Pokhara via tourist buses, private 4WD jeeps, and short 25-minute domestic flights. High mountain hubs like Lukla and Jomsom rely on mountain airstrips subject to morning visual flight weather."
+                }
               }
             ]
           }
@@ -152,14 +183,12 @@
             loading="eager"
         /></picture>
         <div class="page-hero-inner">
-          <div class="breadcrumbs">
-            <a href="/">Home</a> / <a href="/destinations">Destinations</a>
-          </div>
-          <p class="kicker">Twenty ways into Nepal</p>
-          <h1>Destinations</h1>
+          <p class="kicker">Regional Exploration Hub</p>
+            <h1>Nepal Destinations: Across Seven Geographic Zones</h1>
           <p class="hero-lede">
-            Start with one of twenty major destination hubs, then connect it to
-            a route, trek or realistic itinerary.
+            Nepal spans an elevation gradient from 60 meters in the Terai lowlands to 8,848 meters at Mount Everest. 
+              Each region has distinct weather windows, trail conditions, permit requirements, and cultural traditions. 
+              Use our verified regional notes to choose your base hubs deliberately.
           </p>
         </div>
       </section>
@@ -171,437 +200,268 @@
           </div>
         </div>
         <div class="destination-grid">
-          <a
-            class="destination-card reveal"
-            href="/destinations/kathmandu-valley"
-            data-filter-value="bagmati"
-            ><picture
-              ><source
-                srcset="/assets/nepal-kathmandu.webp"
-                type="image/webp" />
-              <img
-                src="/assets/nepal-kathmandu.jpg"
-                alt="Kathmandu Valley travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">01</span>
+          <a class="destination-card reveal" href="/destinations/kathmandu-valley" data-filter-value="bagmati">
+            <picture>
+              <source srcset="/assets/nepal-kathmandu.webp" type="image/webp" />
+              <img src="/assets/nepal-kathmandu.jpg" alt="Kathmandu Valley historic temple squares and courtyards" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">01</span>
             <div class="destination-card-copy">
-              <p>Bagmati · Living heritage</p>
+              <p>Bagmati · Living Heritage</p>
               <h3>Kathmandu Valley</h3>
-              <small
-                >Three historic cities, layered neighbourhoods and living
-                ritual—best understood one courtyard at a time.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/pokhara"
-            data-filter-value="gandaki"
-            ><picture
-              ><source srcset="/assets/nepal-pokhara.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-pokhara.jpg"
-                alt="Pokhara travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">02</span>
+              <small>Three historic royal cities, intricate Newar courtyards, and centuries of living ritual—best explored slowly on foot.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/pokhara" data-filter-value="gandaki">
+            <picture>
+              <source srcset="/assets/nepal-pokhara.webp" type="image/webp" />
+              <img src="/assets/nepal-pokhara.jpg" alt="Pokhara lakefront and Machapuchare view" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">02</span>
             <div class="destination-card-copy">
-              <p>Gandaki · Lakes & adventure</p>
+              <p>Gandaki · Lakes & Adventure</p>
               <h3>Pokhara</h3>
-              <small
-                >A lakeside city where Himalayan mornings open into ridge walks,
-                paddling, neighbourhood food and unhurried afternoons.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/everest-region"
-            data-filter-value="koshi"
-            ><picture
-              ><source srcset="/assets/nepal-everest.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-everest.jpg"
-                alt="Everest Region travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">03</span>
+              <small>A sub-tropical lakeside haven serving as the primary staging ground for Annapurna expeditions, day hikes, and boating.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/everest-region" data-filter-value="koshi">
+            <picture>
+              <source srcset="/assets/nepal-everest.webp" type="image/webp" />
+              <img src="/assets/nepal-everest.jpg" alt="Everest Region high Himalayan landscape and teahouse trail" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">03</span>
             <div class="destination-card-copy">
               <p>Koshi · High Himalaya</p>
               <h3>Everest Region</h3>
-              <small
-                >The Khumbu is not one viewpoint but a lived mountain landscape
-                of Sherpa villages, monasteries and high valleys.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/annapurna-region"
-            data-filter-value="gandaki"
-            ><picture
-              ><source
-                srcset="/assets/nepal-annapurna.webp"
-                type="image/webp" />
-              <img
-                src="/assets/nepal-annapurna.jpg"
-                alt="Annapurna Region travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">04</span>
+              <small>The Khumbu heartland: Sherpa mountain settlements, high-altitude Buddhist monasteries, and routes to Everest Base Camp.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/annapurna-region" data-filter-value="gandaki">
+            <picture>
+              <source srcset="/assets/nepal-annapurna.webp" type="image/webp" />
+              <img src="/assets/nepal-annapurna.jpg" alt="Annapurna range peaks and trekking valley" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">04</span>
             <div class="destination-card-copy">
-              <p>Gandaki · Village trekking</p>
+              <p>Gandaki · Village Trekking</p>
               <h3>Annapurna Region</h3>
-              <small
-                >A web of trails links subtropical valleys, rhododendron forest,
-                Gurung villages and the high desert beyond Thorong La.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/chitwan"
-            data-filter-value="madhesh–bagmati"
-            ><picture
-              ><source srcset="/assets/nepal-chitwan.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-chitwan.jpg"
-                alt="Chitwan travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">05</span>
+              <small>Subtropical terraced hills, Gurung villages, and alpine sanctuaries culminating at Thorong La pass.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/chitwan" data-filter-value="bagmati">
+            <picture>
+              <source srcset="/assets/nepal-chitwan.webp" type="image/webp" />
+              <img src="/assets/nepal-chitwan.jpg" alt="Riverine grasslands and wildlife safari in Chitwan National Park" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">05</span>
             <div class="destination-card-copy">
-              <p>Madhesh–Bagmati lowlands · Wildlife & Tharu culture</p>
+              <p>Terai Lowlands · Wildlife & Tharu Culture</p>
               <h3>Chitwan</h3>
-              <small
-                >Riverine forest and tall grasslands reveal a lowland Nepal of
-                rhinos, birds, gharials and Tharu heritage.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/lumbini"
-            data-filter-value="lumbini"
-            ><picture
-              ><source srcset="/assets/nepal-lumbini.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-lumbini.jpg"
-                alt="Lumbini travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">06</span>
+              <small>Dense riverine jungles home to one-horned rhinos, Bengal tigers, gharials, and indigenous Tharu heritage.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/lumbini" data-filter-value="lumbini">
+            <picture>
+              <source srcset="/assets/nepal-lumbini.webp" type="image/webp" />
+              <img src="/assets/nepal-lumbini.jpg" alt="Maya Devi Temple and sacred gardens at Lumbini" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">06</span>
             <div class="destination-card-copy">
-              <p>Lumbini Province · Sacred heritage</p>
+              <p>Lumbini Province · Sacred Heritage</p>
               <h3>Lumbini</h3>
-              <small
-                >The birthplace of the Buddha is a quiet landscape of
-                archaeology, gardens and living monastic traditions.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/upper-mustang"
-            data-filter-value="gandaki"
-            ><picture
-              ><source srcset="/assets/nepal-mustang.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-mustang.jpg"
-                alt="Upper Mustang travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">07</span>
+              <small>The UNESCO birthplace of Gautama Buddha: a peaceful zone of international monasteries, gardens, and archaeological sites.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/upper-mustang" data-filter-value="gandaki">
+            <picture>
+              <source srcset="/assets/nepal-mustang.webp" type="image/webp" />
+              <img src="/assets/nepal-mustang.jpg" alt="Upper Mustang red cliffs and walled city of Lo Manthang" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">07</span>
             <div class="destination-card-copy">
-              <p>Gandaki · Restricted high desert</p>
+              <p>Gandaki · Restricted High Desert</p>
               <h3>Upper Mustang</h3>
-              <small
-                >A trans-Himalayan world of walled settlements, cave complexes,
-                wind-carved cliffs and Tibetan Buddhist culture.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/rara-lake"
-            data-filter-value="karnali"
-            ><picture
-              ><source srcset="/assets/nepal-rara.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-rara.jpg"
-                alt="Rara Lake travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">08</span>
+              <small>An arid trans-Himalayan Tibetan kingdom marked by whitewashed fortresses, centuries-old sky caves, and canyon trails.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/rara-lake" data-filter-value="karnali">
+            <picture>
+              <source srcset="/assets/nepal-rara.webp" type="image/webp" />
+              <img src="/assets/nepal-rara.jpg" alt="Deep blue alpine waters of Rara Lake surrounded by pine forests" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">08</span>
             <div class="destination-card-copy">
-              <p>Karnali · Remote lake & forest</p>
+              <p>Karnali · Remote Lake & Pines</p>
               <h3>Rara Lake</h3>
-              <small
-                >Nepal’s largest lake rests among pine ridges in Karnali, far
-                beyond the country’s familiar travel corridors.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/langtang"
-            data-filter-value="bagmati"
-            ><picture
-              ><source srcset="/assets/nepal-everest.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-everest.jpg"
-                alt="Langtang travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">09</span>
+              <small>Nepal's largest alpine lake, resting peacefully among pine-covered ridges far beyond commercial tourism paths.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/langtang" data-filter-value="bagmati">
+            <picture>
+              <source srcset="/assets/nepal-everest.webp" type="image/webp" />
+              <img src="/assets/nepal-everest.jpg" alt="Langtang mountain valley trail" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">09</span>
             <div class="destination-card-copy">
-              <p>Bagmati Himal · Accessible mountain valley</p>
+              <p>Bagmati Himal · Accessible Valley</p>
               <h3>Langtang</h3>
-              <small
-                >A compact Himalayan valley north of Kathmandu, rebuilt through
-                community effort and best travelled with time to listen.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/manaslu"
-            data-filter-value="gandaki"
-            ><picture
-              ><source
-                srcset="/assets/nepal-annapurna.webp"
-                type="image/webp" />
-              <img
-                src="/assets/nepal-annapurna.jpg"
-                alt="Manaslu travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">10</span>
+              <small>A compact mountain valley easily reached by overland transport from Kathmandu, rich in Tamang hospitality and glaciers.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/manaslu" data-filter-value="gandaki">
+            <picture>
+              <source srcset="/assets/nepal-annapurna.webp" type="image/webp" />
+              <img src="/assets/nepal-annapurna.jpg" alt="Manaslu circuit high-pass route" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">10</span>
             <div class="destination-card-copy">
-              <p>Gandaki Himal · Restricted circuit</p>
+              <p>Gandaki Himal · Restricted Circuit</p>
               <h3>Manaslu</h3>
-              <small
-                >A demanding circuit follows the Budhi Gandaki from warm valleys
-                to Tibetan-influenced villages and Larkya La.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/gosaikunda"
-            data-filter-value="langtang,"
-            ><picture
-              ><source srcset="/assets/nepal-rara.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-rara.jpg"
-                alt="Gosaikunda travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">11</span>
+              <small>A wilderness circuit tracing the Budhi Gandaki river gorge to Tibetan-border settlements and Larkya La pass (5,106m).</small>
+            </div>
+          </a>
+
+          <!-- Fixed filter value from "langtang," to "bagmati" -->
+          <a class="destination-card reveal" href="/destinations/gosaikunda" data-filter-value="bagmati">
+            <picture>
+              <source srcset="/assets/nepal-rara.webp" type="image/webp" />
+              <img src="/assets/nepal-rara.jpg" alt="High sacred lake of Gosaikunda" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">11</span>
             <div class="destination-card-copy">
-              <p>Langtang, Bagmati · Sacred alpine lakes</p>
+              <p>Langtang, Bagmati · Sacred Alpine Tarns</p>
               <h3>Gosaikunda</h3>
-              <small
-                >A chain of sacred alpine lakes sits above forest and Tamang
-                villages on a high route between Langtang and Helambu.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/bandipur"
-            data-filter-value="gandaki"
-            ><picture
-              ><source srcset="/assets/nepal-pokhara.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-pokhara.jpg"
-                alt="Bandipur travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">12</span>
+              <small>A cluster of oligotrophic glacial lakes at 4,380m venerated in Hindu and Buddhist mythology and frequented by ridge trekkers.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/bandipur" data-filter-value="gandaki">
+            <picture>
+              <source srcset="/assets/nepal-pokhara.webp" type="image/webp" />
+              <img src="/assets/nepal-pokhara.jpg" alt="Traditional architecture in Bandipur hilltop town" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">12</span>
             <div class="destination-card-copy">
-              <p>Gandaki hills · Historic hill town</p>
+              <p>Gandaki Hills · Preserved Newar Bazaar</p>
               <h3>Bandipur</h3>
-              <small
-                >A preserved hill bazaar turns the Kathmandu–Pokhara journey
-                into a place worth pausing.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/nagarkot"
-            data-filter-value="kathmandu"
-            ><picture
-              ><source
-                srcset="/assets/nepal-kathmandu.webp"
-                type="image/webp" />
-              <img
-                src="/assets/nepal-kathmandu.jpg"
-                alt="Nagarkot travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">13</span>
+              <small>A tranquil, vehicle-free hilltop town preserving 18th-century Newar merchant homes and expansive mountain panoramas.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/nagarkot" data-filter-value="bagmati">
+            <picture>
+              <source srcset="/assets/nepal-kathmandu.webp" type="image/webp" />
+              <img src="/assets/nepal-kathmandu.jpg" alt="Sunrise over the Himalayas from Nagarkot ridge" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">13</span>
             <div class="destination-card-copy">
-              <p>Kathmandu Valley rim · Himalayan viewpoints</p>
+              <p>Kathmandu Valley Rim · Sunrise Viewpoint</p>
               <h3>Nagarkot</h3>
-              <small
-                >A forested ridge gives the Kathmandu Valley breathing room—and,
-                in clear weather, a long Himalayan horizon.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/janakpur"
-            data-filter-value="madhesh"
-            ><picture
-              ><source srcset="/assets/nepal-lumbini.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-lumbini.jpg"
-                alt="Janakpur travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">14</span>
+              <small>An accessible forested ridge on the eastern edge of the valley offering views stretching from Annapurna to Everest in clear weather.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/janakpur" data-filter-value="lumbini">
+            <picture>
+              <source srcset="/assets/nepal-lumbini.webp" type="image/webp" />
+              <img src="/assets/nepal-lumbini.jpg" alt="Ornate Janaki Mandir in Janakpur" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">14</span>
             <div class="destination-card-copy">
-              <p>Madhesh · Mithila culture & pilgrimage</p>
+              <p>Madhesh Lowlands · Mithila Art & Heritage</p>
               <h3>Janakpur</h3>
-              <small
-                >A sacred city of bright temple architecture, Mithila painting
-                and the living story of Sita.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/ilam"
-            data-filter-value="koshi"
-            ><picture
-              ><source srcset="/assets/nepal-chitwan.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-chitwan.jpg"
-                alt="Ilam travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">15</span>
+              <small>The cultural nucleus of Mithila civilization, famed for the palace-like Janaki Mandir, sacred ponds, and folk painting.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/ilam" data-filter-value="koshi">
+            <picture>
+              <source srcset="/assets/nepal-chitwan.webp" type="image/webp" />
+              <img src="/assets/nepal-chitwan.jpg" alt="Rolling green tea estates of Ilam" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">15</span>
             <div class="destination-card-copy">
-              <p>Koshi hills · Tea country</p>
+              <p>Koshi Hills · Eastern Tea Country</p>
               <h3>Ilam</h3>
-              <small
-                >Green ridges, tea gardens and misty market towns introduce
-                Nepal’s quieter eastern hills.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/muktinath"
-            data-filter-value="mustang,"
-            ><picture
-              ><source srcset="/assets/nepal-mustang.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-mustang.jpg"
-                alt="Muktinath travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">16</span>
+              <small>Terraced tea plantations, cool misty ridgelines, and authentic rural homestays in Nepal's eastern agricultural hills.</small>
+            </div>
+          </a>
+
+          <!-- Fixed filter value from "mustang," to "gandaki" -->
+          <a class="destination-card reveal" href="/destinations/muktinath" data-filter-value="gandaki">
+            <picture>
+              <source srcset="/assets/nepal-mustang.webp" type="image/webp" />
+              <img src="/assets/nepal-mustang.jpg" alt="Muktinath temple at the base of Thorong La" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">16</span>
             <div class="destination-card-copy">
-              <p>Mustang, Gandaki · Pilgrimage & high desert</p>
+              <p>Mustang, Gandaki · Pilgrimage Valley</p>
               <h3>Muktinath</h3>
-              <small
-                >A sacred Himalayan site brings Hindu and Buddhist traditions
-                together above the Kali Gandaki valley.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/tansen"
-            data-filter-value="lumbini"
-            ><picture
-              ><source
-                srcset="/assets/nepal-kathmandu.webp"
-                type="image/webp" />
-              <img
-                src="/assets/nepal-kathmandu.jpg"
-                alt="Tansen / Palpa travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">17</span>
+              <small>A sacred sanctuary at 3,710m uniting Hindu and Buddhist pilgrims above the windswept Kali Gandaki gorge.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/tansen" data-filter-value="lumbini">
+            <picture>
+              <source srcset="/assets/nepal-kathmandu.webp" type="image/webp" />
+              <img src="/assets/nepal-kathmandu.jpg" alt="Cobbled streets and brick houses in Tansen Palpa" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">17</span>
             <div class="destination-card-copy">
-              <p>Lumbini hills · Hill town & craft</p>
+              <p>Lumbini Hills · Traditional Artisan Town</p>
               <h3>Tansen / Palpa</h3>
-              <small
-                >A steep, lived-in hill town of courtyards, metalwork, woven
-                dhaka and far-reaching ridge views.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/khaptad"
-            data-filter-value="far"
-            ><picture
-              ><source srcset="/assets/nepal-rara.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-rara.jpg"
-                alt="Khaptad travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">18</span>
+              <small>A steep hill station celebrated for woven Dhaka fabric, bronze crafts, Magar cultural roots, and Shreenagar hill vistas.</small>
+            </div>
+          </a>
+
+          <!-- Fixed filter value from "far" to "sudurpashchim" -->
+          <a class="destination-card reveal" href="/destinations/khaptad" data-filter-value="sudurpashchim">
+            <picture>
+              <source srcset="/assets/nepal-rara.webp" type="image/webp" />
+              <img src="/assets/nepal-rara.jpg" alt="Rolling green moorlands of Khaptad National Park" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">18</span>
             <div class="destination-card-copy">
-              <p>Far West · High meadows & forest</p>
+              <p>Sudurpashchim · High Moors & Forest</p>
               <h3>Khaptad</h3>
-              <small
-                >Rolling high meadows, forest and sacred places form one of
-                far-west Nepal’s least hurried landscapes.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/kanchenjunga"
-            data-filter-value="koshi"
-            ><picture
-              ><source srcset="/assets/nepal-everest.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-everest.jpg"
-                alt="Kanchenjunga travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">19</span>
+              <small>Gentle sub-alpine grasslands, dense fir forests, and meditation hermitages in far-western Nepal's quietest conservation plateau.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/kanchenjunga" data-filter-value="koshi">
+            <picture>
+              <source srcset="/assets/nepal-everest.webp" type="image/webp" />
+              <img src="/assets/nepal-everest.jpg" alt="Remote wilderness approaching Mount Kanchenjunga" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">19</span>
             <div class="destination-card-copy">
-              <p>Koshi Himal · Remote high trekking</p>
+              <p>Koshi Himal · Wilderness High Trekking</p>
               <h3>Kanchenjunga</h3>
-              <small
-                >Long approaches and vast valleys lead toward the world’s
-                third-highest mountain in Nepal’s far east.</small
-              >
-            </div></a
-          ><a
-            class="destination-card reveal"
-            href="/destinations/dolpo-phoksundo"
-            data-filter-value="karnali"
-            ><picture
-              ><source srcset="/assets/nepal-rara.webp" type="image/webp" />
-              <img
-                src="/assets/nepal-rara.jpg"
-                alt="Dolpo / Phoksundo travel guide"
-                width="1600"
-                height="1067"
-                loading="lazy" /></picture
-            ><span class="index">20</span>
+              <small>Demanding expedition-grade approaches to the world's third-highest peak through rhododendron forests and remote Limbu hamlets.</small>
+            </div>
+          </a>
+
+          <a class="destination-card reveal" href="/destinations/dolpo-phoksundo" data-filter-value="karnali">
+            <picture>
+              <source srcset="/assets/nepal-rara.webp" type="image/webp" />
+              <img src="/assets/nepal-rara.jpg" alt="Deep blue Shey Phoksundo lake waters" width="1600" height="1067" loading="lazy" />
+            </picture>
+            <span class="index">20</span>
             <div class="destination-card-copy">
-              <p>Karnali Himal · Remote lake & trans-Himalaya</p>
+              <p>Karnali Himal · Trans-Himalayan Lake</p>
               <h3>Dolpo / Phoksundo</h3>
-              <small
-                >Turquoise Phoksundo and the austere valleys beyond open one of
-                Nepal’s most remote journeys.</small
-              >
-            </div></a
-          >
+              <small>Spectacular turquoise alpine waters and ancient pre-Buddhist Bonpo monasteries across Nepal's most secluded plateau.</small>
+            </div>
+          </a>
         </div>
       </section>
       <section class="newsletter">

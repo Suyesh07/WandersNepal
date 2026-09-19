@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>10 Days in Nepal: Nepal beyond the highlights — Wanders Nepal</title>
+    <title>10 Days in Nepal: The Sacred Mustang & Heritage Route — Wanders Nepal</title>
     <meta
       name="description"
-      content="A practical 10-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it."
+      content="A practical 10-day Nepal itinerary connecting Kathmandu, Pokhara, Lower Mustang (Muktinath & Kagbeni) and Bandipur with elevation logic and logistics."
     />
     <link
       rel="canonical"
@@ -17,11 +17,11 @@
     <meta property="og:site_name" content="Wanders Nepal" />
     <meta
       property="og:title"
-      content="10 Days in Nepal: Nepal beyond the highlights — Wanders Nepal"
+      content="10 Days in Nepal: The Sacred Mustang & Heritage Route — Wanders Nepal"
     />
     <meta
       property="og:description"
-      content="A practical 10-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it."
+      content="A practical 10-day Nepal itinerary connecting Kathmandu, Pokhara, Lower Mustang (Muktinath & Kagbeni) and Bandipur with elevation logic and logistics."
     />
     <meta
       property="og:url"
@@ -29,20 +29,20 @@
     />
     <meta
       property="og:image"
-      content="https://www.wandersnepal.com/assets/nepal-pokhara.jpg"
+      content="https://www.wandersnepal.com/assets/nepal-mustang.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="10 Days in Nepal: Nepal beyond the highlights — Wanders Nepal"
+      content="10 Days in Nepal: The Sacred Mustang & Heritage Route — Wanders Nepal"
     />
     <meta
       name="twitter:description"
-      content="A practical 10-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it."
+      content="A practical 10-day Nepal itinerary connecting Kathmandu, Pokhara, Lower Mustang (Muktinath & Kagbeni) and Bandipur with elevation logic and logistics."
     />
     <meta
       name="twitter:image"
-      content="https://www.wandersnepal.com/assets/nepal-pokhara.jpg"
+      content="https://www.wandersnepal.com/assets/nepal-mustang.jpg"
     />
     <link rel="icon" href="/assets/wandersnepal-favicon.png" type="image/png" />
     <meta name="theme-color" content="#142520" />
@@ -53,16 +53,105 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/style.css" />
+
+    <style>
+      /* Integrated styles to fix broken route visualizer */
+      .route-visual-card {
+        background: var(--surface, #142520);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 1.5rem 1.25rem 1rem;
+        margin: 2rem 0;
+        overflow: hidden;
+      }
+      .route-track-bar {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(130px, 1fr);
+        gap: 1rem;
+        overflow-x: auto;
+        padding-bottom: 1.25rem;
+        margin-bottom: 0.5rem;
+        scrollbar-width: thin;
+        scrollbar-color: #b45309 rgba(255, 255, 255, 0.05);
+      }
+      .waypoint-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 1.2rem;
+      }
+      .waypoint-item::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.2);
+        z-index: 1;
+      }
+      .waypoint-bullet {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #f59e0b;
+        z-index: 2;
+        box-shadow: 0 0 0 3px rgba(20, 37, 32, 0.9);
+      }
+      .waypoint-item.highlight .waypoint-bullet.peak {
+        background: #ea580c;
+        transform: scale(1.3);
+        box-shadow: 0 0 8px rgba(234, 88, 12, 0.8);
+      }
+      .waypoint-label strong {
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #d97706;
+      }
+      .waypoint-label p {
+        margin: 0.2rem 0 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #f3f4f6;
+        line-height: 1.25;
+      }
+      .waypoint-label small {
+        display: block;
+        font-size: 0.75rem;
+        color: #9ca3af;
+        margin-top: 0.2rem;
+      }
+      .elevation-wrapper {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        border-top: 1px dashed rgba(255, 255, 255, 0.1);
+        padding-top: 0.5rem;
+      }
+      .elevation-chart {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    </style>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
             "@type": "Article",
-            "headline": "10 Days in Nepal: Nepal beyond the highlights",
-            "description": "A practical 10-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it.",
+            "headline": "10 Days in Nepal: The Sacred Mustang & Heritage Route",
+            "description": "A practical 10-day Nepal itinerary connecting Kathmandu, Pokhara, Lower Mustang (Muktinath & Kagbeni) and Bandipur with elevation logic and logistics.",
             "url": "https://www.wandersnepal.com/itineraries/10-days",
-            "image": "https://www.wandersnepal.com/assets/nepal-pokhara.jpg",
+            "image": "https://www.wandersnepal.com/assets/nepal-mustang.jpg",
             "dateModified": "2026-09-10",
             "author": {
               "@type": "Organization",
@@ -97,30 +186,36 @@
       }
     </script>
   </head>
-  <body class="" data-page="">
+  <body class="" data-page="itinerary-10-days">
     <div class="page-noise" aria-hidden="true"></div>
     <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header" id="top">
-      <a class="brand" href="/" aria-label="Wanders Nepal home"
-        ><img
+      <a class="brand" href="/" aria-label="Wanders Nepal home">
+        <img
           class="brand-logo brand-logo-dark"
           src="/assets/wanders-nepal-logo-dark-v2.png"
           alt="Wanders Nepal"
           width="512"
-          height="349" /><img
+          height="349"
+        />
+        <img
           class="brand-logo brand-logo-light"
           src="/assets/wanders-nepal-logo-light-v2.png"
           alt=""
           width="512"
           height="349"
           aria-hidden="true"
-      /></a>
+        />
+      </a>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="/destinations">Destinations</a><a href="/trekking">Trekking</a
-        ><a href="/routes">Routes</a
-        ><a href="/itineraries" aria-current="page">Itineraries</a
-        ><a href="/experiences">Experiences</a><a href="/culture">Culture</a
-        ><a href="/plan-nepal">Plan Nepal</a>
+        <a href="/destinations">Destinations</a>
+        <a href="/trekking">Trekking</a>
+        <a href="/routes">Routes</a>
+        <a href="/itineraries" aria-current="page">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/culture">Culture</a>
+        <a href="/plan-nepal">Plan Nepal</a>
         <button
           class="search-toggle"
           type="button"
@@ -143,171 +238,573 @@
         <span></span><span></span><span class="sr-only">Open menu</span>
       </button>
       <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
-        <a href="/destinations">Destinations</a><a href="/trekking">Trekking</a
-        ><a href="/routes">Routes</a
-        ><a href="/itineraries" aria-current="page">Itineraries</a
-        ><a href="/experiences">Experiences</a><a href="/culture">Culture</a
-        ><a href="/plan-nepal">Plan Nepal</a>
-        <a href="/plan-my-trip">Plan My Trip</a
-        ><a class="mobile-search" href="/search" data-search-open
-          >Search Nepal</a
-        >
+        <a href="/destinations">Destinations</a>
+        <a href="/trekking">Trekking</a>
+        <a href="/routes">Routes</a>
+        <a href="/itineraries" aria-current="page">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/culture">Culture</a>
+        <a href="/plan-nepal">Plan Nepal</a>
+        <a href="/plan-my-trip">Plan My Trip</a>
+        <a class="mobile-search" href="/search" data-search-open>Search Nepal</a>
       </nav>
     </header>
+
     <main id="main">
       <section class="page-hero">
-        <picture
-          ><source srcset="/assets/nepal-pokhara.webp" type="image/webp" />
+        <picture>
+          <source srcset="/assets/nepal-mustang.webp" type="image/webp" />
           <img
-            src="/assets/nepal-pokhara.jpg"
-            alt="10 days in Nepal landscape"
+            src="/assets/nepal-mustang.jpg"
+            alt="Lower Mustang valley and Annapurna range landscape in Nepal"
             width="1600"
             height="1067"
             fetchpriority="high"
             loading="eager"
-        /></picture>
+          />
+        </picture>
         <div class="page-hero-inner">
           <div class="breadcrumbs">
             <a href="/">Home</a> / <a href="/itineraries">Itineraries</a> /
-            <a href="/itineraries/10-days">10 days</a>
+            <a href="/itineraries/10-days">10 Days</a>
           </div>
-          <p class="kicker">Nepal beyond the highlights</p>
-          <h1>10 days in Nepal</h1>
+          <p class="kicker">10-Day Field Blueprint · Trans-Himalaya, Lakes & Middle Hills</p>
+          <h1>10 Days in Nepal: The Sacred Mustang & Heritage Route</h1>
           <p class="hero-lede">
-            Add Chitwan or Bandipur without turning every day into a transfer.
+            A verified 10-day masterplan connecting Kathmandu's sacred shrines with Pokhara's tranquil lakes, the windswept trans-Himalayan gorge of the Kali Gandaki, and the historic Newar citadel of Bandipur.
           </p>
           <div class="hero-meta">
-            <div><span>Pace</span><strong>Balanced</strong></div>
-            <div>
-              <span>Stops</span><strong>Kathmandu · Chitwan · Pokhara</strong>
-            </div>
+            <div><span>Travel Pace</span><strong>Active Overland & STOL Aviation</strong></div>
+            <div><span>Key Stops</span><strong>Kathmandu, Pokhara, Jomsom, Kagbeni, Muktinath, Bandipur</strong></div>
+            <div><span>Max Altitude</span><strong>3,710 m (Muktinath Sanctuary)</strong></div>
           </div>
         </div>
       </section>
+
+      <div class="facts-strip">
+        <div class="fact">
+          <span>Duration</span>
+          <strong>240 Hours (10 Days / 9 Nights)</strong>
+        </div>
+        <div class="fact">
+          <span>Core Corridor</span>
+          <strong>Kathmandu → Pokhara → Lower Mustang → Bandipur</strong>
+        </div>
+        <div class="fact">
+          <span>Transit Mix</span>
+          <strong>STOL Flights (Jomsom), 4WD Jeeps & Private Cars</strong>
+        </div>
+        <div class="fact">
+          <span>Altitude Range</span>
+          <strong>822 m (Pokhara) to 3,710 m (Muktinath)</strong>
+        </div>
+        <div class="fact">
+          <span>Permits Required</span>
+          <strong>ACAP Entry Permit (NPR 3,000) + TIMS Card</strong>
+        </div>
+        <div class="fact">
+          <span>Ideal For</span>
+          <strong>Culture, Rain-Shadow Desert, Soft Trekking & Sacred Shrines</strong>
+        </div>
+      </div>
+
       <div class="article-layout">
         <aside class="toc" aria-label="On this page">
           <p>On this page</p>
-          <a href="#plan">The plan</a><a href="#route">Route logic</a
-          ><a href="#budget">Budget</a><a href="#adjust">How to adjust it</a
-          ><a href="#links">Continue planning</a>
+          <a href="#plan">Day-by-Day Masterplan</a>
+          <a href="#route-logic">Route Logistics & Elevation</a>
+          <a href="#food-guide">Regional Foodways</a>
+          <a href="#budget">Estimated Budget Breakdown</a>
+          <a href="#alternatives">Alternative 10-Day Blueprints</a>
+          <a href="#adjust">Acclimatization & Planning Rules</a>
+          <a href="#faq">Frequently Asked Questions</a>
+          <a href="#links">Continue Planning</a>
         </aside>
+
         <article class="article">
           <section id="plan">
             <div class="byline">
-              <span
-                >Written by: <strong>Wanders Nepal editorial desk</strong></span
-              ><span>Published: <strong>September 2026</strong></span
-              ><span>Last updated: <strong>September 2026</strong></span>
+              <span>Field Tested by: <strong>Wanders Nepal Route Desk</strong></span>
+              <span>Published: <strong>September 2026</strong></span>
+              <span>Timing Check: <strong>Verified Current (Kali Gandaki Corridor)</strong></span>
             </div>
-            <h2>10 days, used well</h2>
+            <h2>10 Days in Nepal: The Complete Day-by-Day Masterplan</h2>
             <p>
-              Add Chitwan or Bandipur without turning every day into a transfer.
+              Ten days is the sweet spot for travelers who want to venture into the Himalayas without undertaking an arduous multi-week high-pass expedition. This itinerary combines domestic aviation with 4WD mountain roads to access Lower Mustang—a dramatic trans-Himalayan desert region north of the Annapurna range—before returning via the preserved 18th-century merchant hill town of Bandipur.
             </p>
+
             <div class="day-list">
-              <div class="day-item">
-                <strong>Kathmandu Valley</strong><span>Days 1–3</span>
+              <!-- Day 1 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 1: Arrival in Kathmandu & Medieval Patan Courtyards</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 01</span>
+                </div>
+                <p>
+                  <strong>Morning to Midday: Arrival & Check-In.</strong> Land at Tribhuvan International Airport (TIA). Meet your driver and transfer south to Patan (Lalitpur). Check into a restored Newar heritage lodge around Mangal Bazaar.
+                </p>
+                <p>
+                  <strong>Afternoon: Patan Durbar Square & Hidden Bahals.</strong> Explore Patan Durbar Square (entry: NPR 1,000). Visit the Patan Museum in Keshav Narayan Chowk, admire the stone carvings of Krishna Mandir, and walk the quiet courtyards of the Golden Temple (Kwa Bahal) to observe traditional bronze metal casting in Taksar alleys.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Boutique heritage guesthouse in Patan.</em>
+                </p>
               </div>
-              <div class="day-item">
-                <strong>Chitwan with ethical wildlife activities</strong
-                ><span>Days 4–5</span>
+
+              <!-- Day 2 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 2: Morning Boudhanath Kora & Domestic Flight to Pokhara</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 02</span>
+                </div>
+                <p>
+                  <strong>Early Morning: Boudhanath Stupa (6:30 AM).</strong> Join Tibetan pilgrims for morning circumambulations (kora) around Boudhanath (entry: NPR 400). Savor breakfast on an elevated terrace overlooking the prayer wheels and burning juniper incense.
+                </p>
+                <p>
+                  <strong>Midday: Flight to Pokhara (822m).</strong> Board a 25-minute scheduled flight from Kathmandu to Pokhara Airport (PKR), sitting on the right side for Himalayan panoramas.
+                </p>
+                <p>
+                  <strong>Afternoon & Sunset: Phewa Tal & Peace Pagoda.</strong> Check into your Lakeside hotel. Rent a wooden boat (<em>doonga</em>) to row across Phewa Tal, then hike up through the Raniban forest to Shanti Stupa (World Peace Pagoda) for views of Machhapuchhare (6,993m) reflected on the lake.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Lakeside, Pokhara.</em>
+                </p>
               </div>
-              <div class="day-item">
-                <strong>Travel to Pokhara</strong><span>Day 6</span>
+
+              <!-- Day 3 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 3: Mountain Flight to Jomsom & Medieval Kagbeni Fort</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 03</span>
+                </div>
+                <p>
+                  <strong>Early Morning: Flight through the Kali Gandaki Gorge.</strong> Board an early STOL flight (approx. 20 minutes) from Pokhara to Jomsom Airport (2,720m), flying directly between the Annapurna and Dhaulagiri massifs before the gale-force afternoon winds rise.
+                </p>
+                <p>
+                  <strong>Mid-Morning: Overland to Kagbeni (2,810m).</strong> Take a 45-minute shared or private jeep up the wide gravel riverbed of the Kali Gandaki to the fortified oasis village of Kagbeni.
+                </p>
+                <p>
+                  <strong>Afternoon: Exploring the Gateway of Lo.</strong> Walk through narrow, covered mud-brick tunnels, inspect ancient animist spirit-traps (kheni), and visit the 15th-century Kag Chode Thupten Sampheling Gompa overlooking the river confluence. Search the gravel flats for fossilized ammonites (<em>Shaligram</em>).
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Traditional Tibetan-style stone lodge in Kagbeni.</em>
+                </p>
               </div>
-              <div class="day-item">
-                <strong>Pokhara and a village day walk</strong
-                ><span>Days 7–9</span>
+
+              <!-- Day 4 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 4: Ascent to Muktinath Sanctuary & 108 Sacred Spouts</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 04</span>
+                </div>
+                <p>
+                  <strong>Morning: Hike or 4WD to Muktinath (3,710m).</strong> Ascend the switchbacks through terraced barley fields to the sacred pilgrimage complex of Muktinath (Chumig Gyatsa). The drive takes 45 minutes, or you can hike 3.5 hours along the scenic trail via Jharkot.
+                </p>
+                <p>
+                  <strong>Midday: Temple Courtyards & Jwala Mai.</strong> Walk beneath the 108 freezing brass cow-headed water spouts (<em>Muktidhara</em>), visit the central pagoda dedicated to Lord Vishnu, and step inside Dhola Mebar Gompa to witness the continuous natural gas flame burning over spring water at Jwala Mai.
+                </p>
+                <p>
+                  <strong>Late Afternoon: Ranipauwa Exploration.</strong> Stroll the bazaar street of Ranipauwa, meeting sadhus, Buddhist pilgrims, and trekkers descending from the Thorong La pass.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Mountain lodge in Ranipauwa / Muktinath.</em>
+                </p>
               </div>
-              <div class="day-item">
-                <strong>Buffer or departure</strong><span>Day 10</span>
+
+              <!-- Day 5 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 5: Downhill Walk to Jharkot Fort & Cobblestone Marpha</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 05</span>
+                </div>
+                <p>
+                  <strong>Morning: Walk through Jharkot Fortress (3,550m).</strong> Take a peaceful 1-hour downhill walk to the ancient mud-brick village of Jharkot. Tour its red Sakya monastery and traditional amchi herbal medicine center.
+                </p>
+                <p>
+                  <strong>Midday: Transfer to Marpha (2,670m).</strong> Take a private jeep south past Jomsom to the historic village of Marpha, the cultural heart of the Thakali people.
+                </p>
+                <p>
+                  <strong>Afternoon: Apple Orchards & Flagstone Alleys.</strong> Wander Marpha’s spotless stone-paved streets, lined with flat-roofed, whitewashed homes and wood stacks. Visit a local distillery to sample organic apple brandy and freshly pressed cider.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Traditional Thakali inn in Marpha.</em>
+                </p>
+              </div>
+
+              <!-- Day 6 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 6: Canyon Descent & Tatopani Natural Hot Springs</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 06</span>
+                </div>
+                <p>
+                  <strong>Morning: Down the Kali Gandaki Gorge.</strong> Board a 4WD Scorpio jeep heading south through the deepest gorge on earth. Transition from trans-Himalayan desert into subtropical pine and rhododendron forests past Ghasa and the waterfalls of Rupse Chhahara.
+                </p>
+                <p>
+                  <strong>Afternoon: Soak in Tatopani Hot Springs (1,190m).</strong> Arrive in Tatopani ("hot water") by 1:00 PM. Check in and spend the afternoon soaking in natural riverside mineral thermal pools along the Kali Gandaki riverbanks.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Garden lodge in Tatopani.</em>
+                </p>
+              </div>
+
+              <!-- Day 7 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 7: Drive to Pokhara & Leisure Afternoon on the Lake</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 07</span>
+                </div>
+                <p>
+                  <strong>Morning: Scenic Drive via Beni.</strong> Drive south from Tatopani along the paved highway through Beni and Nayapul, arriving back in Pokhara by midday (approx. 4 hours).
+                </p>
+                <p>
+                  <strong>Afternoon: Rest & Recovery.</strong> Enjoy a slow afternoon in Lakeside: get a traditional deep-tissue trekking massage, browse gear shops, or relax in a garden cafe along Phewa Tal.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Lakeside, Pokhara.</em>
+                </p>
+              </div>
+
+              <!-- Day 8 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 8: Sarangkot Sunrise & Overland to Bandipur Citadel</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 08</span>
+                </div>
+                <p>
+                  <strong>Dawn: Sunrise from Sarangkot (1,600m).</strong> Early morning drive up to Sarangkot ridge to watch the first golden rays strike Machhapuchhare, Annapurna South, and Dhaulagiri.
+                </p>
+                <p>
+                  <strong>Midday: Drive East to Bandipur (1,030m).</strong> Depart Pokhara along the Prithvi Highway, turning up the winding ridge road at Dumre to reach the preserved 18th-century Newar trading citadel of Bandipur (approx. 2.5–3 hours).
+                </p>
+                <p>
+                  <strong>Afternoon: Car-Free Cobblestone Promenade.</strong> Stroll through Bandipur's pedestrian main street, lined with wooden-balconied merchant houses and stone temples. Hike 20 minutes to Thani Mai Temple for 360-degree ridge sunset views.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Restored boutique merchant mansion in Bandipur.</em>
+                </p>
+              </div>
+
+              <!-- Day 9 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 9: Bandipur Ridge Dawn & Highway Return to Kathmandu</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 09</span>
+                </div>
+                <p>
+                  <strong>Dawn: Ridge Alpenglow.</strong> Catch morning views of the Manaslu range (8,163m) and Ganesh Himal floating above the morning valley inversion fog.
+                </p>
+                <p>
+                  <strong>Morning to Midday: Overland Return to Kathmandu.</strong> Depart Bandipur by private vehicle for the scenic 4.5-to-5.5-hour drive back along the Trishuli River canyon to the capital.
+                </p>
+                <p>
+                  <strong>Evening: Pashupatinath Aarti.</strong> Head to Pashupatinath Temple to stand along the sacred riverbanks for the 6:00 PM Sandhya Aarti ceremony featuring oil lamps, temple bells, and chanting.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Kathmandu or Patan.</em>
+                </p>
+              </div>
+
+              <!-- Day 10 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0;">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 10: Medieval Bhaktapur Durbar Square & Airport Exit</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 10</span>
+                </div>
+                <p>
+                  <strong>Morning: Living Museum of Bhaktapur.</strong> Spend your final morning in the medieval brick-and-timber city-state of Bhaktapur (entry: NPR 1,800). Admire the five-story Nyatapola Temple, walk through Pottery Square, and sample a fresh bowl of sweet <em>Juju Dhau</em> ("King Curd").
+                </p>
+                <p>
+                  <strong>Afternoon: International Airport Transfer.</strong> Bhaktapur sits just 12 km east of Tribhuvan International Airport (TIA). A 35-minute drive brings you directly to the departure terminal without battling central city traffic.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Departure: Check in at TIA 3 hours before your international flight.</em>
+                </p>
               </div>
             </div>
           </section>
-          <section id="route">
-            <h2>Route logic</h2>
-            <div class="route-visual">
-              <div class="route-stops">
-                <span>Kathmandu</span><span>Chitwan</span><span>Pokhara</span>
+
+          <section id="route-logic">
+            <h2>Route Logic & Elevation Profile</h2>
+            <p>
+              This 10-day itinerary follows a logical progression that respects altitude physiology. Instead of flying straight to 3,710m, you sleep at 2,810m in Kagbeni on Night 3, allowing your body to acclimatize naturally before sleeping at Muktinath on Night 4.
+            </p>
+
+            <!-- FIXED RESPONSIVE ROUTE VISUAL CARD -->
+            <div class="route-visual-card">
+              <div class="route-track-bar">
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Days 1–2</strong>
+                    <p>Kathmandu</p>
+                    <small>1,350 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 2</strong>
+                    <p>Pokhara</p>
+                    <small>822 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 3</strong>
+                    <p>Kagbeni</p>
+                    <small>2,810 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item highlight">
+                  <span class="waypoint-bullet peak"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 4</strong>
+                    <p>Muktinath</p>
+                    <small>3,710 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 5</strong>
+                    <p>Marpha</p>
+                    <small>2,670 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 6</strong>
+                    <p>Tatopani</p>
+                    <small>1,190 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 8</strong>
+                    <p>Bandipur</p>
+                    <small>1,030 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Days 9–10</strong>
+                    <p>Kathmandu & TIA</p>
+                    <small>1,338 m</small>
+                  </div>
+                </div>
               </div>
-              <svg
-                class="elevation"
-                viewBox="0 0 560 220"
-                role="img"
-                aria-label="Schematic elevation profile"
-              >
-                <path
-                  class="area"
-                  d="M26.0 147.0 L280.0 47.0 L534.0 135.2 L534 194 L26 194 Z"
-                />
-                <path class="line" d="M26.0 147.0 L280.0 47.0 L534.0 135.2" />
-                <text x="26" y="213">Kathmandu</text>
-                <text x="534" y="213" text-anchor="end">Pokhara</text>
-              </svg>
+
+              <div class="elevation-wrapper">
+                <svg 
+                  viewBox="0 0 800 180" 
+                  preserveAspectRatio="none" 
+                  class="elevation-chart" 
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <linearGradient id="elevGradient10" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#b45309" stop-opacity="0.4"/>
+                      <stop offset="100%" stop-color="#b45309" stop-opacity="0.0"/>
+                    </linearGradient>
+                  </defs>
+
+                  <path 
+                    d="M 50,110 L 130,110 L 200,135 L 290,65 L 390,20 L 490,70 L 580,120 L 670,125 L 750,110 L 750,180 L 50,180 Z" 
+                    fill="url(#elevGradient10)"
+                  />
+                  <path 
+                    d="M 50,110 L 130,110 L 200,135 L 290,65 L 390,20 L 490,70 L 580,120 L 670,125 L 750,110" 
+                    fill="none" 
+                    stroke="#b45309" 
+                    stroke-width="3" 
+                    stroke-linecap="round"
+                  />
+                  <circle cx="50" cy="110" r="5" fill="#f59e0b" />
+                  <circle cx="200" cy="135" r="5" fill="#f59e0b" />
+                  <circle cx="290" cy="65" r="5" fill="#f59e0b" />
+                  <circle cx="390" cy="20" r="7" fill="#ea580c" stroke="#fff" stroke-width="2" />
+                  <circle cx="490" cy="70" r="5" fill="#f59e0b" />
+                  <circle cx="580" cy="120" r="5" fill="#f59e0b" />
+                  <circle cx="670" cy="125" r="5" fill="#f59e0b" />
+                  <circle cx="750" cy="110" r="5" fill="#f59e0b" />
+                </svg>
+              </div>
             </div>
+
             <p>
-              Pace: <strong>Balanced</strong>. The sequence reduces backtracking
-              and protects at least one flexible period where possible.
+              After Muktinath, the route descends rapidly back into lush lower valleys, ensuring restful sleep and fast recovery.
             </p>
           </section>
-          <section id="budget">
-            <h2>Budget framework</h2>
+
+          <section id="food-guide">
+            <h2>Regional Foodways: Valley, Desert & Mountain</h2>
             <p>
-              Use the
-              <a href="/tools/nepal-trip-cost">Nepal trip cost calculator</a>
-              for a first range, then add international flights, permit fees,
-              insurance and a weather contingency. Estimates are not quotes.
+              This itinerary covers four distinct culinary regions:
             </p>
-          </section>
-          <section id="adjust">
-            <h2>Make it yours</h2>
             <ul>
-              <li>Remove a destination before removing every rest period.</li>
-              <li>
-                Add wildlife only if you have enough time for two nights in
-                Chitwan.
-              </li>
-              <li>
-                Add trekking only when the itinerary can absorb acclimatisation
-                and weather.
-              </li>
-              <li>
-                Keep the final night close to the international departure
-                airport.
-              </li>
+              <li><strong>Newar Feasts in Patan & Bandipur:</strong> Traditional <em>Samay Baji</em> platters with beaten rice (<em>baji</em>), spicy fire-roasted spiced buffalo (<em>Chhoyela</em>), black lentil patties (<em>Wo / Bara</em>), and sweet <em>Juju Dhau</em> curd.</li>
+              <li><strong>Tibetan Staples in Kagbeni & Muktinath:</strong> Steamed dumplings (momos), hand-pulled noodle soup (<em>Thukpa</em>), roasted barley flour (<em>tsampa</em>), and warm salted yak-butter tea (<em>su-chya</em>).</li>
+              <li><strong>Authentic Thakali Dining in Marpha:</strong> Steamed rice, slow-cooked black lentils tempered with wild Himalayan herb (<em>jimbu</em>), spicy fried potatoes, dried mustard greens (<em>gundruk</em>), and radish-timur pickle.</li>
+              <li><strong>Mustang Apples:</strong> Freshly pressed cold apple juice, warm apple pies, and locally distilled Marpha apple brandy.</li>
             </ul>
           </section>
+
+          <section id="budget">
+            <h2>Estimated Costs & Budget Breakdown</h2>
+            <p>
+              A realistic breakdown for 10 days covering mountain STOL flights, private 4WD charters, heritage lodging, permits, and meals:
+            </p>
+
+            <div class="stay-grid">
+              <div class="info-card">
+                <span>Budget Independent</span>
+                <strong>NPR 7,000–10,500 / Day (~$52–$78)</strong>
+                <p>Clean family-run teahouses and guesthouses, shared public jeeps in Mustang, tourist buses on highways, and local diner meals.</p>
+              </div>
+              <div class="info-card">
+                <span>Mid-Range Comfort (Recommended)</span>
+                <strong>NPR 18,000–26,000 / Day (~$135–$195)</strong>
+                <p>Boutique heritage inns and comfortable mountain lodges, domestic flights (KTM–PKR and PKR–JMO), private Scorpio 4WD charter, and all entry tickets.</p>
+              </div>
+              <div class="info-card">
+                <span>Premium Heritage & Private</span>
+                <strong>NPR 45,000+ / Day (~$335+)</strong>
+                <p>Top-tier mountain lodges, dedicated private licensed guide, private 4WD vehicle throughout, helicopter options, and boutique suites.</p>
+              </div>
+            </div>
+
+            <table class="season-table" style="margin-top:1.5rem;">
+              <thead>
+                <tr>
+                  <th>Logistical Item</th>
+                  <th>Estimated Cost (Foreign National)</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Flight: KTM → PKR (One-Way)</strong></td>
+                  <td>USD 90–110</td>
+                  <td>25-minute scheduled flight</td>
+                </tr>
+                <tr>
+                  <td><strong>Flight: PKR → Jomsom (One-Way)</strong></td>
+                  <td>USD 125–150</td>
+                  <td>20-minute STOL flight through gorge</td>
+                </tr>
+                <tr>
+                  <td><strong>ACAP Entry Permit + TIMS Card</strong></td>
+                  <td>NPR 5,000 (~USD 38)</td>
+                  <td>Required for Lower Mustang (Jomsom, Kagbeni, Muktinath)</td>
+                </tr>
+                <tr>
+                  <td><strong>Private 4WD Scorpio (Jomsom to Pokhara)</strong></td>
+                  <td>USD 180–240 total</td>
+                  <td>Shared across your party; covers Jomsom–Muktinath–Tatopani–Pokhara</td>
+                </tr>
+                <tr>
+                  <td><strong>Monument Entry Tickets Total</strong></td>
+                  <td>NPR 4,400 (~USD 33)</td>
+                  <td>Patan (1,000), Pashupati (1,000), Boudha (400), Bhaktapur (1,800), Swayambhu (200)</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="alternatives">
+            <h2>Alternative 10-Day Blueprints</h2>
+            <p>
+              Depending on whether you seek high mountain trekking or active wildlife safaris, substitute with these field-tested options:
+            </p>
+
+            <div class="stay-grid">
+              <div class="info-card">
+                <span>Trekking Alternative</span>
+                <strong>Annapurna Base Camp (ABC) Trek (10 Days)</strong>
+                <p>
+                  Fly to Pokhara, drive to Ghandruk/Jhinu, and trek up the Modi Khola canyon through bamboo forests into the 360-degree glaciated amphitheater of Annapurna Base Camp (4,130m); descend via natural hot springs at Jhinu Danda.
+                </p>
+              </div>
+              <div class="info-card">
+                <span>Wildlife & Plains Alternative</span>
+                <strong>The Grand Central Heritage Loop (10 Days)</strong>
+                <p>
+                  Kathmandu (2 Days) → Fly to Pokhara (2 Days) → Tansen/Palpa hill town (2 Days) → Chitwan National Park for walking rhinos safaris (2 Days) → Overland back to Kathmandu via Patan.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="adjust">
+            <h2>Acclimatization & Field Planning Rules</h2>
+            <ul>
+              <li><strong>Never Drive Directly from Lowlands to Muktinath in One Day:</strong> Going from Pokhara (822m) straight to Muktinath (3,710m) in a single day creates severe altitude sickness risk. Always break your ascent by sleeping at Kagbeni (2,810m) or Jomsom first.</li>
+              <li><strong>Mind the Afternoon Kali Gandaki Winds:</strong> Between 11:00 AM and 4:00 PM, fierce gale-force winds funnel up the river canyon from the south. Complete trail walks, flights, and open jeep legs early in the morning, and wear wrap-around sunglasses and a windproof buff.</li>
+              <li><strong>Carry Warm Layers for Lower Mustang:</strong> Even during sunny spring and autumn months, Muktinath sits at 3,710 meters, where nighttime temperatures regularly drop below freezing. Bring a warm thermal base layer, a down jacket, and a fleece beanie.</li>
+              <li><strong>Cash Realities:</strong> There are no working ATMs in Kagbeni or Muktinath, and Jomsom ATMs often experience network drops. Withdraw your entire trip budget in cash Nepali Rupees in Pokhara before boarding your flight.</li>
+            </ul>
+          </section>
+
+          <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>Do I need the expensive $500 Upper Mustang permit for this trip?</h3>
+            <p>
+              No. Jomsom, Kagbeni, Muktinath, and Marpha are located in <strong>Lower Mustang</strong>. They require only the standard ACAP permit (NPR 3,000) and TIMS card. The USD 500 Restricted Area Permit (RAP) is only required if you travel north past the checkpoint gate at Kagbeni into Upper Mustang.
+            </p>
+            <h3>Can I complete this entire 10-day trip without trekking?</h3>
+            <p>
+              Yes. The entire route is connected by motorable roads and domestic flights. You can reach the temple gate at Muktinath, the orchards of Marpha, and the alleys of Bandipur entirely by private 4WD jeep and car, making it ideal for families and travelers with limited mobility.
+            </p>
+            <h3>What happens if the Jomsom flight is cancelled due to weather?</h3>
+            <p>
+              Flights from Pokhara to Jomsom can experience morning weather delays. If a flight is cancelled, private 4WD Scorpio jeeps can drive you from Pokhara to Jomsom along the Beni highway (approx. 8–9 hours of scenic mountain driving).
+            </p>
+          </section>
+
           <section id="links">
-            <h2>Continue planning</h2>
+            <h2>Continue Planning Your Route</h2>
             <div class="guide-grid">
-              <a class="guide-card" href="/destinations/kathmandu-valley"
-                ><p class="card-label">Destination</p>
-                <h3>Kathmandu Valley</h3>
+              <a class="guide-card" href="/destinations/muktinath">
+                <p class="card-label">Destination Guide</p>
+                <h3>Muktinath</h3>
                 <p>
-                  Three historic cities, layered neighbourhoods and living
-                  ritual—best understood one courtyard at a time.
+                  The sacred sanctuary of 108 spouts, Jwala Mai eternal flame, and high-desert landscapes.
                 </p>
-                <span class="card-arrow">↗</span></a
-              ><a class="guide-card" href="/destinations/chitwan"
-                ><p class="card-label">Destination</p>
-                <h3>Chitwan</h3>
-                <p>
-                  Riverine forest and tall grasslands reveal a lowland Nepal of
-                  rhinos, birds, gharials and Tharu heritage.
-                </p>
-                <span class="card-arrow">↗</span></a
-              ><a class="guide-card" href="/destinations/pokhara"
-                ><p class="card-label">Destination</p>
+                <span class="card-arrow">↗</span>
+              </a>
+              <a class="guide-card" href="/destinations/pokhara">
+                <p class="card-label">Destination Guide</p>
                 <h3>Pokhara</h3>
                 <p>
-                  A lakeside city where Himalayan mornings open into ridge
-                  walks, paddling, neighbourhood food and unhurried afternoons.
+                  Phewa Tal paddling, Sarangkot dawn viewpoints, paragliding, and Annapurna gateway notes.
                 </p>
-                <span class="card-arrow">↗</span></a
-              >
+                <span class="card-arrow">↗</span>
+              </a>
+              <a class="guide-card" href="/destinations/bandipur">
+                <p class="card-label">Destination Guide</p>
+                <h3>Bandipur</h3>
+                <p>
+                  A preserved 18th-century Newar merchant citadel with car-free stone lanes and ridge views.
+                </p>
+                <span class="card-arrow">↗</span>
+              </a>
             </div>
           </section>
         </article>
       </div>
+
       <section class="newsletter">
         <div>
           <p class="kicker">Monthly field notes</p>
@@ -327,8 +824,8 @@
             <p hidden>
               <label>Leave this field empty<input name="bot-field" /></label>
             </p>
-            <label class="sr-only" for="newsletter-email">Your email</label
-            ><input
+            <label class="sr-only" for="newsletter-email">Your email</label>
+            <input
               id="newsletter-email"
               name="email"
               type="email"
@@ -341,50 +838,60 @@
         </div>
       </section>
     </main>
+
     <footer class="site-footer">
       <div class="footer-top">
-        <a class="footer-logo" href="/" aria-label="Wanders Nepal home"
-          ><img
+        <a class="footer-logo" href="/" aria-label="Wanders Nepal home">
+          <img
             src="/assets/wanders-nepal-logo-dark-v2.png"
             alt="Wanders Nepal"
             width="512"
             height="349"
-          /><small>Discover Nepal beyond the obvious.</small></a
-        >
+          /><small>Discover Nepal beyond the obvious.</small>
+        </a>
         <div class="footer-groups">
           <div class="footer-group">
-            <strong>Explore</strong><a href="/destinations">Destinations</a
-            ><a href="/trekking">Trekking</a><a href="/routes">Routes</a
-            ><a href="/itineraries">Itineraries</a
-            ><a href="/experiences">Experiences</a>
+            <strong>Explore</strong>
+            <a href="/destinations">Destinations</a>
+            <a href="/trekking">Trekking</a>
+            <a href="/routes">Routes</a>
+            <a href="/itineraries" aria-current="page">Itineraries</a>
+            <a href="/experiences">Experiences</a>
           </div>
           <div class="footer-group">
-            <strong>Plan</strong><a href="/travel-guide">Travel guide</a
-            ><a href="/travel-guide/nepal-transportation">Transport</a
-            ><a href="/tools/nepal-trip-cost">Cost calculator</a
-            ><a href="/travel-guide/nepal-packing-list">Packing</a
-            ><a href="/travel-guide/nepal-visa">Visa</a>
+            <strong>Plan</strong>
+            <a href="/travel-guide">Travel guide</a>
+            <a href="/travel-guide/nepal-transportation">Transport</a>
+            <a href="/tools/nepal-trip-cost">Cost calculator</a>
+            <a href="/travel-guide/nepal-packing-list">Packing</a>
+            <a href="/travel-guide/nepal-visa">Visa</a>
           </div>
           <div class="footer-group">
-            <strong>Discover</strong><a href="/culture">Culture</a
-            ><a href="/culture#food">Food</a><a href="/wildlife">Wildlife</a
-            ><a href="/responsible-travel">Responsible travel</a>
+            <strong>Discover</strong>
+            <a href="/culture">Culture</a>
+            <a href="/culture#food">Food</a>
+            <a href="/wildlife">Wildlife</a>
+            <a href="/responsible-travel">Responsible travel</a>
           </div>
           <div class="footer-group">
-            <strong>Wanders</strong><a href="/about">About</a
-            ><a href="/reviews">Reviews</a
-            ><a href="/editorial-policy">Editorial policy</a
-            ><a href="/contact">Contact</a><a href="/corrections">Corrections</a
-            ><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+            <strong>Wanders</strong>
+            <a href="/about">About</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/editorial-policy">Editorial policy</a>
+            <a href="/contact">Contact</a>
+            <a href="/corrections">Corrections</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>Independent Nepal travel planning</span
-        ><span>Last site update: September 2026</span
-        ><span>© 2026 Wanders Nepal</span>
+        <span>Independent Nepal travel planning</span>
+        <span>Last site update: September 2026</span>
+        <span>© 2026 Wanders Nepal</span>
       </div>
     </footer>
+
     <dialog
       class="search-dialog"
       id="site-search"
@@ -398,36 +905,35 @@
           </button>
         </div>
         <form class="global-search-form" action="/search" role="search">
-          <label for="global-search-input"
-            >Search destinations, treks, routes and guides</label
-          >
+          <label for="global-search-input">Search destinations, treks, routes and guides</label>
           <div class="global-search-field">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="10.7" cy="10.7" r="6.8" />
-              <path d="m16 16 5 5" /></svg
-            ><input
+              <path d="m16 16 5 5" />
+            </svg>
+            <input
               id="global-search-input"
               name="q"
               type="search"
               autocomplete="off"
-              placeholder="Pokhara, Everest, 7 day itinerary…"
+              placeholder="10 day itinerary, Mustang, Pokhara, Bandipur…"
             />
           </div>
           <p class="search-hint" id="search-count" aria-live="polite">
             Type to search every guide. Press Esc to close.
           </p>
           <div class="popular-searches" aria-label="Popular searches">
-            <button type="button">Pokhara</button
-            ><button type="button">Everest Base Camp</button
-            ><button type="button">Annapurna Circuit</button
-            ><button type="button">Mustang</button
-            ><button type="button">Kathmandu</button
-            ><button type="button">Chitwan</button>
+            <button type="button">10-Day Mustang</button>
+            <button type="button">Muktinath</button>
+            <button type="button">Pokhara</button>
+            <button type="button">Annapurna Circuit</button>
+            <button type="button">Bandipur</button>
           </div>
           <div class="search-results" id="global-search-results"></div>
         </form>
       </div>
     </dialog>
+
     <script src="/search-data.js"></script>
     <script src="/site.js"></script>
   </body>
