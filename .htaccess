@@ -1,0 +1,46 @@
+# ----------------------------------------------------------------------
+# 1. Enforce HTTPS & Canonical Domain (non-WWW)
+# ----------------------------------------------------------------------
+RewriteEngine On
+RewriteBase /
+
+# Redirect WWW to non-WWW & HTTP to HTTPS
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.wandersnepal\.com$ [NC]
+RewriteRule ^(.*)$ https://wandersnepal.com/$1 [L,R=301]
+
+# ----------------------------------------------------------------------
+# 2. Prevent Access to Hidden Files & Version Control (.git)
+# ----------------------------------------------------------------------
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+RewriteRule ^\.git - [F,L]
+RewriteRule ^__MACOSX - [F,L]
+
+# ----------------------------------------------------------------------
+# 3. Security Headers
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 4. Browser Caching for Performance
+# ----------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>

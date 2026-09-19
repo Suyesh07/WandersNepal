@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>5 Days in Nepal: Mountains + culture — Wanders Nepal</title>
+    <meta
+      name="description"
+      content="A practical 5-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it."
+    />
+    <link
+      rel="canonical"
+      href="https://www.wandersnepal.com/itineraries/5-days"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Wanders Nepal" />
+    <meta
+      property="og:title"
+      content="5 Days in Nepal: Mountains + culture — Wanders Nepal"
+    />
+    <meta
+      property="og:description"
+      content="A practical 5-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it."
+    />
+    <meta
+      property="og:url"
+      content="https://www.wandersnepal.com/itineraries/5-days"
+    />
+    <meta
+      property="og:image"
+      content="https://www.wandersnepal.com/assets/nepal-pokhara.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="5 Days in Nepal: Mountains + culture — Wanders Nepal"
+    />
+    <meta
+      name="twitter:description"
+      content="A practical 5-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.wandersnepal.com/assets/nepal-pokhara.jpg"
+    />
+    <link rel="icon" href="/assets/wandersnepal-favicon.png" type="image/png" />
+    <meta name="theme-color" content="#142520" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <style>
+      /* Integrated styles to fix broken route visualizer */
+      .route-visual-card {
+        background: var(--surface, #142520);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 1.5rem 1.25rem 1rem;
+        margin: 2rem 0;
+        overflow: hidden;
+      }
+      .route-track-bar {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(130px, 1fr);
+        gap: 1rem;
+        overflow-x: auto;
+        padding-bottom: 1.25rem;
+        margin-bottom: 0.5rem;
+        scrollbar-width: thin;
+        scrollbar-color: #b45309 rgba(255, 255, 255, 0.05);
+      }
+      .waypoint-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 1.2rem;
+      }
+      .waypoint-item::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.2);
+        z-index: 1;
+      }
+      .waypoint-bullet {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #f59e0b;
+        z-index: 2;
+        box-shadow: 0 0 0 3px rgba(20, 37, 32, 0.9);
+      }
+      .waypoint-item.highlight .waypoint-bullet.peak {
+        background: #ea580c;
+        transform: scale(1.3);
+        box-shadow: 0 0 8px rgba(234, 88, 12, 0.8);
+      }
+      .waypoint-label strong {
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #d97706;
+      }
+      .waypoint-label p {
+        margin: 0.2rem 0 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #f3f4f6;
+        line-height: 1.25;
+      }
+      .waypoint-label small {
+        display: block;
+        font-size: 0.75rem;
+        color: #9ca3af;
+        margin-top: 0.2rem;
+      }
+      .elevation-wrapper {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        border-top: 1px dashed rgba(255, 255, 255, 0.1);
+        padding-top: 0.5rem;
+      }
+      .elevation-chart {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "5 Days in Nepal: Mountains + culture",
+            "description": "A practical 5-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it.",
+            "url": "https://www.wandersnepal.com/itineraries/5-days",
+            "image": "https://www.wandersnepal.com/assets/nepal-pokhara.jpg",
+            "dateModified": "2026-09-10",
+            "author": {
+              "@type": "Organization",
+              "name": "Wanders Nepal editorial desk"
+            },
+            "publisher": { "@type": "Organization", "name": "Wanders Nepal" }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.wandersnepal.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Itineraries",
+                "item": "https://www.wandersnepal.com/itineraries"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "5 days",
+                "item": "https://www.wandersnepal.com/itineraries/5-days"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="" data-page="itinerary-5-days">
+    <div class="page-noise" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="/" aria-label="Wanders Nepal home">
+        <img
+          class="brand-logo brand-logo-dark"
+          src="/assets/wanders-nepal-logo-dark-v2.png"
+          alt="Wanders Nepal"
+          width="512"
+          height="349"
+        />
+        <img
+          class="brand-logo brand-logo-light"
+          src="/assets/wanders-nepal-logo-light-v2.png"
+          alt=""
+          width="512"
+          height="349"
+          aria-hidden="true"
+        />
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="/destinations">Destinations</a>
+        <a href="/trekking">Trekking</a>
+        <a href="/routes">Routes</a>
+        <a href="/itineraries" aria-current="page">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/culture">Culture</a>
+        <a href="/plan-nepal">Plan Nepal</a>
+        <button
+          class="search-toggle"
+          type="button"
+          data-search-open
+          aria-label="Search Wanders Nepal"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.7" cy="10.7" r="6.8" />
+            <path d="m16 16 5 5" />
+          </svg>
+        </button>
+        <a class="nav-cta" href="/plan-my-trip">Plan My Trip</a>
+      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span><span></span><span class="sr-only">Open menu</span>
+      </button>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="/destinations">Destinations</a>
+        <a href="/trekking">Trekking</a>
+        <a href="/routes">Routes</a>
+        <a href="/itineraries" aria-current="page">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/culture">Culture</a>
+        <a href="/plan-nepal">Plan Nepal</a>
+        <a href="/plan-my-trip">Plan My Trip</a>
+        <a class="mobile-search" href="/search" data-search-open>Search Nepal</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <picture>
+          <source srcset="/assets/nepal-pokhara.webp" type="image/webp" />
+          <img
+            src="/assets/nepal-pokhara.jpg"
+            alt="View over Phewa Tal lake and the Annapurna mountain range in Pokhara, Nepal"
+            width="1600"
+            height="1067"
+            fetchpriority="high"
+            loading="eager"
+          />
+        </picture>
+        <div class="page-hero-inner">
+          <div class="breadcrumbs">
+            <a href="/">Home</a> / <a href="/itineraries">Itineraries</a> /
+            <a href="/itineraries/5-days">5 Days</a>
+          </div>
+          <p class="kicker">5-Day Field Blueprint · Air-Linked Valley & Annapurna Foothills</p>
+          <h1>5 Days in Nepal: The Cultural & Mountain Escape</h1>
+          <p class="hero-lede">
+            A verified 120-hour masterplan balancing Kathmandu's sacred UNESCO courtyards with Pokhara’s subtropical lakes, ridge sunrises facing Machhapuchhare, and gentle foothill walking.
+          </p>
+          <div class="hero-meta">
+            <div><span>Travel Pace</span><strong>Balanced & Air-Linked</strong></div>
+            <div><span>Key Stops</span><strong>Kathmandu, Patan, Pokhara, Sarangkot, Begnas Tal</strong></div>
+            <div><span>Max Altitude</span><strong>1,600 m (Sarangkot Ridge)</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="facts-strip">
+        <div class="fact">
+          <span>Duration</span>
+          <strong>120 Hours (5 Days / 4 Nights)</strong>
+        </div>
+        <div class="fact">
+          <span>Route Hubs</span>
+          <strong>Kathmandu Valley & Pokhara</strong>
+        </div>
+        <div class="fact">
+          <span>Transit Mode</span>
+          <strong>Domestic Flights (25 min each way)</strong>
+        </div>
+        <div class="fact">
+          <span>Altitude Impact</span>
+          <strong>Zero AMS Risk (Sub-1,600 m)</strong>
+        </div>
+        <div class="fact">
+          <span>Permits Needed</span>
+          <strong>None (Open Valley & Lake Corridors)</strong>
+        </div>
+        <div class="fact">
+          <span>Ideal For</span>
+          <strong>First-Time Visitors, Couples, Soft Adventure</strong>
+        </div>
+      </div>
+
+      <div class="article-layout">
+        <aside class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <a href="#plan">Day-by-Day Itinerary</a>
+          <a href="#route-logic">Route Logic & Elevation</a>
+          <a href="#food-guide">Dining & Regional Flavors</a>
+          <a href="#budget">Estimated Costs & Budget</a>
+          <a href="#alternatives">Alternative 5-Day Routes</a>
+          <a href="#adjust">Planning Rules & Tips</a>
+          <a href="#faq">Frequently Asked Questions</a>
+          <a href="#links">Continue Planning</a>
+        </aside>
+
+        <article class="article">
+          <section id="plan">
+            <div class="byline">
+              <span>Field Tested by: <strong>Wanders Nepal Route Desk</strong></span>
+              <span>Published: <strong>September 2026</strong></span>
+              <span>Timing Check: <strong>Verified Current (Domestic Flight Corridors)</strong></span>
+            </div>
+            <h2>5 Days, Balanced and Unhurried</h2>
+            <p>
+              With five days on the ground, you have the breathing room to combine Nepal’s cultural heartland with its premier alpine leisure valley. The critical logistical rule for a 5-day window: <strong>fly between Kathmandu and Pokhara</strong>. The 25-minute domestic flight saves 14 to 18 hours of highway transit, giving you two full days of mountain reflections, wooden boat paddling, and ridge viewpoints.
+            </p>
+
+            <div class="day-list">
+              <!-- Day 1 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 1: Kathmandu Arrival, Sacred Patan & Evening Aarti</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 01</span>
+                </div>
+                <p>
+                  <strong>Morning to Midday: Arrival & Patan Heritage.</strong> Land at Tribhuvan International Airport (TIA). Head directly to your base in Patan (Lalitpur). Walk through Patan Durbar Square (entry: NPR 1,000), taking in the 17th-century stone Krishna Mandir, the Patan Museum in Keshav Narayan Chowk, and the tranquil courtyard of the Golden Temple (Kwa Bahal).
+                </p>
+                <p>
+                  <strong>Late Afternoon: Pashupatinath Sandhya Aarti.</strong> Transfer northeast to Pashupatinath Temple (entry: NPR 1,000). Walk the stone terraces across the sacred Bagmati River, observing evening rituals and the 6:00 PM fire-lit Sandhya Aarti ceremony featuring conch horns, brass oil lamps, and Vedic chanting.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Restored Newar boutique guesthouse in Patan.</em>
+                </p>
+              </div>
+
+              <!-- Day 2 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 2: Morning Boudhanath, Flight to Pokhara & Lakefront Sunset</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 02</span>
+                </div>
+                <p>
+                  <strong>Early Morning: Boudhanath Stupa.</strong> Arrive by 6:30 AM at Boudhanath (entry: NPR 400). Join Buddhist pilgrims for morning circumambulations (kora) around the giant whitewashed dome. Enjoy a rooftop breakfast with views of spinning prayer wheels and drifting juniper smoke.
+                </p>
+                <p>
+                  <strong>Midday: Flight to Pokhara.</strong> Transfer to TIA domestic terminal for the 25-minute flight to Pokhara Airport (PKR). Sit on the right side of the aircraft for views of the Langtang, Manaslu, and Annapurna massifs.
+                </p>
+                <p>
+                  <strong>Afternoon & Dusk: Phewa Tal & Shanti Stupa.</strong> Check into your Lakeside hotel. Rent a wooden boat (<em>doonga</em>) to cross Phewa Tal, then hike 45 minutes up through Raniban forest to the gleaming white Shanti Stupa (World Peace Pagoda) for sunset over the lake and the fluted spire of Machhapuchhare.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Lakeside, Pokhara.</em>
+                </p>
+              </div>
+
+              <!-- Day 3 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 3: Sarangkot Sunrise, Mountain Museum & Thakali Feast</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 03</span>
+                </div>
+                <p>
+                  <strong>Dawn: Sarangkot Himalayan Panorama (1,600m).</strong> Take an early 30-minute drive or cable car to Sarangkot ridge before first light. Watch the dawn alpenglow sweep across Dhaulagiri (8,167m), Annapurna I (8,091m), and Machhapuchhare (6,993m).
+                </p>
+                <p>
+                  <strong>Mid-Morning (Optional): Tandem Paragliding.</strong> Launch from Sarangkot or Toripani with an accredited pilot, soaring on mountain thermals over green terraces before landing near the lake.
+                </p>
+                <p>
+                  <strong>Afternoon: International Mountain Museum & Old Bazaar.</strong> Tour the International Mountain Museum to explore mountaineering expeditions, flora, fauna, and Sherpa heritage. Later, explore the 18th-century Newar brick architecture and Bindhyabasini Temple in Pokhara's Old Town.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Dinner: Authentic Thakali Dal Bhat dinner in Central Lakeside. Overnight: Lakeside, Pokhara.</em>
+                </p>
+              </div>
+
+              <!-- Day 4 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 4: Peaceful Begnas Lake & Return Flight to Kathmandu</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 04</span>
+                </div>
+                <p>
+                  <strong>Morning: Begnas Tal Escape.</strong> Drive 30 minutes east of Pokhara to tranquil Begnas Tal. Walk peaceful shoreline trails, visit hillside organic coffee smallholders, and enjoy a quiet lakeside lunch away from tourist bustle.
+                </p>
+                <p>
+                  <strong>Afternoon: Return Flight to Kathmandu.</strong> Transfer to Pokhara Airport for your afternoon flight back to Kathmandu. Sit on the left side of the aircraft for mountain panoramas.
+                </p>
+                <p>
+                  <strong>Evening: Thamel or Bhaktapur Twilight.</strong> Check into your hotel. Spend a relaxed evening exploring the artisanal craft alleys of Thamel or transfer east to Bhaktapur for a quiet heritage dinner.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Kathmandu or Bhaktapur.</em>
+                </p>
+              </div>
+
+              <!-- Day 5 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0;">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 5: Medieval Bhaktapur Durbar Square & International Departure</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 05</span>
+                </div>
+                <p>
+                  <strong>Morning: Bhaktapur Durbar Square.</strong> Spend your final morning in the preserved medieval citadel of Bhaktapur (entry: NPR 1,800). Admire the five-tiered Nyatapola Temple, walk through Pottery Square to see artisans working on open-air wheels, and savor a fresh bowl of sweet <em>Juju Dhau</em> ("King Curd").
+                </p>
+                <p>
+                  <strong>Midday: Final Shopping & Airport Transfer.</strong> Pick up authentic souvenirs—organic loose-leaf orthodox tea, hand-loomed Dhaka scarves, or singing bowls. Transfer smoothly to Tribhuvan International Airport (TIA) for your onward flight.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Departure: Airport check-in 3 hours before international flight departure.</em>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="route-logic">
+            <h2>Route Logic & Elevation Profile</h2>
+            <p>
+              This itinerary connects two iconic valleys without highway exhaustion. Domestic flights ensure you spend less than 1 hour total in major transit, leaving the rest of your daylight for walking, cultural exploration, and nature.
+            </p>
+
+            <!-- FIXED RESPONSIVE ROUTE VISUAL CARD -->
+            <div class="route-visual-card">
+              <div class="route-track-bar">
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Days 1–2</strong>
+                    <p>Kathmandu</p>
+                    <small>1,350 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Days 2–4</strong>
+                    <p>Pokhara (Lakeside)</p>
+                    <small>822 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item highlight">
+                  <span class="waypoint-bullet peak"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 3 Dawn</strong>
+                    <p>Sarangkot Ridge</p>
+                    <small>1,600 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 4</strong>
+                    <p>Begnas Tal</p>
+                    <small>650 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 5</strong>
+                    <p>Bhaktapur & TIA</p>
+                    <small>1,338 m</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="elevation-wrapper">
+                <svg 
+                  viewBox="0 0 800 180" 
+                  preserveAspectRatio="none" 
+                  class="elevation-chart" 
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <linearGradient id="elevGradient5" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#b45309" stop-opacity="0.4"/>
+                      <stop offset="100%" stop-color="#b45309" stop-opacity="0.0"/>
+                    </linearGradient>
+                  </defs>
+
+                  <path 
+                    d="M 50,90 L 160,90 L 220,135 L 360,135 L 440,35 L 520,135 L 590,150 L 660,90 L 750,90 L 750,180 L 50,180 Z" 
+                    fill="url(#elevGradient5)"
+                  />
+                  <path 
+                    d="M 50,90 L 160,90 L 220,135 L 360,135 L 440,35 L 520,135 L 590,150 L 660,90 L 750,90" 
+                    fill="none" 
+                    stroke="#b45309" 
+                    stroke-width="3" 
+                    stroke-linecap="round"
+                  />
+                  <circle cx="50" cy="90" r="5" fill="#f59e0b" />
+                  <circle cx="220" cy="135" r="5" fill="#f59e0b" />
+                  <circle cx="440" cy="35" r="7" fill="#ea580c" stroke="#fff" stroke-width="2" />
+                  <circle cx="590" cy="150" r="5" fill="#f59e0b" />
+                  <circle cx="750" cy="90" r="5" fill="#f59e0b" />
+                </svg>
+              </div>
+            </div>
+
+            <p>
+              Elevation tops out at 1,600 meters on Sarangkot ridge, well below the 2,500-meter threshold for altitude illness, making this route suitable for travelers of any age and fitness level.
+            </p>
+          </section>
+
+          <section id="food-guide">
+            <h2>Dining & Regional Flavors</h2>
+            <p>
+              This 5-day loop introduces two distinct culinary traditions:
+            </p>
+            <ul>
+              <li><strong>Newar Cuisine in Patan:</strong> Order a <em>Samay Baji</em> platter featuring beaten rice (<em>baji</em>), spicy fire-roasted water buffalo (<em>Chhoyela</em>), black lentil patties (<em>Wo / Bara</em>), and roasted soybeans.</li>
+              <li><strong>Thakali Khana in Pokhara:</strong> A traditional brass thali of steamed rice, slow-cooked black lentils tempered with wild mountain herb (<em>jimbu</em>), spicy dry-roasted potatoes, wild greens, and radish-timur pickle.</li>
+              <li><strong>Fresh Lake Fish in Begnas:</strong> Locally caught freshwater carp or trout, spiced with turmeric, chili, and garlic, and pan-fried at shoreline family kitchens.</li>
+              <li><strong>Bhaktapur Juju Dhau:</strong> Thick, rich buffalo-milk yogurt naturally sweetened and fermented in unglazed clay pots.</li>
+            </ul>
+          </section>
+
+          <section id="budget">
+            <h2>Estimated Costs & Budget Breakdown</h2>
+            <p>
+              A realistic breakdown for 5 days covering domestic flights, boutique lodging, monument fees, and meals:
+            </p>
+
+            <div class="stay-grid">
+              <div class="info-card">
+                <span>Budget Backpacker</span>
+                <strong>NPR 5,500–8,500 / Day (~$42–$65)</strong>
+                <p>Clean family guesthouses, local diner meals, public airport taxis, and 1 domestic flight (returning via tourist bus).</p>
+              </div>
+              <div class="info-card">
+                <span>Mid-Range Comfort (Recommended)</span>
+                <strong>NPR 14,000–22,000 / Day (~$105–$165)</strong>
+                <p>Boutique heritage hotels in Patan and lakeside resorts in Pokhara, round-trip domestic flights, private cars for sightseeing, and all site entries.</p>
+              </div>
+              <div class="info-card">
+                <span>Premium Heritage & Leisure</span>
+                <strong>NPR 35,000+ / Day (~$260+)</strong>
+                <p>Five-star heritage suites (e.g., Dwarika's or Pavilions Himalayas), dedicated private chauffeur throughout, private boat charters, and guided cultural tours.</p>
+              </div>
+            </div>
+
+            <table class="season-table" style="margin-top:1.5rem;">
+              <thead>
+                <tr>
+                  <th>Expense Item</th>
+                  <th>Estimated Cost (Foreign National)</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Roundtrip Flights (KTM ⇄ PKR)</strong></td>
+                  <td>USD 180–220 total per person</td>
+                  <td>25-minute flight each way on Yeti or Buddha Air</td>
+                </tr>
+                <tr>
+                  <td><strong>Heritage Monument Entries Total</strong></td>
+                  <td>NPR 4,400 (~USD 33)</td>
+                  <td>Covers Patan (1,000), Pashupati (1,000), Boudha (400), Bhaktapur (1,800), Swayambhu (200)</td>
+                </tr>
+                <tr>
+                  <td><strong>Phewa Tal Boat Rental</strong></td>
+                  <td>NPR 1,000–1,200 / hour</td>
+                  <td>Includes wooden boat with licensed boatman</td>
+                </tr>
+                <tr>
+                  <td><strong>Sarangkot Cable Car (Roundtrip)</strong></td>
+                  <td>NPR 800–1,000 per person</td>
+                  <td>Direct lift from Sedi Bagar to Sarangkot top</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="alternatives">
+            <h2>Alternative 5-Day Blueprints</h2>
+            <p>
+              If your focus leans toward active hiking or wildlife safaris rather than city culture, consider these alternative 5-day routes:
+            </p>
+
+            <div class="stay-grid">
+              <div class="info-card">
+                <span>Alternative 01</span>
+                <strong>Ghorepani Poon Hill Mini-Trek</strong>
+                <p>
+                  Fly to Pokhara on Day 1; drive to Birethanti and trek up through rhododendron forests to Ulleri and Ghorepani; catch sunrise over Dhaulagiri from Poon Hill (3,210m) on Day 3; descend via Ghandruk Gurung village; return to Kathmandu on Day 5.
+                </p>
+              </div>
+              <div class="info-card">
+                <span>Alternative 02</span>
+                <strong>Kathmandu Valley to Chitwan Jungle Safari</strong>
+                <p>
+                  Spend Day 1 in Kathmandu; fly or drive south to Chitwan National Park on Day 2; spend Days 2–4 on river safaris, jeep tracks, and Tharu village walks tracking one-horned rhinos; fly back to Kathmandu on Day 5.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="adjust">
+            <h2>Planning Rules for a 5-Day Trip</h2>
+            <ul>
+              <li><strong>Book Morning Flights (Before 10:00 AM):</strong> Early flights between Kathmandu and Pokhara are less prone to afternoon haze and thermal wind delays.</li>
+              <li><strong>Carry Physical Cash for Monuments:</strong> Ticket counters at Bhaktapur, Patan, and Pashupatinath require cash in Nepali Rupees. Keep small denominations handy.</li>
+              <li><strong>Choose the Right Aircraft Seat:</strong> On the outbound flight from Kathmandu to Pokhara, sit on the <strong>right side</strong> for views of the Himalayan chain. On the return flight to Kathmandu, sit on the <strong>left side</strong>.</li>
+              <li><strong>Keep Night 4 Near the Airport:</strong> Staying in Kathmandu or Bhaktapur on your final night avoids transport stress on your departure day.</li>
+            </ul>
+          </section>
+
+          <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>Can I drive between Kathmandu and Pokhara instead of flying?</h3>
+            <p>
+              Driving the 200 km Prithvi Highway currently takes 7 to 9 hours each way due to road-widening work. On a 5-day itinerary, driving consumes two entire days in transit. Flying takes just 25 minutes and protects your daylight hours for sightseeing.
+            </p>
+            <h3>Do I need trekking permits for this 5-day itinerary?</h3>
+            <p>
+              No. Visiting Kathmandu, Patan, Bhaktapur, Pokhara, Sarangkot, and Begnas Lake requires zero trekking permits or TIMS cards. You only pay standard local heritage ticket fees at monument gates.
+            </p>
+            <h3>What should I pack for 5 days in Kathmandu and Pokhara?</h3>
+            <p>
+              Pack comfortable walking shoes for stone steps and temple courtyards, modest clothing that covers shoulders and knees, a light fleece or jacket for early mornings on Sarangkot, sunglasses, sunscreen, and a universal power adapter.
+            </p>
+          </section>
+
+          <section id="links">
+            <h2>Continue Planning Your Route</h2>
+            <div class="guide-grid">
+              <a class="guide-card" href="/destinations/pokhara">
+                <p class="card-label">Destination Guide</p>
+                <h3>Pokhara</h3>
+                <p>
+                  Lakeside relaxation, Sarangkot dawn viewpoints, paragliding, and Annapurna trailheads.
+                </p>
+                <span class="card-arrow">↗</span>
+              </a>
+              <a class="guide-card" href="/destinations/kathmandu-valley">
+                <p class="card-label">Destination Guide</p>
+                <h3>Kathmandu Valley</h3>
+                <p>
+                  Medieval courtyards, living goddess traditions, and ancient brick-and-timber architecture.
+                </p>
+                <span class="card-arrow">↗</span>
+              </a>
+              <a class="guide-card" href="/itineraries/3-days">
+                <p class="card-label">Itinerary</p>
+                <h3>3 Days in Nepal</h3>
+                <p>
+                  The compact 72-hour valley rim and heritage masterplan.
+                </p>
+                <span class="card-arrow">↗</span>
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+
+      <section class="newsletter">
+        <div>
+          <p class="kicker">Monthly field notes</p>
+          <h2>Get Nepal Route Notes</h2>
+        </div>
+        <div>
+          <p>Monthly routes, seasonal advice and places worth taking slowly.</p>
+          <form
+            class="newsletter-form"
+            name="newsletter"
+            method="POST"
+            action="/newsletter-success"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p hidden>
+              <label>Leave this field empty<input name="bot-field" /></label>
+            </p>
+            <label class="sr-only" for="newsletter-email">Your email</label>
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="Your email"
+            /><button type="submit">Subscribe ↗</button>
+          </form>
+          <small>No spam. Unsubscribe any time.</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="footer-logo" href="/" aria-label="Wanders Nepal home">
+          <img
+            src="/assets/wanders-nepal-logo-dark-v2.png"
+            alt="Wanders Nepal"
+            width="512"
+            height="349"
+          /><small>Discover Nepal beyond the obvious.</small>
+        </a>
+        <div class="footer-groups">
+          <div class="footer-group">
+            <strong>Explore</strong>
+            <a href="/destinations">Destinations</a>
+            <a href="/trekking">Trekking</a>
+            <a href="/routes">Routes</a>
+            <a href="/itineraries" aria-current="page">Itineraries</a>
+            <a href="/experiences">Experiences</a>
+          </div>
+          <div class="footer-group">
+            <strong>Plan</strong>
+            <a href="/travel-guide">Travel guide</a>
+            <a href="/travel-guide/nepal-transportation">Transport</a>
+            <a href="/tools/nepal-trip-cost">Cost calculator</a>
+            <a href="/travel-guide/nepal-packing-list">Packing</a>
+            <a href="/travel-guide/nepal-visa">Visa</a>
+          </div>
+          <div class="footer-group">
+            <strong>Discover</strong>
+            <a href="/culture">Culture</a>
+            <a href="/culture#food">Food</a>
+            <a href="/wildlife">Wildlife</a>
+            <a href="/responsible-travel">Responsible travel</a>
+          </div>
+          <div class="footer-group">
+            <strong>Wanders</strong>
+            <a href="/about">About</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/editorial-policy">Editorial policy</a>
+            <a href="/contact">Contact</a>
+            <a href="/corrections">Corrections</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Independent Nepal travel planning</span>
+        <span>Last site update: September 2026</span>
+        <span>© 2026 Wanders Nepal</span>
+      </div>
+    </footer>
+
+    <dialog
+      class="search-dialog"
+      id="site-search"
+      aria-labelledby="search-title"
+    >
+      <div class="search-shell">
+        <div class="search-top">
+          <p id="search-title">Search Wanders Nepal</p>
+          <button class="search-close" type="button" aria-label="Close search">
+            ×
+          </button>
+        </div>
+        <form class="global-search-form" action="/search" role="search">
+          <label for="global-search-input">Search destinations, treks, routes and guides</label>
+          <div class="global-search-field">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.7" cy="10.7" r="6.8" />
+              <path d="m16 16 5 5" />
+            </svg>
+            <input
+              id="global-search-input"
+              name="q"
+              type="search"
+              autocomplete="off"
+              placeholder="Pokhara, Everest, 5 day itinerary…"
+            />
+          </div>
+          <p class="search-hint" id="search-count" aria-live="polite">
+            Type to search every guide. Press Esc to close.
+          </p>
+          <div class="popular-searches" aria-label="Popular searches">
+            <button type="button">Pokhara</button>
+            <button type="button">5 Day Itinerary</button>
+            <button type="button">Kathmandu Valley</button>
+            <button type="button">Annapurna Circuit</button>
+            <button type="button">Chitwan</button>
+          </div>
+          <div class="search-results" id="global-search-results"></div>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="/search-data.js"></script>
+    <script src="/site.js"></script>
+  </body>
+</html>

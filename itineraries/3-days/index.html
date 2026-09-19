@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>3 Days in Nepal: A quick Nepal escape — Wanders Nepal</title>
+    <meta
+      name="description"
+      content="A practical 3-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it."
+    />
+    <link
+      rel="canonical"
+      href="https://www.wandersnepal.com/itineraries/3-days"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Wanders Nepal" />
+    <meta
+      property="og:title"
+      content="3 Days in Nepal: A quick Nepal escape — Wanders Nepal"
+    />
+    <meta
+      property="og:description"
+      content="A practical 3-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it."
+    />
+    <meta
+      property="og:url"
+      content="https://www.wandersnepal.com/itineraries/3-days"
+    />
+    <meta
+      property="og:image"
+      content="https://www.wandersnepal.com/assets/nepal-kathmandu.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="3 Days in Nepal: A quick Nepal escape — Wanders Nepal"
+    />
+    <meta
+      name="twitter:description"
+      content="A practical 3-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.wandersnepal.com/assets/nepal-kathmandu.jpg"
+    />
+    <link rel="icon" href="/assets/wandersnepal-favicon.png" type="image/png" />
+    <meta name="theme-color" content="#142520" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <style>
+      /* Integrated styles to fix broken route visualizer */
+      .route-visual-card {
+        background: var(--surface, #142520);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 1.5rem 1.25rem 1rem;
+        margin: 2rem 0;
+        overflow: hidden;
+      }
+      .route-track-bar {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(130px, 1fr);
+        gap: 1rem;
+        overflow-x: auto;
+        padding-bottom: 1.25rem;
+        margin-bottom: 0.5rem;
+        scrollbar-width: thin;
+        scrollbar-color: #b45309 rgba(255, 255, 255, 0.05);
+      }
+      .waypoint-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 1.2rem;
+      }
+      .waypoint-item::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.2);
+        z-index: 1;
+      }
+      .waypoint-bullet {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #f59e0b;
+        z-index: 2;
+        box-shadow: 0 0 0 3px rgba(20, 37, 32, 0.9);
+      }
+      .waypoint-item.highlight .waypoint-bullet.peak {
+        background: #ea580c;
+        transform: scale(1.3);
+        box-shadow: 0 0 8px rgba(234, 88, 12, 0.8);
+      }
+      .waypoint-label strong {
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #d97706;
+      }
+      .waypoint-label p {
+        margin: 0.2rem 0 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #f3f4f6;
+        line-height: 1.25;
+      }
+      .waypoint-label small {
+        display: block;
+        font-size: 0.75rem;
+        color: #9ca3af;
+        margin-top: 0.2rem;
+      }
+      .elevation-wrapper {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        border-top: 1px dashed rgba(255, 255, 255, 0.1);
+        padding-top: 0.5rem;
+      }
+      .elevation-chart {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "3 Days in Nepal: A quick Nepal escape",
+            "description": "A practical 3-day Nepal itinerary with route logic, daily plan, pacing and ways to adapt it.",
+            "url": "https://www.wandersnepal.com/itineraries/3-days",
+            "image": "https://www.wandersnepal.com/assets/nepal-kathmandu.jpg",
+            "dateModified": "2026-09-10",
+            "author": {
+              "@type": "Organization",
+              "name": "Wanders Nepal editorial desk"
+            },
+            "publisher": { "@type": "Organization", "name": "Wanders Nepal" }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.wandersnepal.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Itineraries",
+                "item": "https://www.wandersnepal.com/itineraries"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "3 days",
+                "item": "https://www.wandersnepal.com/itineraries/3-days"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="" data-page="itinerary-3-days">
+    <div class="page-noise" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="/" aria-label="Wanders Nepal home">
+        <img
+          class="brand-logo brand-logo-dark"
+          src="/assets/wanders-nepal-logo-dark-v2.png"
+          alt="Wanders Nepal"
+          width="512"
+          height="349"
+        />
+        <img
+          class="brand-logo brand-logo-light"
+          src="/assets/wanders-nepal-logo-light-v2.png"
+          alt=""
+          width="512"
+          height="349"
+          aria-hidden="true"
+        />
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="/destinations">Destinations</a>
+        <a href="/trekking">Trekking</a>
+        <a href="/routes">Routes</a>
+        <a href="/itineraries" aria-current="page">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/culture">Culture</a>
+        <a href="/plan-nepal">Plan Nepal</a>
+        <button
+          class="search-toggle"
+          type="button"
+          data-search-open
+          aria-label="Search Wanders Nepal"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.7" cy="10.7" r="6.8" />
+            <path d="m16 16 5 5" />
+          </svg>
+        </button>
+        <a class="nav-cta" href="/plan-my-trip">Plan My Trip</a>
+      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span><span></span><span class="sr-only">Open menu</span>
+      </button>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="/destinations">Destinations</a>
+        <a href="/trekking">Trekking</a>
+        <a href="/routes">Routes</a>
+        <a href="/itineraries" aria-current="page">Itineraries</a>
+        <a href="/experiences">Experiences</a>
+        <a href="/culture">Culture</a>
+        <a href="/plan-nepal">Plan Nepal</a>
+        <a href="/plan-my-trip">Plan My Trip</a>
+        <a class="mobile-search" href="/search" data-search-open>Search Nepal</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <picture>
+          <source srcset="/assets/nepal-kathmandu.webp" type="image/webp" />
+          <img
+            src="/assets/nepal-kathmandu.jpg"
+            alt="Patan Durbar Square courtyards and temple spires in Kathmandu Valley, Nepal"
+            width="1600"
+            height="1067"
+            fetchpriority="high"
+            loading="eager"
+          />
+        </picture>
+        <div class="page-hero-inner">
+          <div class="breadcrumbs">
+            <a href="/">Home</a> / <a href="/itineraries">Itineraries</a> /
+            <a href="/itineraries/3-days">3 Days</a>
+          </div>
+          <p class="kicker">72-Hour Valley Masterplan · Zero Backtracking & Verified Logistics</p>
+          <h1>3 Days in Nepal: The Kathmandu Valley & Ridge Itinerary</h1>
+          <p class="hero-lede">
+            A high-efficiency, culturally grounded 72-hour blueprint linking the medieval Newar royal squares of Patan and Bhaktapur, sacred monastic kora walks, and sunrise mountain horizons along the valley rim.
+          </p>
+          <div class="hero-meta">
+            <div><span>Travel Pace</span><strong>Focused & Active</strong></div>
+            <div><span>Base Corridor</span><strong>Kathmandu Valley (Patan, Boudha, Bhaktapur, Nagarkot)</strong></div>
+            <div><span>Max Altitude</span><strong>2,175 m (Nagarkot Ridge)</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="facts-strip">
+        <div class="fact">
+          <span>Duration</span>
+          <strong>72 Hours (3 Days / 2 Nights)</strong>
+        </div>
+        <div class="fact">
+          <span>Primary Hubs</span>
+          <strong>Patan, Boudha, Nagarkot, Bhaktapur</strong>
+        </div>
+        <div class="fact">
+          <span>Transport Mode</span>
+          <strong>Pre-Arranged Private Car (Avoid Bus Transfers)</strong>
+        </div>
+        <div class="fact">
+          <span>Elevation Span</span>
+          <strong>1,350 m (Patan) to 2,175 m (Nagarkot)</strong>
+        </div>
+        <div class="fact">
+          <span>Permits & Fees</span>
+          <strong>Heritage Entry Tickets (NPR 1,000–1,800/site)</strong>
+        </div>
+        <div class="fact">
+          <span>Ideal For</span>
+          <strong>Stopovers, Cultural Immersion, First-Time Visitors</strong>
+        </div>
+      </div>
+
+      <div class="article-layout">
+        <aside class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <a href="#plan">Day-by-Day Itinerary</a>
+          <a href="#route-logic">Route Logistics & Elevation</a>
+          <a href="#food-guide">Where to Eat: Newar Foodways</a>
+          <a href="#budget">Estimated Budget Breakdown</a>
+          <a href="#alternatives">Alternative 3-Day Blueprints</a>
+          <a href="#adjust">Planning Rules & Optimization</a>
+          <a href="#faq">Frequently Asked Questions</a>
+          <a href="#links">Continue Planning</a>
+        </aside>
+
+        <article class="article">
+          <section id="plan">
+            <div class="byline">
+              <span>Field Tested by: <strong>Wanders Nepal Route Desk</strong></span>
+              <span>Published: <strong>September 2026</strong></span>
+              <span>Timing Check: <strong>Verified Current (Kathmandu Traffic Corridors)</strong></span>
+            </div>
+            <h2>72 Hours in Nepal: The Complete Day-by-Day Masterplan</h2>
+            <p>
+              With only three days in Nepal, attempting cross-country road transfers to Pokhara or Chitwan results in spending more than 16 hours stuck on expanding arterial highways. This curated route clusters stops geographically within the Kathmandu bowl and its eastern rim, ensuring you maximize time in living courtyards, ancient monasteries, and pine-clad viewpoints.
+            </p>
+
+            <div class="day-list">
+              <!-- Day 1 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 1: Royal Patan Courtyards, Metalworking Alleys & Sacred Cremations</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 01</span>
+                </div>
+                <p>
+                  <strong>Morning: Arrival & Base Check-in (Patan / Lalitpur).</strong> Touch down at Tribhuvan International Airport (TIA). Clear immigration, secure a local NTC or Ncell tourist e-SIM, and take a direct 20-minute taxi south across the Bagmati River to Patan. Settle into a restored Newar heritage guesthouse around Switha Tole or Mangal Bazaar rather than noisy Thamel.
+                </p>
+                <p>
+                  <strong>Midday: Patan Durbar Square & Hidden Bahals.</strong> Step directly into Patan Durbar Square (entry: NPR 1,000 for foreign nationals). Tour the Keshav Narayan Chowk housing the world-class Patan Museum, and admire the stone masterwork of the 17th-century Krishna Mandir. Slip into the narrow alleys to find the Golden Temple (Kwa Bahal), a 12th-century Buddhist monastery, and observe master metalsmiths practicing lost-wax bronze casting in the surrounding foundries.
+                </p>
+                <p>
+                  <strong>Afternoon & Dusk: Pashupatinath Sandhya Aarti.</strong> At 4:30 PM, drive 25 minutes northeast to the sacred Hindu precinct of Pashupatinath (entry: NPR 1,000). Walk the eastern bank of the holy Bagmati River across from the royal cremation pyres at Arya Ghat. At 6:00 PM, witness the rhythmic, fire-lit ceremony of the Sandhya Aarti, accompanied by brass oil lamps, Vedic chants, drums, and ringing bells.
+                </p>
+                <p style="margin-bottom:0;">
+                  <em>Overnight: Restored Newar boutique guesthouse in Patan.</em>
+                </p>
+              </div>
+
+              <!-- Day 2 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0; border-bottom:1px solid var(--border, #e5e5e5);">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 2: Dawn Monastic Kora, Swayambhunath Ridge & Valley Rim Ascent</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 02</span>
+                </div>
+                <p>
+                  <strong>Dawn: Morning Kora at Boudhanath Stupa.</strong> Arrive by 6:30 AM at Boudhanath (entry: NPR 400), the spiritual heart of Tibetan Buddhism in Nepal. Join Tibetan pilgrims, monks, and locals as they circumambulate the colossal whitewashed stupa clockwise, spinning brass prayer wheels through drifting clouds of burning juniper incense. Head to an elevated rooftop terrace for organic coffee and fresh Tibetan flatbread.
+                </p>
+                <p>
+                  <strong>Midday: Swayambhunath (The Monkey Temple).</strong> Drive west across town to the forested hill of Swayambhunath (entry: NPR 200). Climb the ancient 365 stone steps flanked by painted stone chaityas and macaques to view the valley floor from above, where Buddhist prayer flags weave directly into Tantric Hindu shrines.
+                </p>
+                <p>
+                  <strong>Afternoon: Drive East to the Nagarkot Ridge (2,175m).</strong> Meet your private driver and head east along the Araniko Highway past Bhaktapur, climbing the pine-scented switchbacks to Nagarkot (municipal fee: NPR 340). Check into a mountain-facing lodge.
+                </p>
+                <p style="margin-bottom:0;">
+                  <strong>Sunset:</strong> Watch the evening light turn the snowfields of Ganesh Himal, Langtang Lirung, and Jugal Himal to shades of amber and pink directly from your terrace. <em>Overnight: Nagarkot ridge resort.</em>
+                </p>
+              </div>
+
+              <!-- Day 3 -->
+              <div class="day-item" style="display:block; padding:1.5rem 0;">
+                <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.75rem;">
+                  <h3 style="margin:0; font-size:1.35rem;">Day 3: Himalayan Sunrise, Medieval Bhaktapur & Airport Exit</h3>
+                  <span style="font-weight:700; color:var(--accent, #b45309);">Day 03</span>
+                </div>
+                <p>
+                  <strong>Dawn: Nagarkot Sunrise.</strong> Awaken at 5:30 AM to catch the alpenglow illuminating the 300-kilometer Himalayan crest. On crystal-clear autumn and winter mornings, scan the far eastern horizon for the optical point of Mount Everest.
+                </p>
+                <p>
+                  <strong>Morning: Descent to Bhaktapur Durbar Square.</strong> Enjoy a relaxed outdoor breakfast, then drive 45 minutes down the hill into Bhaktapur (entry: NPR 1,800), the best-preserved medieval city-state in Nepal. Enter through the grand stone gates into a car-free heritage zone of reddish brick, timber carvings, and stone temples.
+                </p>
+                <p>
+                  <strong>Midday: Pottery Squares & Five-Story Pagodas.</strong> Wander past the soaring five-tiered roof of Nyatapola Temple in Taumadhi Square—the tallest pagoda in Nepal. Visit the 55-Window Palace, watch potters spin clay vessels in sunlit Pottery Square, and pause at a street stall for a traditional clay bowl of <em>Juju Dhau</em> ("King Curd"), Bhaktapur's famed thick, sweet yogurt.
+                </p>
+                <p style="margin-bottom:0;">
+                  <strong>Afternoon: Direct Airport Departure.</strong> Bhaktapur lies just 12 kilometers east of Tribhuvan International Airport (TIA). A 30-to-40-minute drive delivers you straight to the departure terminal, completely bypassing central Kathmandu's notorious afternoon bottlenecks.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="route-logic">
+            <h2>Route Logic: Spatial Clustering & Elevation Profile</h2>
+            <p>
+              The primary failure of most short visits is zigzagging across the city during peak traffic hours (9:00–11:00 AM and 4:30–6:30 PM). This itinerary flows systematically: South (Patan) → Northeast (Pashupati & Boudha) → East Ridge (Nagarkot) → East Valley (Bhaktapur) → Airport.
+            </p>
+
+            <!-- FIXED RESPONSIVE ROUTE VISUAL CARD -->
+            <div class="route-visual-card">
+              <div class="route-track-bar">
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 1</strong>
+                    <p>Patan</p>
+                    <small>1,350 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 2</strong>
+                    <p>Boudha & Swayambhu</p>
+                    <small>1,400 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item highlight">
+                  <span class="waypoint-bullet peak"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 2 (Night)</strong>
+                    <p>Nagarkot Ridge</p>
+                    <small>2,175 m</small>
+                  </div>
+                </div>
+
+                <div class="waypoint-item">
+                  <span class="waypoint-bullet"></span>
+                  <div class="waypoint-label">
+                    <strong>Day 3</strong>
+                    <p>Bhaktapur & TIA</p>
+                    <small>1,338 m</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="elevation-wrapper">
+                <svg 
+                  viewBox="0 0 800 180" 
+                  preserveAspectRatio="none" 
+                  class="elevation-chart" 
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <linearGradient id="elevGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#b45309" stop-opacity="0.4"/>
+                      <stop offset="100%" stop-color="#b45309" stop-opacity="0.0"/>
+                    </linearGradient>
+                  </defs>
+
+                  <path 
+                    d="M 50,140 L 250,135 L 530,35 L 750,142 L 750,180 L 50,180 Z" 
+                    fill="url(#elevGradient3)"
+                  />
+                  <path 
+                    d="M 50,140 L 250,135 L 530,35 L 750,142" 
+                    fill="none" 
+                    stroke="#b45309" 
+                    stroke-width="3" 
+                    stroke-linecap="round"
+                  />
+                  <circle cx="50" cy="140" r="5" fill="#f59e0b" />
+                  <circle cx="250" cy="135" r="5" fill="#f59e0b" />
+                  <circle cx="530" cy="35" r="7" fill="#ea580c" stroke="#fff" stroke-width="2" />
+                  <circle cx="750" cy="142" r="5" fill="#f59e0b" />
+                </svg>
+              </div>
+            </div>
+
+            <p>
+              Altitude stays comfortably below 2,200 meters throughout the 72 hours, eliminating any risk of Acute Mountain Sickness (AMS) while still providing crisp mountain ridge air and wide sightlines across the central Himalayas.
+            </p>
+          </section>
+
+          <section id="food-guide">
+            <h2>Where to Eat: 72 Hours of Authentic Gastronomy</h2>
+            <p>
+              Rather than dining inside international hotels, sample authentic culinary lineages at each stop:
+            </p>
+            <ul>
+              <li><strong>Patan Heritage Lunch:</strong> Order a complete <em>Samay Baji</em> platter at a traditional Newari kitchen in Mangal Bazaar—beaten rice (<em>baji</em>), spicy fire-roasted spiced buffalo (<em>Chhoyela</em>), savory black lentil patties (<em>Wo / Bara</em>), roasted soybeans, and dry-roasted potato curry.</li>
+              <li><strong>Boudhanath Tibetan Breakfast:</strong> Enjoy freshly steamed vegetable or chicken Tibetan momos, hand-pulled noodle soup (<em>Thukpa</em>), and salted butter tea (<em>Su-chya</em>) overlooking the whitewashed stupa.</li>
+              <li><strong>Bhaktapur Clay-Pot Dessert:</strong> Sample fresh, naturally sweetened <em>Juju Dhau</em> ("King Curd") served in disposable clay pots in Taumadhi Square.</li>
+              <li><strong>Nagarkot Evening Hearth:</strong> Savor a steaming bowl of wild mushroom soup and authentic Nepali Dal Bhat Tarkari featuring locally grown organic hill potatoes and wild mustard greens (<em>saag</em>).</li>
+            </ul>
+          </section>
+
+          <section id="budget">
+            <h2>Budget Framework & Mandatory Site Fees</h2>
+            <p>
+              A realistic cost breakdown for an independent 3-day itinerary covering private transport, heritage entry tickets, meals, and accommodations:
+            </p>
+
+            <div class="stay-grid">
+              <div class="info-card">
+                <span>Budget Tier</span>
+                <strong>NPR 4,500–7,000 / Day (~$35–$52)</strong>
+                <p>Clean family-run guesthouses in Patan and Nagarkot, local diner meals, and public microbuses or ride-hailing app taxis (Pathao / inDrive).</p>
+              </div>
+              <div class="info-card">
+                <span>Mid-Range Comfort (Recommended)</span>
+                <strong>NPR 11,000–18,000 / Day (~$82–$135)</strong>
+                <p>Restored boutique Newar heritage hotels, dedicated private car and driver on standby for all transfers, cafe dining, and all entry tickets.</p>
+              </div>
+              <div class="info-card">
+                <span>Premium Heritage</span>
+                <strong>NPR 26,000+ / Day (~$195+)</strong>
+                <p>Luxury resort stays (e.g., Dwarika's or Club Himalaya), private licensed cultural guides at each site, and chauffeured executive 4WD vehicles.</p>
+              </div>
+            </div>
+
+            <table class="season-table" style="margin-top:1.5rem;">
+              <thead>
+                <tr>
+                  <th>Monument / Heritage Site</th>
+                  <th>Foreign National Fee</th>
+                  <th>SAARC National Fee</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Bhaktapur Durbar Square</strong></td>
+                  <td>NPR 1,800 (~USD 14)</td>
+                  <td>NPR 500</td>
+                </tr>
+                <tr>
+                  <td><strong>Patan Durbar Square & Museum</strong></td>
+                  <td>NPR 1,000 (~USD 8)</td>
+                  <td>NPR 250</td>
+                </tr>
+                <tr>
+                  <td><strong>Pashupatinath Temple Complex</strong></td>
+                  <td>NPR 1,000 (~USD 8)</td>
+                  <td>Free (Hindu SAARC) / NPR 1,000</td>
+                </tr>
+                <tr>
+                  <td><strong>Boudhanath Stupa</strong></td>
+                  <td>NPR 400 (~USD 3)</td>
+                  <td>NPR 100</td>
+                </tr>
+                <tr>
+                  <td><strong>Swayambhunath Stupa</strong></td>
+                  <td>NPR 200 (~USD 1.50)</td>
+                  <td>NPR 50</td>
+                </tr>
+                <tr>
+                  <td><strong>Nagarkot Municipality Levy</strong></td>
+                  <td>NPR 340 (~USD 2.50)</td>
+                  <td>NPR 150</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section id="alternatives">
+            <h2>Alternative 3-Day Blueprints</h2>
+            <p>
+              If your travel goals focus on mountain trekking or lake adventure rather than temple courtyards, switch to one of these verified alternative sequences:
+            </p>
+
+            <div class="stay-grid">
+              <div class="info-card">
+                <span>Alternative 01</span>
+                <strong>The Pokhara Flight Escape</strong>
+                <p>
+                  Fly 25 minutes from Kathmandu to <a href="/destinations/pokhara">Pokhara</a>. Spend Day 1 boating on Phewa Tal and hiking to Shanti Stupa; Day 2 catching sunrise from Sarangkot and tandem paragliding; Day 3 exploring the Old Bazaar and Begnas Lake before flying back to Kathmandu.
+                </p>
+              </div>
+              <div class="info-card">
+                <span>Alternative 02</span>
+                <strong>The Shivapuri Rim Ridge Hike</strong>
+                <p>
+                  Start at Sundarijal and trek through the oak canopies of Shivapuri Nagarjun National Park to Chisapani (2,300m) on Day 1. Hike the scenic northern ridge to Nagarkot on Day 2; descend past Newar farms to ancient Changu Narayan on Day 3.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="adjust">
+            <h2>Essential Planning Rules for a 72-Hour Stay</h2>
+            <ul>
+              <li><strong>Hire a Dedicated Vehicle & Driver:</strong> Do not rely on hailing street taxis point-to-point. Pre-booking an air-conditioned sedan or Scorpio for the entire 3 days (approx. NPR 12,000–16,000 total) saves hours of bargaining and waiting.</li>
+              <li><strong>Carry Cash in Small Denominations:</strong> Heritage ticket booths, village tea stalls, and local artisans rarely accept credit cards. Withdraw NPR 10,000 to 15,000 in cash at airport ATMs upon arrival.</li>
+              <li><strong>Pack Layered Clothing:</strong> Kathmandu Valley temperatures are mild during the day (20–25°C in spring and autumn), but Nagarkot sits at 2,175 meters, where night and dawn temperatures routinely drop to 6–10°C. Bring a fleece or light down jacket.</li>
+              <li><strong>Keep the Final Night East of Kathmandu:</strong> Staying in Nagarkot or Bhaktapur on Night 2 places you within 30 to 45 minutes of the airport without having to cross downtown Kathmandu's congested river bridges.</li>
+            </ul>
+          </section>
+
+          <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>Is 3 days really enough time to visit Nepal?</h3>
+            <p>
+              While 3 days is too short for high-altitude base camp trekking or multi-day wildlife safaris, it is the perfect window to experience the UNESCO World Heritage monuments, Newar culinary traditions, and Himalayan sunrise viewpoints of the Kathmandu Valley without feeling rushed.
+            </p>
+            <h3>Can I go to Pokhara on a 3-day trip?</h3>
+            <p>
+              Only if you travel strictly by air (25-minute domestic flights each way). Driving the 200 km Prithvi Highway takes 7 to 9 hours each direction due to highway widening work, consuming two full days in road transit.
+            </p>
+            <h3>How do I handle the airport transfer on Day 1?</h3>
+            <p>
+              Pre-arrange an airport pickup through your Patan guesthouse, or use the official prepaid taxi counter inside the international arrival hall (fixed fares: approx. NPR 800–1,000 to Patan).
+            </p>
+          </section>
+
+          <section id="links">
+            <h2>Continue Planning Your Route</h2>
+            <div class="guide-grid">
+              <a class="guide-card" href="/destinations/kathmandu-valley">
+                <p class="card-label">Destination Guide</p>
+                <h3>Kathmandu Valley</h3>
+                <p>
+                  Three medieval royal kingdoms, sacred river ghats, and hidden monastic courtyards.
+                </p>
+                <span class="card-arrow">↗</span>
+              </a>
+              <a class="guide-card" href="/destinations/nagarkot">
+                <p class="card-label">Viewpoint Guide</p>
+                <h3>Nagarkot</h3>
+                <p>
+                  Himalayan sunrises, quiet nature walking trails, and the ridge route to Changu Narayan.
+                </p>
+                <span class="card-arrow">↗</span>
+              </a>
+              <a class="guide-card" href="/travel-guide/nepal-transportation">
+                <p class="card-label">Transit Guide</p>
+                <h3>Transportation</h3>
+                <p>
+                  Everything you need to know about hiring cars, domestic flights, and ride apps in Nepal.
+                </p>
+                <span class="card-arrow">↗</span>
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+
+      <section class="newsletter">
+        <div>
+          <p class="kicker">Monthly field notes</p>
+          <h2>Get Nepal Route Notes</h2>
+        </div>
+        <div>
+          <p>Monthly routes, seasonal advice and places worth taking slowly.</p>
+          <form
+            class="newsletter-form"
+            name="newsletter"
+            method="POST"
+            action="/newsletter-success"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p hidden>
+              <label>Leave this field empty<input name="bot-field" /></label>
+            </p>
+            <label class="sr-only" for="newsletter-email">Your email</label>
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="Your email"
+            /><button type="submit">Subscribe ↗</button>
+          </form>
+          <small>No spam. Unsubscribe any time.</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="footer-logo" href="/" aria-label="Wanders Nepal home">
+          <img
+            src="/assets/wanders-nepal-logo-dark-v2.png"
+            alt="Wanders Nepal"
+            width="512"
+            height="349"
+          /><small>Discover Nepal beyond the obvious.</small>
+        </a>
+        <div class="footer-groups">
+          <div class="footer-group">
+            <strong>Explore</strong>
+            <a href="/destinations">Destinations</a>
+            <a href="/trekking">Trekking</a>
+            <a href="/routes">Routes</a>
+            <a href="/itineraries" aria-current="page">Itineraries</a>
+            <a href="/experiences">Experiences</a>
+          </div>
+          <div class="footer-group">
+            <strong>Plan</strong>
+            <a href="/travel-guide">Travel guide</a>
+            <a href="/travel-guide/nepal-transportation">Transport</a>
+            <a href="/tools/nepal-trip-cost">Cost calculator</a>
+            <a href="/travel-guide/nepal-packing-list">Packing</a>
+            <a href="/travel-guide/nepal-visa">Visa</a>
+          </div>
+          <div class="footer-group">
+            <strong>Discover</strong>
+            <a href="/culture">Culture</a>
+            <a href="/culture#food">Food</a>
+            <a href="/wildlife">Wildlife</a>
+            <a href="/responsible-travel">Responsible travel</a>
+          </div>
+          <div class="footer-group">
+            <strong>Wanders</strong>
+            <a href="/about">About</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/editorial-policy">Editorial policy</a>
+            <a href="/contact">Contact</a>
+            <a href="/corrections">Corrections</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Independent Nepal travel planning</span>
+        <span>Last site update: September 2026</span>
+        <span>© 2026 Wanders Nepal</span>
+      </div>
+    </footer>
+
+    <dialog
+      class="search-dialog"
+      id="site-search"
+      aria-labelledby="search-title"
+    >
+      <div class="search-shell">
+        <div class="search-top">
+          <p id="search-title">Search Wanders Nepal</p>
+          <button class="search-close" type="button" aria-label="Close search">
+            ×
+          </button>
+        </div>
+        <form class="global-search-form" action="/search" role="search">
+          <label for="global-search-input">Search destinations, treks, routes and guides</label>
+          <div class="global-search-field">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.7" cy="10.7" r="6.8" />
+              <path d="m16 16 5 5" />
+            </svg>
+            <input
+              id="global-search-input"
+              name="q"
+              type="search"
+              autocomplete="off"
+              placeholder="Pokhara, Everest, 7 day itinerary…"
+            />
+          </div>
+          <p class="search-hint" id="search-count" aria-live="polite">
+            Type to search every guide. Press Esc to close.
+          </p>
+          <div class="popular-searches" aria-label="Popular searches">
+            <button type="button">Pokhara</button>
+            <button type="button">Everest Base Camp</button>
+            <button type="button">Annapurna Circuit</button>
+            <button type="button">Mustang</button>
+            <button type="button">Kathmandu</button>
+            <button type="button">Chitwan</button>
+          </div>
+          <div class="search-results" id="global-search-results"></div>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="/search-data.js"></script>
+    <script src="/site.js"></script>
+  </body>
+</html>
