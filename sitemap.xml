@@ -2,46 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Platform & Top-Level Hubs -->
   <url>
-    <loc>https://wandersnepal.com/</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.wandersnepal.com/</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://www.wandersnepal.com/destinations</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/trekking/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.wandersnepal.com/routes</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.wandersnepal.com/itineraries</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/travel-guide/</loc>
-    <lastmod>2026-09-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.wandersnepal.com/plan-nepal</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://www.wandersnepal.com/experiences</loc>
@@ -100,10 +66,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wandersnepal.com/destinations/langtang/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.wandersnepal.com/destinations/langtang</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://www.wandersnepal.com/destinations/manaslu</loc>
@@ -118,10 +82,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wandersnepal.com/destinations/bandipur/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.wandersnepal.com/destinations/bandipur</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://www.wandersnepal.com/destinations/nagarkot</loc>
@@ -328,10 +290,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wandersnepal.com/itineraries/5-days/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.wandersnepal.com/itineraries/5-days</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://www.wandersnepal.com/itineraries/7-days</loc>
@@ -458,10 +418,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wandersnepal.com/travel-guide/pokhara-to-chitwan/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.wandersnepal.com/travel-guide/pokhara-to-chitwan</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://www.wandersnepal.com/travel-guide/kathmandu-to-lumbini</loc>
@@ -476,16 +434,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wandersnepal.com/travel-guide/pokhara-to-jomsom/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.wandersnepal.com/travel-guide/pokhara-to-jomsom</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
-    <loc>https://wandersnepal.com/travel-guide/kathmandu-to-lukla/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.wandersnepal.com/travel-guide/kathmandu-to-lukla</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
 
   <!-- Experiences, Heritage & Interactive Tools -->
@@ -558,10 +512,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://wandersnepal.com/contact/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.wandersnepal.com/contact</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
     <loc>https://www.wandersnepal.com/privacy</loc>
