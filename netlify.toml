@@ -28,6 +28,30 @@
     Cache-Control = "public, max-age=86400"
 
 [[redirects]]
+  from = "https://www.wandersnepal.com/"
+  to = "https://wandersnepal.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.wandersnepal.com/*"
+  to = "https://wandersnepal.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/bandipur"
+  to = "/destinations/bandipur/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/travel-guide"
+  to = "/travel-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404

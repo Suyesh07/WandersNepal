@@ -2087,3 +2087,156 @@ button {
     display: none;
   }
 }
+
+/* ==========================================================================
+   DESTINATION PAGES — MOBILE RESPONSIVENESS FIXES
+   ========================================================================== */
+
+/* 1. Prevent mobile horizontal overflow across article containers */
+.article,
+.article section,
+.article-layout {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* 2. Responsive Table Containment */
+.season-table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+}
+
+.season-table th,
+.season-table td {
+  white-space: nowrap;
+}
+
+/* 3. Tablet Breakpoint (Under 900px) */
+@media (max-width: 900px) {
+  /* Stack Table of Contents above article */
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 2.5rem;
+  }
+
+  .toc {
+    position: static;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--rule);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .toc::-webkit-scrollbar {
+    display: none;
+  }
+
+  .toc p {
+    display: none;
+  }
+
+  .toc a {
+    flex: 0 0 auto;
+    padding: 0.5rem 0.85rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--white);
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  /* Flatten multi-column grids */
+  .reason-grid,
+  .cost-grid,
+  .stay-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  /* Route visual container */
+  .route-visual {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+/* 4. Small Mobile Breakpoint (Under 600px) */
+@media (max-width: 600px) {
+  /* Prevent oversized titles from overflowing on small screens */
+  .page-hero h1 {
+    font-size: clamp(2.4rem, 11vw, 3.8rem);
+    line-height: 0.92;
+  }
+
+  .article h2 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    line-height: 1;
+  }
+
+  .article h3 {
+    font-size: 1.35rem;
+  }
+
+  /* Adjust Hero Padding */
+  .page-hero-inner {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-meta {
+    gap: 1rem 1.5rem;
+  }
+
+  .hero-meta div {
+    min-width: calc(50% - 0.75rem);
+  }
+
+  /* Two-column facts strip */
+  .facts-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fact {
+    min-height: 90px;
+    padding: 0.9rem;
+  }
+
+  .fact:nth-child(2n) {
+    border-right: 0;
+  }
+
+  /* Notice and callout boxes */
+  .notice {
+    margin: 1.2rem 0;
+    padding: 1rem 1.1rem;
+    font-size: 0.88rem;
+  }
+
+  /* Elevation graphic container */
+  .elevation-card {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .elevation {
+    min-width: 320px;
+    height: auto;
+  }
+
+  /* Byline row wrapping */
+  .byline {
+    gap: 0.5rem 1.2rem;
+    font-size: 0.62rem;
+  }
+}

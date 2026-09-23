@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.elsewherenepal.com/sitemap.xml
+Sitemap: https://www.wandersnepal.com/sitemap.xml
