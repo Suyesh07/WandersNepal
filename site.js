@@ -233,17 +233,36 @@
   const filterButtons = document.querySelectorAll("[data-filter]");
   if (filterButtons.length) {
     const filterItems = document.querySelectorAll("[data-filter-value]");
+    const mountainSearch = document.querySelector("[data-mountain-search]");
+    const mountainSearchInput = document.querySelector(
+      "[data-mountain-search-input]"
+    );
+    let activeFilter = "all";
+
+    function applyFilters() {
+      const query = normalise(mountainSearchInput?.value || "");
+      filterItems.forEach((item) => {
+        const matchesFilter =
+          activeFilter === "all" || item.dataset.filterValue === activeFilter;
+        const matchesSearch = !query || normalise(item.textContent).includes(query);
+        item.hidden = !matchesFilter || !matchesSearch;
+      });
+    }
+
     filterButtons.forEach((button) =>
       button.addEventListener("click", () => {
-        const filter = button.dataset.filter;
+        activeFilter = button.dataset.filter;
         filterButtons.forEach((item) =>
           item.classList.toggle("active", item === button)
         );
-        filterItems.forEach((item) => {
-          item.hidden = filter !== "all" && item.dataset.filterValue !== filter;
-        });
+        applyFilters();
       })
     );
+    mountainSearchInput?.addEventListener("input", applyFilters);
+    mountainSearch?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      applyFilters();
+    });
   }
 
   const journey = document.querySelector("#journey");
