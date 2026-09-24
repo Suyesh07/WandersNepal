@@ -40,13 +40,13 @@
   force = true
 
 [[redirects]]
-  from = "/destinations/bandipur"
+  from = "/destinations/bandipur/"
   to = "/destinations/bandipur/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/travel-guide"
+  from = "/travel-guide/"
   to = "/travel-guide/"
   status = 301
   force = true
