@@ -111,6 +111,9 @@ button {
   border-bottom: 1px solid var(--rule);
   backdrop-filter: blur(15px);
 }
+.site-header:has(.mobile-menu.open) {
+  backdrop-filter: none;
+}
 .brand {
   display: inline-flex;
   align-items: center;
