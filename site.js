@@ -275,7 +275,7 @@
         '<div class="hero-actions"><a href="/destinations">Explore Nepal</a><a href="/plan-my-trip">Plan My Trip</a></div>'
       );
   }
-  if (journey && routePath && window.ELSEWHERE_JOURNEY && !reduceMotion) {
+  if (journey && routePath && window.WANDERS_NEPAL_JOURNEY && !reduceMotion) {
     const intro = journey.querySelector(".journey-intro");
     const panel = journey.querySelector(".journey-panel");
     const scrollNote = journey.querySelector(".journey-scroll");
@@ -290,7 +290,7 @@
     function updateStage(index) {
       if (index === active) return;
       active = index;
-      const stage = window.ELSEWHERE_JOURNEY[index];
+      const stage = window.WANDERS_NEPAL_JOURNEY[index];
       layers.forEach((layer, i) =>
         layer.classList.toggle("active", i === index)
       );
@@ -328,7 +328,7 @@
         0.9999,
         Math.max(0, (progress - 0.035) / 0.965)
       );
-      const index = Math.floor(stageProgress * window.ELSEWHERE_JOURNEY.length);
+      const index = Math.floor(stageProgress * window.WANDERS_NEPAL_JOURNEY.length);
       intro.classList.toggle("departed", departed);
       panel.classList.toggle("active", departed);
       scrollNote.classList.toggle("hidden", departed);
