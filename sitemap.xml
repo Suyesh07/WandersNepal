@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- Core Platform & Top-Level Hubs -->
   <url>
     <loc>https://wandersnepal.com/</loc>
@@ -66,18 +66,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://wandersnepal.com/destinations/everest-region/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/destinations/annapurna-region/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://wandersnepal.com/destinations/chitwan/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -94,28 +82,6 @@
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/destinations/rara-lake/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/destinations/langtang/</loc>
-    <lastmod>2026-09-11</lastmod>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/destinations/manaslu/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/destinations/gosaikunda/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wandersnepal.com/destinations/bandipur/</loc>
@@ -161,12 +127,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wandersnepal.com/destinations/kanchenjunga/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wandersnepal.com/destinations/dolpo-phoksundo/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -176,24 +136,18 @@
   <!-- Established Trek Guides -->
   <url>
     <loc>https://wandersnepal.com/treks/everest-base-camp/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/treks/everest-view/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://wandersnepal.com/assets/everest-base-camp-trek.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://wandersnepal.com/assets/everest-base-camp-trek-map.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://wandersnepal.com/treks/gokyo-lakes/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/treks/three-passes/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -206,9 +160,15 @@
   </url>
   <url>
     <loc>https://wandersnepal.com/treks/annapurna-base-camp/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://wandersnepal.com/assets/annapurna-base-camp-trek.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://wandersnepal.com/assets/Annapurna-base-camp-trek-map.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://wandersnepal.com/treks/mardi-himal/</loc>

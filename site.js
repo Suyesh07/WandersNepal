@@ -61,6 +61,38 @@
     ?.querySelectorAll("a")
     .forEach((link) => link.addEventListener("click", closeMenu));
 
+  const itineraryOptions = document.querySelectorAll(
+    "[data-itinerary-show]"
+  );
+  itineraryOptions.forEach((option) =>
+    option.addEventListener("click", () => {
+      const target = document.getElementById(option.dataset.itineraryShow);
+      if (!target) return;
+      itineraryOptions.forEach((item) => {
+        const active = item === option;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      document.querySelectorAll(".itinerary-view").forEach((view) => {
+        view.hidden = view !== target;
+      });
+      const alternateItinerary = document.querySelector(
+        "#everest-view-itinerary"
+      );
+      if (alternateItinerary)
+        alternateItinerary.hidden = alternateItinerary !== target;
+      target.scrollIntoView({
+        behavior: reduceMotion ? "auto" : "smooth",
+        block: "start",
+      });
+    })
+  );
+  const hashTarget = document.getElementById(window.location.hash.slice(1));
+  const hashOption = [...itineraryOptions].find(
+    (option) => option.dataset.itineraryShow === hashTarget?.id
+  );
+  hashOption?.click();
+
   const dialog = document.querySelector("#site-search");
   const searchInput = dialog?.querySelector("#global-search-input");
   const results = dialog?.querySelector("#global-search-results");

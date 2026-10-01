@@ -955,6 +955,11 @@ button {
   object-fit: cover;
   transform: translateY(var(--hero-shift, 0)) scale(1.04);
 }
+.trek-map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .page-hero::after {
   content: "";
   position: absolute;
@@ -1018,6 +1023,33 @@ button {
 .hero-meta strong {
   font-size: 0.78rem;
 }
+.itinerary-switcher {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0 2rem;
+}
+.itinerary-switcher-option {
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.itinerary-switcher-option:hover,
+.itinerary-switcher-option:focus-visible,
+.itinerary-switcher-option.is-active {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--white);
+}
+.itinerary-switcher > span {
+  color: var(--lake);
+}
 .facts-strip {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -1049,6 +1081,18 @@ button {
   grid-template-columns: minmax(190px, 0.28fr) minmax(0, 1fr);
   gap: clamp(3rem, 8vw, 8rem);
   padding: clamp(4rem, 8vw, 8rem) var(--pad);
+}
+.article-layout[hidden] {
+  display: none !important;
+}
+.annapurna-itinerary-layout {
+  grid-template-columns: minmax(190px, 0.28fr) minmax(0, 1fr);
+}
+.annapurna-itinerary-layout .article {
+  min-width: 0;
+}
+.annapurna-itinerary-layout .toc {
+  min-width: 0;
 }
 .toc {
   position: sticky;
@@ -1094,6 +1138,182 @@ button {
 .article p {
   color: #465a53;
   line-height: 1.78;
+}
+.article figure {
+  margin: 1.5rem 0 2rem;
+}
+.article figure img {
+  width: 100%;
+  height: clamp(180px, 38vw, 360px);
+  border-radius: 2px;
+  object-fit: cover;
+}
+.article figcaption {
+  margin-top: 0.55rem;
+  color: #60706a;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+.article li figure {
+  margin: 1rem 0 0;
+}
+.article li figure img {
+  height: clamp(160px, 30vw, 300px);
+}
+.faq-list {
+  display: grid;
+  gap: 0.65rem;
+}
+.faq-item {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--lake);
+  background: rgba(255, 253, 247, 0.72);
+}
+.faq-item[open] {
+  border-left-color: var(--coral);
+}
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: 0 0 auto;
+  border-right: 2px solid var(--coral);
+  border-bottom: 2px solid var(--coral);
+  content: "";
+  transform: rotate(45deg);
+  transition: transform 0.18s ease;
+}
+.faq-item[open] summary::after {
+  transform: rotate(225deg);
+}
+.faq-item summary h3 {
+  margin: 0;
+  font: 600 1.05rem/1.35 var(--sans);
+}
+.faq-item summary:focus-visible {
+  outline: 2px solid var(--lake);
+  outline-offset: 2px;
+}
+.faq-answer {
+  padding: 0 1.1rem 1rem;
+}
+.faq-answer p {
+  margin: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-item summary::after {
+    transition: none;
+  }
+}
+.itinerary-day {
+  --day-accent: var(--lake);
+  --day-wash: rgba(80, 122, 113, 0.09);
+  --day-border: rgba(80, 122, 113, 0.24);
+  margin: 0.7rem 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--day-border);
+  border-left: 4px solid var(--day-accent);
+  background: var(--day-wash);
+}
+.itinerary-day--easy {
+  --day-accent: #507a71;
+  --day-wash: rgba(80, 122, 113, 0.09);
+  --day-border: rgba(80, 122, 113, 0.24);
+}
+.itinerary-day--moderate {
+  --day-accent: #80691f;
+  --day-wash: rgba(230, 193, 75, 0.16);
+  --day-border: rgba(128, 105, 31, 0.24);
+}
+.itinerary-day--acclimatization {
+  --day-accent: #3f6f83;
+  --day-wash: rgba(84, 139, 157, 0.2);
+  --day-border: rgba(63, 111, 131, 0.42);
+}
+.itinerary-day--hard {
+  --day-accent: #a94f41;
+  --day-wash: rgba(229, 108, 76, 0.11);
+  --day-border: rgba(169, 79, 65, 0.24);
+}
+.itinerary-day-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.itinerary-day h3 {
+  margin: 0;
+  font: 600 1.15rem/1.35 var(--sans);
+}
+.itinerary-day p {
+  margin: 0.5rem 0 0;
+  color: #465a53;
+  line-height: 1.7;
+}
+.itinerary-alternative {
+  margin-top: 2rem;
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--coral);
+  background: rgba(255, 253, 247, 0.72);
+}
+.itinerary-alternative summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+.itinerary-alternative summary::-webkit-details-marker {
+  display: none;
+}
+.itinerary-alternative summary::after {
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: 0 0 auto;
+  border-right: 2px solid var(--coral);
+  border-bottom: 2px solid var(--coral);
+  content: "";
+  transform: rotate(45deg);
+  transition: transform 0.18s ease;
+}
+.itinerary-alternative[open] summary::after {
+  transform: rotate(225deg);
+}
+.itinerary-alternative summary:focus-visible {
+  outline: 2px solid var(--lake);
+  outline-offset: 2px;
+}
+.itinerary-alternative-content {
+  padding: 0 1.1rem 1rem;
+}
+.itinerary-alternative-content > h3 {
+  margin-top: 0.5rem;
+}
+.itinerary-alternative-content .itinerary-day:last-child {
+  margin-bottom: 0;
+}
+.itinerary-difficulty {
+  flex: 0 0 auto;
+  padding: 0.18rem 0.45rem;
+  border: 1px solid var(--day-accent);
+  color: var(--day-accent);
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .article ul {
   padding: 0;
@@ -1241,6 +1461,326 @@ button {
 .elevation text {
   fill: rgba(255, 255, 255, 0.58);
   font: 11px var(--sans);
+}
+.altitude-figure {
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1rem 0.75rem;
+  border: 1px solid var(--rule);
+  background: rgba(255, 253, 247, 0.72);
+}
+.altitude-chart-scroll,
+.altitude-table-wrap {
+  overflow-x: auto;
+}
+.altitude-profile {
+  display: block;
+  width: 100%;
+  min-width: 680px;
+  height: auto;
+}
+.altitude-grid line {
+  stroke: rgba(20, 37, 32, 0.16);
+  stroke-dasharray: 4 6;
+}
+.altitude-grid text,
+.altitude-days text {
+  fill: #65736e;
+  font: 12px var(--sans);
+}
+.altitude-area {
+  fill: rgba(80, 122, 113, 0.12);
+}
+.altitude-line {
+  fill: none;
+  stroke: var(--lake);
+  stroke-width: 3;
+  vector-effect: non-scaling-stroke;
+}
+.altitude-marker {
+  cursor: pointer;
+}
+.altitude-marker circle {
+  fill: var(--lake);
+  stroke: var(--white);
+  stroke-width: 2;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.16s ease;
+}
+.altitude-marker:hover circle,
+.altitude-marker:focus-visible circle {
+  transform: scale(1.55);
+  stroke: var(--coral);
+  stroke-width: 3;
+  outline: none;
+}
+.altitude-marker .acclimatization-point {
+  fill: #80691f;
+}
+.altitude-marker .summit-point {
+  fill: var(--coral);
+}
+.altitude-tooltip {
+  overflow: visible;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
+  transition: opacity 0.12s ease, visibility 0s linear 0.12s;
+}
+.altitude-marker:hover .altitude-tooltip,
+.altitude-marker:focus-visible .altitude-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.altitude-tooltip-card {
+  display: flex;
+  height: 42px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+  padding: 0;
+  color: var(--ink);
+  font: 600 0.7rem/1.2 var(--sans);
+  white-space: nowrap;
+}
+.altitude-tooltip-card span {
+  color: #465a53;
+}
+.altitude-figure figcaption {
+  padding-top: 0.75rem;
+  color: #65736e;
+  font-size: 0.7rem;
+}
+.altitude-axis-label {
+  margin: 0;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-weight: 600;
+  text-align: center;
+}
+.altitude-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
+  padding-top: 0.6rem;
+}
+.altitude-legend-point {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background: var(--lake);
+}
+.altitude-legend-point.acclimatization {
+  background: #80691f;
+}
+.altitude-data {
+  width: 100%;
+  min-width: 520px;
+  margin: 0.5rem 0 1.5rem;
+  border-collapse: collapse;
+}
+.altitude-data th,
+.altitude-data td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.76rem;
+}
+.altitude-data th {
+  color: var(--lake);
+  font-size: 0.62rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.altitude-data .acclimatization-row td {
+  background: rgba(230, 193, 75, 0.13);
+}
+.altitude-sources {
+  font-size: 0.76rem;
+}
+.weather-chart-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0 0.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.weather-month-control {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.weather-month-control label {
+  color: #65736e;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.weather-month-control select {
+  min-width: 10rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 2rem 0.5rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+.weather-temperature-units {
+  color: #65736e;
+  font-size: 0.72rem;
+}
+.weather-figure {
+  margin: 1rem 0 1.5rem;
+  padding: 0.8rem 0.8rem 0.6rem;
+  border: 1px solid var(--rule);
+  background: rgba(255, 253, 247, 0.72);
+}
+.weather-chart-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.weather-chart {
+  display: block;
+  width: 100%;
+  min-width: 700px;
+  height: auto;
+}
+.weather-chart-grid line {
+  stroke: rgba(20, 37, 32, 0.14);
+  stroke-dasharray: 4 6;
+}
+.weather-chart-grid text,
+.weather-days text {
+  fill: #65736e;
+  font: 12px var(--sans);
+}
+.weather-y-axis-label {
+  fill: var(--ink-soft);
+  font: 600 12px var(--sans);
+}
+.weather-line {
+  fill: none;
+  stroke-width: 2.75;
+  vector-effect: non-scaling-stroke;
+}
+.weather-min-line {
+  stroke: #547987;
+}
+.weather-max-line {
+  stroke: var(--coral);
+}
+.weather-day-marker {
+  cursor: pointer;
+}
+.weather-range-mark {
+  stroke: rgba(20, 37, 32, 0.28);
+  stroke-width: 2;
+}
+.weather-min-point,
+.weather-max-point {
+  stroke: var(--white);
+  stroke-width: 2;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.14s ease;
+}
+.weather-min-point {
+  fill: #547987;
+}
+.weather-max-point {
+  fill: var(--coral);
+}
+.weather-day-marker:hover .weather-min-point,
+.weather-day-marker:hover .weather-max-point,
+.weather-day-marker:focus-visible .weather-min-point,
+.weather-day-marker:focus-visible .weather-max-point {
+  transform: scale(1.45);
+  stroke: var(--ink);
+  stroke-width: 2.5;
+}
+.weather-day-marker:focus-visible {
+  outline: none;
+}
+.weather-day-marker.weather-anomaly-marker .weather-range-mark {
+  stroke: #80691f;
+  stroke-width: 3;
+}
+.weather-day-marker.weather-anomaly-marker .weather-min-point {
+  fill: #80691f;
+}
+.weather-tooltip {
+  overflow: visible;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
+  transition: opacity 0.12s ease, visibility 0s linear 0.12s;
+}
+.weather-day-marker:hover .weather-tooltip,
+.weather-day-marker:focus-visible .weather-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.weather-tooltip-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  color: var(--ink);
+  font: 600 0.7rem/1.2 var(--sans);
+  white-space: nowrap;
+}
+.weather-tooltip-card span {
+  color: #465a53;
+}
+.weather-tooltip-card small {
+  color: #65736e;
+  font: 500 0.62rem/1.2 var(--sans);
+}
+.weather-chart-caption {
+  padding-top: 0.6rem;
+  color: #65736e;
+  font-size: 0.7rem;
+}
+.weather-axis-label {
+  margin: 0;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-weight: 600;
+  text-align: center;
+}
+.weather-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
+  padding-top: 0.6rem;
+}
+.weather-key {
+  display: inline-block;
+  width: 1rem;
+  height: 3px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+  background: #547987;
+}
+.weather-key--maximum {
+  background: var(--coral);
+}
+.weather-key--check {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: #80691f;
 }
 .day-list {
   counter-reset: day;
@@ -2245,10 +2785,37 @@ button {
     font-size: 1.35rem;
   }
 
+  .itinerary-day {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .itinerary-day-heading {
+    flex-wrap: wrap;
+    gap: 0.55rem;
+  }
+
+  .itinerary-day h3 {
+    font-size: 1.05rem;
+  }
+
+  .weather-chart-controls {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
   /* Adjust Hero Padding */
   .page-hero-inner {
     padding-top: 6rem;
     padding-bottom: 2rem;
+  }
+
+  .page-hero {
+    min-height: 700px;
+  }
+
+  .page-hero img {
+    object-position: 58% center;
   }
 
   .hero-meta {
@@ -2296,5 +2863,40 @@ button {
   .byline {
     gap: 0.5rem 1.2rem;
     font-size: 0.62rem;
+  }
+
+  .annapurna-itinerary-layout {
+    padding-inline: 1.1rem;
+  }
+
+  .annapurna-itinerary-layout .toc {
+    margin-bottom: 0.5rem;
+  }
+
+  .annapurna-itinerary-layout .itinerary-day-heading {
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .annapurna-itinerary-layout .itinerary-difficulty {
+    align-self: flex-start;
+  }
+
+  #annapurna-faq .faq-item summary {
+    align-items: flex-start;
+  }
+
+  #annapurna-faq .faq-item summary h3 {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .article figure {
+    margin: 1.25rem 0 1.75rem;
+  }
+
+  .article figure img,
+  .article li figure img {
+    height: 220px;
   }
 }
