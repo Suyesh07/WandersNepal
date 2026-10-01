@@ -64,6 +64,114 @@
   force = true
 
 [[redirects]]
+  from = "/treks/everest-view"
+  to = "/treks/everest-base-camp/#everest-view-itinerary"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/treks/everest-view/"
+  to = "/treks/everest-base-camp/#everest-view-itinerary"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/treks/three-passes"
+  to = "/treks/everest-base-camp/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/treks/three-passes/"
+  to = "/treks/everest-base-camp/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/everest-region"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/everest-region/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/annapurna-region"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/annapurna-region/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/rara-lake"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/rara-lake/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/langtang"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/langtang/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/manaslu"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/manaslu/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/gosaikunda"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/gosaikunda/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/kanchenjunga"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/kanchenjunga/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
