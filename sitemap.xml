@@ -49,15 +49,21 @@
   <!-- Destination Deep Dives -->
   <url>
     <loc>https://wandersnepal.com/destinations/kathmandu-valley/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://wandersnepal.com/assets/kathmandu-valley-hero.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://wandersnepal.com/destinations/pokhara/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://wandersnepal.com/assets/places-to-visit-in-pokhara-phewa-lake.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://wandersnepal.com/destinations/chitwan/</loc>
@@ -82,10 +88,13 @@
     <lastmod>2026-09-11</lastmod>
   </url>
   <url>
-    <loc>https://wandersnepal.com/destinations/nagarkot/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <loc>https://wandersnepal.com/destinations/nagarkot</loc>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://wandersnepal.com/assets/nagarkot/nagarkot-nepal-himalayan-sunrise-panorama.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://wandersnepal.com/destinations/janakpur/</loc>
@@ -462,12 +471,6 @@
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wandersnepal.com/newsletter-success/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
   <!-- Trust, Review & Legal Pages -->
   <url>
