@@ -20,6 +20,7 @@
 html {
   scroll-behavior: smooth;
 }
+article img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 1.5rem; }
 body {
   margin: 0;
   background: var(--paper);
