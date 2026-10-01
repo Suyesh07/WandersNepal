@@ -13,6 +13,18 @@
     Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self'; connect-src 'self'; media-src 'self'"
 
 [[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=UTF-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=UTF-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
@@ -40,14 +52,122 @@
   force = true
 
 [[redirects]]
-  from = "/destinations/bandipur"
+  from = "/destinations/bandipur/"
   to = "/destinations/bandipur/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/travel-guide"
+  from = "/travel-guide/"
   to = "/travel-guide/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/treks/everest-view"
+  to = "/treks/everest-base-camp/#everest-view-itinerary"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/treks/everest-view/"
+  to = "/treks/everest-base-camp/#everest-view-itinerary"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/treks/three-passes"
+  to = "/treks/everest-base-camp/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/treks/three-passes/"
+  to = "/treks/everest-base-camp/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/everest-region"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/everest-region/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/annapurna-region"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/annapurna-region/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/rara-lake"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/rara-lake/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/langtang"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/langtang/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/manaslu"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/manaslu/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/gosaikunda"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/gosaikunda/"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/kanchenjunga"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/destinations/kanchenjunga/"
+  to = "/destinations/"
   status = 301
   force = true
 

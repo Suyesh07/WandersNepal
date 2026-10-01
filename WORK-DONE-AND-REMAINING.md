@@ -41,7 +41,7 @@ Updated: 15 September 2026
 
 ## Remaining owner or production work
 
-1. **Provide the exact production domain URL.** Canonical URLs, sitemap and robots.txt still use `https://www.elsewherenepal.com` because a replacement URL was not supplied and should not be guessed.
+1. **Confirm the production domain URL.** Canonical URLs, sitemap and robots.txt use `https://www.wandersnepal.com`.
 2. Deploy to the final HTTPS host and confirm the security headers are returned by the production server.
 3. Configure Netlify form notification recipients and test newsletter, contact and review submissions after deployment.
 4. Publish only real, verified traveler reviews received through the form; no sample reviews are included.

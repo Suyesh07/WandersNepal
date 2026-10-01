@@ -1,0 +1,314 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - link "Wanders Nepal home" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img "Wanders Nepal" [ref=e5]
+    - navigation "Main navigation" [ref=e6]:
+      - link "Destinations" [ref=e7] [cursor=pointer]:
+        - /url: /destinations
+      - link "Trekking" [ref=e8] [cursor=pointer]:
+        - /url: /trekking
+      - link "Routes" [ref=e9] [cursor=pointer]:
+        - /url: /routes
+      - link "Itineraries" [ref=e10] [cursor=pointer]:
+        - /url: /itineraries
+      - link "Plan Nepal" [ref=e11] [cursor=pointer]:
+        - /url: /plan-nepal
+      - button "Search Wanders Nepal" [ref=e12] [cursor=pointer]
+      - link "Plan My Trip" [ref=e16] [cursor=pointer]:
+        - /url: /plan-my-trip
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - img "Everest View Trek landscape" [ref=e19]
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - link "Home" [ref=e22] [cursor=pointer]:
+            - /url: /
+          - text: /
+          - link "Trekking" [ref=e23] [cursor=pointer]:
+            - /url: /trekking
+          - text: /
+          - link "Everest View Trek" [ref=e24] [cursor=pointer]:
+            - /url: /treks/everest-view
+        - paragraph [ref=e25]: Everest trek
+        - heading "Everest View Trek" [level=1] [ref=e26]
+        - paragraph [ref=e27]: A shorter Khumbu route centred on Namche, Khumjung and mountain viewpoints without continuing to base camp.
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: Duration
+            - strong [ref=e31]: 5–8 days
+          - generic [ref=e32]:
+            - generic [ref=e33]: Difficulty
+            - strong [ref=e34]: Moderate
+          - generic [ref=e35]:
+            - generic [ref=e36]: Max altitude
+            - strong [ref=e37]: 3,880 m
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: Duration
+        - strong [ref=e41]: 5–8 days
+      - generic [ref=e42]:
+        - generic [ref=e43]: Difficulty
+        - strong [ref=e44]: Moderate
+      - generic [ref=e45]:
+        - generic [ref=e46]: Max altitude
+        - strong [ref=e47]: 3,880 m
+      - generic [ref=e48]:
+        - generic [ref=e49]: Distance
+        - strong [ref=e50]: Approx. 45–65 km
+      - generic [ref=e51]:
+        - generic [ref=e52]: Start
+        - strong [ref=e53]: Lukla
+      - generic [ref=e54]:
+        - generic [ref=e55]: Best season
+        - strong [ref=e56]: March–May · October–November
+    - generic [ref=e57]:
+      - complementary "On this page" [ref=e58]:
+        - paragraph [ref=e59]: On this page
+        - link "Overview" [ref=e60] [cursor=pointer]:
+          - /url: "#overview"
+        - link "Route & elevation" [ref=e61] [cursor=pointer]:
+          - /url: "#route"
+        - link "Day by day" [ref=e62] [cursor=pointer]:
+          - /url: "#itinerary"
+        - link "Permits & guides" [ref=e63] [cursor=pointer]:
+          - /url: "#permits"
+        - link "Accommodation, food & water" [ref=e64] [cursor=pointer]:
+          - /url: "#trail-life"
+        - link "Budget & transport" [ref=e65] [cursor=pointer]:
+          - /url: "#budget"
+        - link "Weather & altitude" [ref=e66] [cursor=pointer]:
+          - /url: "#weather"
+        - link "Packing list" [ref=e67] [cursor=pointer]:
+          - /url: "#packing"
+        - link "Safety & responsibility" [ref=e68] [cursor=pointer]:
+          - /url: "#safety"
+        - link "Alternatives" [ref=e69] [cursor=pointer]:
+          - /url: "#alternatives"
+        - link "FAQ" [ref=e70] [cursor=pointer]:
+          - /url: "#faq"
+        - link "Official sources" [ref=e71] [cursor=pointer]:
+          - /url: "#sources"
+      - article [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - text: "Written by:"
+              - strong [ref=e76]: Wanders Nepal editorial desk
+            - generic [ref=e77]:
+              - text: "Published:"
+              - strong [ref=e78]: September 2026
+            - generic [ref=e79]:
+              - text: "Last updated:"
+              - strong [ref=e80]: September 2026
+            - generic [ref=e81]:
+              - text: "Last verified:"
+              - strong [ref=e82]: September 2026
+          - heading "Trek overview" [level=2] [ref=e83]
+          - paragraph [ref=e84]: A shorter Khumbu route centred on Namche, Khumjung and mountain viewpoints without continuing to base camp.
+          - paragraph [ref=e85]: This guide presents a conservative planning baseline, not a fixed commercial package. Daily distance, trailhead access and safe pacing change with the exact itinerary, weather and acclimatisation response.
+          - generic [ref=e86]: Altitude cannot be scheduled by ambition. Add rest days and descend if symptoms worsen.
+        - generic [ref=e87]:
+          - heading "Route map & elevation" [level=2] [ref=e88]
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - generic [ref=e91]: Lukla
+              - generic [ref=e92]: Phakding
+              - generic [ref=e93]: Namche Bazaar
+              - generic [ref=e94]: Khumjung
+              - generic [ref=e95]: Everest View area
+              - generic [ref=e96]: Monjo
+              - generic [ref=e97]: Lukla
+            - img "Schematic elevation profile" [ref=e98]:
+              - generic [ref=e101]: Lukla
+              - generic [ref=e102]: Lukla
+          - paragraph [ref=e103]: The profile is schematic and communicates the sequence of major climbs; it is not a navigation chart.
+        - generic [ref=e104]:
+          - heading "Day-by-day itinerary" [level=2] [ref=e105]
+          - generic [ref=e106]: Walking times are broad planning ranges. Distance varies with the exact lodge, trail diversion and acclimatisation day.
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - strong [ref=e109]: Lukla
+              - generic [ref=e110]: 3–5 hr · distance varies by trail
+            - generic [ref=e111]:
+              - strong [ref=e112]: Phakding
+              - generic [ref=e113]: 5–7 hr · distance varies by trail
+            - generic [ref=e114]:
+              - strong [ref=e115]: Namche Bazaar
+              - generic [ref=e116]: 5–7 hr · distance varies by trail
+            - generic [ref=e117]:
+              - strong [ref=e118]: Khumjung
+              - generic [ref=e119]: 5–7 hr · distance varies by trail
+            - generic [ref=e120]:
+              - strong [ref=e121]: Everest View area
+              - generic [ref=e122]: 5–7 hr · distance varies by trail
+        - generic [ref=e123]:
+          - heading "Permits & guide requirements" [level=2] [ref=e124]
+          - heading "Permits" [level=3] [ref=e125]
+          - paragraph [ref=e126]: Sagarmatha National Park entry and applicable local-area fees.
+          - heading "Guide requirements" [level=3] [ref=e127]
+          - paragraph [ref=e128]: Use a registered guide if required by current rules or if new to mountain travel.
+          - paragraph [ref=e129]: "Last verified: September 2026. Rules and fees can change; confirm with Nepal Tourism Board, the protected-area authority and a registered trekking agency."
+        - generic [ref=e130]:
+          - heading "Life on the trail" [level=2] [ref=e131]
+          - heading "Accommodation" [level=3] [ref=e132]
+          - paragraph [ref=e133]: Established routes use simple teahouses or community lodges; restricted and remote itineraries may need arranged camping. Expect shared dining, limited heating and variable charging.
+          - heading "Food" [level=3] [ref=e134]
+          - paragraph [ref=e135]: Dal bhat, soups, noodles, potatoes and porridge are common. At altitude, choose freshly cooked food and avoid over-ordering where supplies are carried in.
+          - heading "Water" [level=3] [ref=e136]
+          - paragraph [ref=e137]: Use boiled, filtered or properly treated water. Avoid a daily trail of disposable plastic bottles.
+        - generic [ref=e138]:
+          - heading "Budget & transportation" [level=2] [ref=e139]
+          - generic [ref=e140]:
+            - generic [ref=e141]:
+              - generic [ref=e142]: Budget baseline
+              - strong [ref=e143]: NPR 6,000–10,000/day
+              - paragraph [ref=e144]: Simple lodge, meals and shared ground travel; excludes major permits and flights.
+            - generic [ref=e145]:
+              - generic [ref=e146]: Supported trek
+              - strong [ref=e147]: NPR 12,000–25,000/day
+              - paragraph [ref=e148]: Guide, porter support and a larger contingency.
+            - generic [ref=e149]:
+              - generic [ref=e150]: Remote/premium
+              - strong [ref=e151]: NPR 28,000+/day
+              - paragraph [ref=e152]: Private logistics, flights or full camping support.
+          - paragraph [ref=e153]:
+            - text: "Start:"
+            - strong [ref=e154]: Lukla
+            - text: ". End:"
+            - strong [ref=e155]: Lukla
+            - text: . Estimates only; compare an itemised quote that separates permits, wages, transport and contingency.
+        - generic [ref=e156]:
+          - heading "Weather & altitude" [level=2] [ref=e157]
+          - paragraph [ref=e158]: The broad trekking window is March–May · October–November. Mountain weather can still bring snow, cloud, wind and transport disruption. The route reaches 3,880 m; gradual ascent and honest symptom reporting matter more than a target day.
+          - list [ref=e159]:
+            - listitem [ref=e160]: Do not continue upward with worsening headache, nausea, dizziness or unusual fatigue.
+            - listitem [ref=e161]: Keep the day before a high pass flexible.
+            - listitem [ref=e162]: Carry layers for sun, wind, cold and precipitation.
+        - generic [ref=e163]:
+          - heading "Packing list" [level=2] [ref=e164]
+          - list [ref=e165]:
+            - listitem [ref=e166]: Broken-in trekking footwear
+            - listitem [ref=e167]: Warm insulating layer
+            - listitem [ref=e168]: Waterproof shell and trousers
+            - listitem [ref=e169]: Sun hat, warm hat and gloves
+            - listitem [ref=e170]: Refillable bottle and treatment method
+            - listitem [ref=e171]: Head torch and power bank
+            - listitem [ref=e172]: Personal medication and first-aid essentials
+            - listitem [ref=e173]: Offline insurance and emergency details
+            - listitem [ref=e174]: Trekking poles where useful
+            - listitem [ref=e175]: Compact repair and blister kit
+          - link "Open the full Nepal packing guide →" [ref=e176] [cursor=pointer]:
+            - /url: /travel-guide/nepal-packing-list
+        - generic [ref=e177]:
+          - heading "Safety & responsible trekking" [level=2] [ref=e178]
+          - paragraph [ref=e179]: Use licensed, insured staff; keep porter loads fair; stay on established trails; carry out non-biodegradable waste; and respect monasteries, fields and water sources. Your evacuation plan should work without a mobile signal.
+          - link "Responsible trekking principles →" [ref=e180] [cursor=pointer]:
+            - /url: /responsible-travel
+        - generic [ref=e181]:
+          - heading "Alternative itineraries" [level=2] [ref=e182]
+          - list [ref=e183]:
+            - listitem [ref=e184]: Add an acclimatisation day rather than compressing the ascent.
+            - listitem [ref=e185]: Choose a shorter viewpoint route if time or experience is limited.
+            - listitem [ref=e186]: Use an overland approach when flight disruption risk is unacceptable.
+            - listitem [ref=e187]: Turn around or exit early without treating it as failure.
+          - paragraph [ref=e188]:
+            - text: Explore the wider
+            - link "Everest destination guide" [ref=e189] [cursor=pointer]:
+              - /url: /destinations/everest-region
+            - text: .
+        - generic [ref=e190]:
+          - heading "Frequently asked questions" [level=2] [ref=e191]
+          - heading "How difficult is Everest View Trek?" [level=3] [ref=e192]
+          - paragraph [ref=e193]: Moderate; the combination of Approx. 45–65 km, altitude up to 3,880 m and consecutive days matters more than any single label.
+          - heading "What is the best season?" [level=3] [ref=e194]
+          - paragraph [ref=e195]: March–May · October–November is the broad planning window. Check snow, rain and transport conditions close to departure.
+          - heading "Do I need insurance?" [level=3] [ref=e196]
+          - paragraph [ref=e197]: Yes. Confirm that your policy covers the route’s maximum altitude, planned activities and emergency evacuation procedure.
+        - generic [ref=e198]:
+          - heading "Official sources" [level=2] [ref=e199]
+          - generic [ref=e200]:
+            - link "Nepal Tourism Board ↗" [ref=e201] [cursor=pointer]:
+              - /url: https://ntb.gov.np/
+            - link "Department of Immigration ↗" [ref=e202] [cursor=pointer]:
+              - /url: https://www.immigration.gov.np/
+            - link "Department of National Parks and Wildlife Conservation ↗" [ref=e203] [cursor=pointer]:
+              - /url: https://dnpwc.gov.np/
+            - link "Civil Aviation Authority of Nepal ↗" [ref=e204] [cursor=pointer]:
+              - /url: https://caanepal.gov.np/
+            - link "Department of Roads ↗" [ref=e205] [cursor=pointer]:
+              - /url: https://dor.gov.np/
+    - generic [ref=e206]:
+      - generic [ref=e207]:
+        - paragraph [ref=e208]: Monthly field notes
+        - heading "Get Nepal Route Notes" [level=2] [ref=e209]
+      - generic [ref=e210]:
+        - paragraph [ref=e211]: Monthly routes, seasonal advice and places worth taking slowly.
+        - generic [ref=e212]:
+          - generic [ref=e213]: Your email
+          - textbox "Your email" [ref=e214]
+          - button "Subscribe ↗" [ref=e215] [cursor=pointer]
+        - text: No spam. Unsubscribe any time.
+  - contentinfo [ref=e216]:
+    - generic [ref=e217]:
+      - link "Wanders Nepal home" [ref=e218] [cursor=pointer]:
+        - /url: /
+        - img "Wanders Nepal" [ref=e219]
+        - generic [ref=e220]: Discover Nepal beyond the obvious.
+      - generic [ref=e221]:
+        - generic [ref=e222]:
+          - strong [ref=e223]: Explore
+          - link "Destinations" [ref=e224] [cursor=pointer]:
+            - /url: /destinations
+          - link "Trekking" [ref=e225] [cursor=pointer]:
+            - /url: /trekking
+          - link "Routes" [ref=e226] [cursor=pointer]:
+            - /url: /routes
+          - link "Itineraries" [ref=e227] [cursor=pointer]:
+            - /url: /itineraries
+          - link "Experiences" [ref=e228] [cursor=pointer]:
+            - /url: /experiences
+        - generic [ref=e229]:
+          - strong [ref=e230]: Plan
+          - link "Travel guide" [ref=e231] [cursor=pointer]:
+            - /url: /travel-guide
+          - link "Transport" [ref=e232] [cursor=pointer]:
+            - /url: /travel-guide/nepal-transportation
+          - link "Cost calculator" [ref=e233] [cursor=pointer]:
+            - /url: /tools/nepal-trip-cost
+          - link "Packing" [ref=e234] [cursor=pointer]:
+            - /url: /travel-guide/nepal-packing-list
+          - link "Visa" [ref=e235] [cursor=pointer]:
+            - /url: /travel-guide/nepal-visa
+        - generic [ref=e236]:
+          - strong [ref=e237]: Discover
+          - link "Culture" [ref=e238] [cursor=pointer]:
+            - /url: /culture
+          - link "Food" [ref=e239] [cursor=pointer]:
+            - /url: /culture#food
+          - link "Wildlife" [ref=e240] [cursor=pointer]:
+            - /url: /wildlife
+          - link "Responsible travel" [ref=e241] [cursor=pointer]:
+            - /url: /responsible-travel
+        - generic [ref=e242]:
+          - strong [ref=e243]: Wanders
+          - link "About" [ref=e244] [cursor=pointer]:
+            - /url: /about
+          - link "Reviews" [ref=e245] [cursor=pointer]:
+            - /url: /reviews
+          - link "Editorial policy" [ref=e246] [cursor=pointer]:
+            - /url: /editorial-policy
+          - link "Contact" [ref=e247] [cursor=pointer]:
+            - /url: /contact
+          - link "Corrections" [ref=e248] [cursor=pointer]:
+            - /url: /corrections
+          - link "Privacy" [ref=e249] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e250] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=e251]:
+      - generic [ref=e252]: Independent Nepal travel planning
+      - generic [ref=e253]: "Last site update: September 2026"
+      - generic [ref=e254]: © 2026 Wanders Nepal

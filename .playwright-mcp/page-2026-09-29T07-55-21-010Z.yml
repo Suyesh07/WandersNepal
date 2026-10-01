@@ -1,0 +1,411 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - link "Wanders Nepal home" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img "Wanders Nepal" [ref=e5]
+    - button "Open menu" [ref=e6] [cursor=pointer]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - img "Trekking route through the Everest region toward Everest Base Camp" [ref=e12]
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - link "Home" [ref=e15] [cursor=pointer]:
+            - /url: /
+          - text: /
+          - link "Trekking" [ref=e16] [cursor=pointer]:
+            - /url: /trekking
+          - text: /
+          - link "Everest Base Camp Trek" [ref=e17] [cursor=pointer]:
+            - /url: /treks/everest-base-camp
+        - paragraph [ref=e18]: Everest trek
+        - heading "Everest Base Camp Trek" [level=1] [ref=e19]
+        - paragraph [ref=e20]: A high-altitude journey through Sherpa country to the foot of the Khumbu Icefall, paced around acclimatisation rather than speed.
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]: Duration
+            - strong [ref=e24]: 12–16 days
+          - generic [ref=e25]:
+            - generic [ref=e26]: Difficulty
+            - strong [ref=e27]: Challenging
+          - generic [ref=e28]:
+            - generic [ref=e29]: Max altitude
+            - strong [ref=e30]: Approx. 5,550 m (Kala Patthar)
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]: Duration
+        - strong [ref=e34]: 12–16 days
+      - generic [ref=e35]:
+        - generic [ref=e36]: Difficulty
+        - strong [ref=e37]: Challenging
+      - generic [ref=e38]:
+        - generic [ref=e39]: Max altitude
+        - strong [ref=e40]: Approx. 5,550 m (Kala Patthar)
+      - generic [ref=e41]:
+        - generic [ref=e42]: Distance
+        - strong [ref=e43]: Approx. 130 km return
+      - generic [ref=e44]:
+        - generic [ref=e45]: Start
+        - strong [ref=e46]: Lukla
+      - generic [ref=e47]:
+        - generic [ref=e48]: Best season
+        - strong [ref=e49]: March–May · October–November
+    - generic [ref=e50]:
+      - complementary "On this page" [ref=e51]:
+        - link "14-day itinerary" [ref=e52] [cursor=pointer]:
+          - /url: "#itinerary"
+        - link "EBC altitude explanation" [ref=e53] [cursor=pointer]:
+          - /url: "#altitude-explanation"
+        - link "EBC weather" [ref=e54] [cursor=pointer]:
+          - /url: "#weather"
+        - link "Everest Base Camp Helicopter Trek" [ref=e55] [cursor=pointer]:
+          - /url: "#helicopter-trek"
+        - link "Himalayan Base Camp Trek | FAQ" [ref=e56] [cursor=pointer]:
+          - /url: "#faq"
+      - article [ref=e57]:
+        - generic [ref=e58]:
+          - heading "Everest Base Camp Trek Itinerary" [level=2] [ref=e59]
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - 'heading "Day 1: Arrival in Kathmandu (1,400 m / 4,593 ft)" [level=3] [ref=e62]'
+              - generic [ref=e63]: Easy
+            - paragraph [ref=e64]: Your journey starts with landing at Tribhuvan International Airport in Kathmandu, followed by a transfer to your hotel. Use this day to rest, meet your guide and get ready for the trek ahead. Overnight at a 3-star hotel in Kathmandu.
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - 'heading "Day 2: Kathmandu to Phakding via Lukla (2,610 m / 8,563 ft)" [level=3] [ref=e67]'
+              - generic [ref=e68]: Easy
+            - paragraph [ref=e69]: The trek officially begins with a 35-minute flight from Kathmandu to Lukla (2,860 m / 9,383 ft), the gateway to the Khumbu region. Alternatively, drive 5–6 hours by shared tourist vehicle to Manthali/Ramechhap (474 m / 1,555 ft), followed by a 20-minute flight to Lukla. From there, walk 3–4 hours to Phakding, passing Sherpa villages and mountain scenery. Overnight at a guesthouse in Phakding.
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - 'heading "Day 3: Phakding to Namche Bazaar (3,440 m / 11,286 ft)" [level=3] [ref=e72]'
+              - generic [ref=e73]: Hard
+            - paragraph [ref=e74]: Today's 5–6 hour walk takes you into Sagarmatha National Park and across several suspension bridges over the Dudh Koshi River, ending in Namche Bazaar, the busy trading town that serves as the hub of the Khumbu. Overnight at a guesthouse in Namche Bazaar.
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - 'heading "Day 4: Acclimatization Day in Namche Bazaar (3,440 m / 11,286 ft)" [level=3] [ref=e77]'
+              - generic [ref=e78]: Moderate
+            - paragraph [ref=e79]: This is a rest day built around altitude adjustment, with an optional 4–5 hour hike up to Hotel Everest View (3,880 m / 12,730 ft) for your first real look at Everest. Overnight at a guesthouse in Namche Bazaar.
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - 'heading "Day 5: Namche Bazaar to Tengboche (3,860 m / 12,664 ft)" [level=3] [ref=e82]'
+              - generic [ref=e83]: Moderate
+            - paragraph [ref=e84]: A 5–6 hour walk through rhododendron forest brings you to Tengboche, known for its monastery and mountain views, including Ama Dablam and Everest. Overnight at a guesthouse in Tengboche.
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - 'heading "Day 6: Tengboche to Dingboche (4,410 m / 14,469 ft)" [level=3] [ref=e87]'
+              - generic [ref=e88]: Moderate
+            - paragraph [ref=e89]: The trail climbs into more open terrain on this 5–6 hour stretch to Dingboche, a small village surrounded by some of the highest peaks in the world. Overnight at a guesthouse in Dingboche.
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - 'heading "Day 7: Acclimatization Day in Dingboche (4,410 m / 14,469 ft)" [level=3] [ref=e92]'
+              - generic [ref=e93]: Moderate
+            - paragraph [ref=e94]: Take a rest day, with the option to hike to Nangkartsang Peak (5,083 m / 16,676 ft) for views of Makalu, Lhotse and the Imja Valley. The round trip takes about 4–5 hours. Overnight at a guesthouse in Dingboche.
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - 'heading "Day 8: Dingboche to Lobuche (4,910 m / 16,109 ft)" [level=3] [ref=e97]'
+              - generic [ref=e98]: Hard
+            - paragraph [ref=e99]: This 5–6 hour day crosses rugged high-altitude terrain. Pass memorials for climbers who died attempting Everest, a quiet reminder of the mountain's scale. Overnight at a guesthouse in Lobuche.
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - 'heading "Day 9: Lobuche to Everest Base Camp (5,364 m / 17,598 ft) via Gorak Shep" [level=3] [ref=e102]'
+              - generic [ref=e103]: Hard
+            - paragraph [ref=e104]: This is the day many trekkers have been waiting for. Trek from Lobuche to Gorak Shep, continue to Everest Base Camp, then return to Gorak Shep for the night. Allow 8–9 hours for the trek and return. Overnight at a guesthouse in Gorak Shep.
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - 'heading "Day 10: Kala Patthar (about 5,550 m / 18,209 ft) to Pheriche (4,240 m / 13,911 ft)" [level=3] [ref=e107]'
+              - generic [ref=e108]: Hard
+            - paragraph [ref=e109]: An early start takes you to Kala Patthar for sunrise, widely considered one of the best viewpoints of Everest's summit on the trek, before descending to Pheriche. Allow roughly 7–8 hours in total. Overnight at a guesthouse in Pheriche.
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - 'heading "Day 11: Pheriche to Namche Bazaar (3,440 m / 11,286 ft)" [level=3] [ref=e112]'
+              - generic [ref=e113]: Hard
+            - paragraph [ref=e114]: From here, the route is mostly downhill. Walk 7–8 hours back through familiar villages to Namche Bazaar. Overnight at a guesthouse in Namche Bazaar.
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - 'heading "Day 12: Namche Bazaar to Lukla (2,860 m / 9,383 ft)" [level=3] [ref=e117]'
+              - generic [ref=e118]: Hard
+            - paragraph [ref=e119]: The last full day of trekking covers 7–8 hours back to Lukla, where the walking part of the journey wraps up. Overnight at a guesthouse in Lukla.
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - 'heading "Day 13: Lukla to Kathmandu" [level=3] [ref=e122]'
+              - generic [ref=e123]: Moderate
+            - paragraph [ref=e124]: A 35-minute flight takes you from Lukla back to Kathmandu. Alternatively, take a 20-minute flight to Manthali/Ramechhap, followed by a 5–6 hour drive to Kathmandu by shared tourist vehicle. Overnight at a 3-star hotel in Kathmandu.
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - 'heading "Day 14: Final Departure" [level=3] [ref=e127]'
+              - generic [ref=e128]: Easy
+            - paragraph [ref=e129]: Transfer to Tribhuvan International Airport for your flight home, bringing the trip to a close.
+        - generic [ref=e130]:
+          - heading "Everest Altitude" [level=2] [ref=e131]
+          - paragraph [ref=e132]: The route climbs from Kathmandu (1,400 m) to Everest Base Camp (5,364 m / 17,598 ft), then reaches its highest point at Kala Patthar (about 5,550 m / 18,209 ft) before descending to Lukla (2,860 m / 9,383 ft). The itinerary includes acclimatization days in Namche Bazaar and Dingboche. Elevations are approximate and can vary slightly by source.
+          - figure [ref=e133]:
+            - img "Everest Base Camp route altitude profile" [ref=e135]:
+              - generic [aria-hidden] [ref=e136]:
+                - generic [ref=e137]: 5k
+                - generic [ref=e138]: 10k
+                - generic [ref=e139]: 15k
+                - generic [ref=e140]: 18k ft
+              - generic [ref=e143]:
+                - 'img "Day 1, Kathmandu: 4,593 feet, 1,400 meters" [ref=e144] [cursor=pointer]'
+                - 'img "Day 2, Phakding: 8,563 feet, 2,610 meters" [ref=e146] [cursor=pointer]'
+                - 'img "Day 3, Namche Bazaar: 11,286 feet, 3,440 meters" [ref=e148] [cursor=pointer]'
+                - 'img "Day 4, acclimatization in Namche Bazaar: 11,286 feet, 3,440 meters" [ref=e150] [cursor=pointer]'
+                - 'img "Day 5, Tengboche: 12,664 feet, 3,860 meters" [ref=e152] [cursor=pointer]'
+                - 'img "Day 6, Dingboche: 14,469 feet, 4,410 meters" [ref=e154] [cursor=pointer]'
+                - 'img "Day 7, acclimatization in Dingboche: 14,469 feet, 4,410 meters" [ref=e156] [cursor=pointer]'
+                - 'img "Day 8, Lobuche: 16,109 feet, 4,910 meters" [ref=e158] [cursor=pointer]'
+                - 'img "Day 9, Everest Base Camp: 17,598 feet, 5,364 meters" [ref=e160] [cursor=pointer]'
+                - 'img "Day 10, Kala Patthar: about 18,209 feet, 5,550 meters" [ref=e162] [cursor=pointer]'
+                - 'img "Day 11, Pheriche: 13,911 feet, 4,240 meters" [ref=e164] [cursor=pointer]'
+                - 'img "Day 12, Namche Bazaar: 11,286 feet, 3,440 meters" [ref=e166] [cursor=pointer]'
+                - 'img "Day 13, Lukla: 9,383 feet, 2,860 meters" [ref=e168] [cursor=pointer]'
+              - generic [aria-hidden] [ref=e170]:
+                - generic [ref=e171]: "1"
+                - generic [ref=e172]: "2"
+                - generic [ref=e173]: "3"
+                - generic [ref=e174]: "4"
+                - generic [ref=e175]: "5"
+                - generic [ref=e176]: "6"
+                - generic [ref=e177]: "7"
+                - generic [ref=e178]: "8"
+                - generic [ref=e179]: "9"
+                - generic [ref=e180]: "10"
+                - generic [ref=e181]: "11"
+                - generic [ref=e182]: "12"
+                - generic [ref=e183]: "13"
+            - generic [ref=e184]:
+              - paragraph [ref=e185]: Day number along the horizontal axis
+              - generic [ref=e186]:
+                - generic [ref=e187]: Route elevation
+                - generic [ref=e189]: Acclimatization day
+          - table [ref=e192]:
+            - rowgroup [ref=e193]:
+              - row [ref=e194]:
+                - columnheader "Day" [ref=e195]
+                - columnheader "Stop" [ref=e196]
+                - columnheader "Altitude" [ref=e197]
+                - columnheader "Note" [ref=e198]
+            - rowgroup [ref=e199]:
+              - row [ref=e200]:
+                - cell "1" [ref=e201]
+                - cell "Kathmandu" [ref=e202]
+                - cell "4,593 ft / 1,400 m" [ref=e203]
+                - cell [ref=e204]
+              - row [ref=e205]:
+                - cell "2" [ref=e206]
+                - cell "Phakding" [ref=e207]
+                - cell "8,563 ft / 2,610 m" [ref=e208]
+                - cell [ref=e209]
+              - row [ref=e210]:
+                - cell "3" [ref=e211]
+                - cell "Namche Bazaar" [ref=e212]
+                - cell "11,286 ft / 3,440 m" [ref=e213]
+                - cell [ref=e214]
+              - row [ref=e215]:
+                - cell "4" [ref=e216]
+                - cell "Namche Bazaar" [ref=e217]
+                - cell "11,286 ft / 3,440 m" [ref=e218]
+                - cell "Acclimatization" [ref=e219]
+              - row [ref=e220]:
+                - cell "5" [ref=e221]
+                - cell "Tengboche" [ref=e222]
+                - cell "12,664 ft / 3,860 m" [ref=e223]
+                - cell [ref=e224]
+              - row [ref=e225]:
+                - cell "6" [ref=e226]
+                - cell "Dingboche" [ref=e227]
+                - cell "14,469 ft / 4,410 m" [ref=e228]
+                - cell [ref=e229]
+              - row [ref=e230]:
+                - cell "7" [ref=e231]
+                - cell "Dingboche" [ref=e232]
+                - cell "14,469 ft / 4,410 m" [ref=e233]
+                - cell "Acclimatization" [ref=e234]
+              - row [ref=e235]:
+                - cell "8" [ref=e236]
+                - cell "Lobuche" [ref=e237]
+                - cell "16,109 ft / 4,910 m" [ref=e238]
+                - cell [ref=e239]
+              - row [ref=e240]:
+                - cell "9" [ref=e241]
+                - cell "Everest Base Camp" [ref=e242]
+                - cell "17,598 ft / 5,364 m" [ref=e243]
+                - cell [ref=e244]
+              - row [ref=e245]:
+                - cell "10" [ref=e246]
+                - cell "Kala Patthar" [ref=e247]
+                - cell "18,209 ft / about 5,550 m" [ref=e248]
+                - cell "High point" [ref=e249]
+              - row [ref=e250]:
+                - cell "11" [ref=e251]
+                - cell "Pheriche" [ref=e252]
+                - cell "13,911 ft / 4,240 m" [ref=e253]
+                - cell [ref=e254]
+              - row [ref=e255]:
+                - cell "12" [ref=e256]
+                - cell "Namche Bazaar" [ref=e257]
+                - cell "11,286 ft / 3,440 m" [ref=e258]
+                - cell [ref=e259]
+              - row [ref=e260]:
+                - cell "13" [ref=e261]
+                - cell "Lukla" [ref=e262]
+                - cell "9,383 ft / 2,860 m" [ref=e263]
+                - cell [ref=e264]
+          - paragraph [ref=e265]:
+            - text: For official Nepal travel information, visit the
+            - link "Nepal Tourism Board" [ref=e266] [cursor=pointer]:
+              - /url: https://ntb.gov.np/
+            - text: .
+        - generic [ref=e267]:
+          - heading "Weather Everest Base Camp" [level=2] [ref=e268]
+          - paragraph [ref=e269]: Compare the source sheet's daily minimum and maximum temperatures by month across the 13-day route.
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - generic [ref=e272]: Month
+              - combobox "Month" [ref=e273]:
+                - option "January"
+                - option "February"
+                - option "March"
+                - option "April"
+                - option "May"
+                - option "June"
+                - option "July"
+                - option "August"
+                - option "September"
+                - option "October" [selected]
+                - option "November"
+                - option "December"
+            - generic [ref=e274]: Daily temperature range · °C
+          - figure [ref=e275]:
+            - img "Daily minimum and maximum temperatures for October" [ref=e277]:
+              - generic [aria-hidden] [ref=e278]:
+                - generic [ref=e279]: 30°
+                - generic [ref=e280]: 20°
+                - generic [ref=e281]: 10°
+                - generic [ref=e282]: 0°
+                - generic [ref=e283]: −10°
+                - generic [ref=e284]: −20°
+                - generic [ref=e285]: −30°
+              - generic [ref=e286]: Temperature (°C)
+              - generic [ref=e289]:
+                - 'img "Day 1, Kathmandu: minimum 13 degrees, maximum 26 degrees Celsius; reference altitude 1,300 m / 4,265 ft" [ref=e290] [cursor=pointer]'
+                - 'img "Day 2, Phakding: minimum 5 degrees, maximum 18 degrees Celsius; reference altitude 2,651 m / 8,697 ft" [ref=e293] [cursor=pointer]'
+                - 'img "Day 3, Namche Bazaar: minimum 2 degrees, maximum 14 degrees Celsius; reference altitude 3,440 m / 11,286 ft" [ref=e296] [cursor=pointer]'
+                - 'img "Day 4, Namche Bazaar · acclimatization: minimum 2 degrees, maximum 14 degrees Celsius; reference altitude 3,700 m / 12,139 ft" [ref=e299] [cursor=pointer]'
+                - 'img "Day 5, Tengboche: minimum -5 degrees, maximum 15 degrees Celsius; reference altitude 3,956 m / 12,979 ft" [ref=e302] [cursor=pointer]'
+                - 'img "Day 6, Dingboche: minimum -11 degrees, maximum 10 degrees Celsius; reference altitude 4,380 m / 14,370 ft" [ref=e305] [cursor=pointer]'
+                - 'img "Day 7, Dingboche · acclimatization: minimum -11 degrees, maximum 10 degrees Celsius; reference altitude 4,380 m / 14,370 ft" [ref=e308] [cursor=pointer]'
+                - 'img "Day 8, Lobuche: minimum -15 degrees, maximum 12 degrees Celsius; reference altitude 4,938 m / 16,200 ft" [ref=e311] [cursor=pointer]'
+                - 'img "Day 9, Gorak Shep / Everest Base Camp day: minimum -10 degrees, maximum 10 degrees Celsius; reference altitude 5,160 m / 16,929 ft" [ref=e314] [cursor=pointer]'
+                - 'img "Day 10, Kala Patthar / Pheriche day: minimum -10 degrees, maximum 10 degrees Celsius; reference altitude 4,371 m / 14,340 ft" [ref=e317] [cursor=pointer]'
+                - 'img "Day 11, Namche Bazaar: minimum 2 degrees, maximum 14 degrees Celsius; reference altitude 3,440 m / 11,286 ft" [ref=e320] [cursor=pointer]'
+                - 'img "Day 12, Lukla: minimum 6 degrees, maximum 18 degrees Celsius; reference altitude 2,860 m / 9,383 ft" [ref=e323] [cursor=pointer]'
+                - 'img "Day 13, Kathmandu: minimum 13 degrees, maximum 26 degrees Celsius; reference altitude 1,300 m / 4,265 ft" [ref=e326] [cursor=pointer]'
+              - generic [aria-hidden] [ref=e329]:
+                - generic [ref=e330]: "1"
+                - generic [ref=e331]: "2"
+                - generic [ref=e332]: "3"
+                - generic [ref=e333]: "4"
+                - generic [ref=e334]: "5"
+                - generic [ref=e335]: "6"
+                - generic [ref=e336]: "7"
+                - generic [ref=e337]: "8"
+                - generic [ref=e338]: "9"
+                - generic [ref=e339]: "10"
+                - generic [ref=e340]: "11"
+                - generic [ref=e341]: "12"
+                - generic [ref=e342]: "13"
+            - generic [ref=e343]:
+              - paragraph [ref=e344]: Day number along the horizontal axis
+              - generic [ref=e345]:
+                - generic [ref=e346]: Minimum
+                - generic [ref=e348]: Maximum
+                - generic [ref=e350]: Source check
+        - generic [ref=e352]:
+          - heading "Everest Base Camp Helicopter Tour" [level=2] [ref=e353]
+          - figure:
+            - img "Everest Base Camp helicopter tour"
+          - paragraph [ref=e354]: Depart early in the morning, when skies are often clearer for mountain views. A comfortable 3–4-seat helicopter takes you over a panorama that may include Manaslu, Ganesh Himal, Langtang, Jugal Himal, Cho Oyu, Everest and Makalu.
+          - paragraph [ref=e355]: After about an hour, the tour may stop in Lukla for refreshments before continuing toward Namche Bazaar and Everest View Hotel. Depending on weather, aircraft performance and permissions, the route may include a brief stop near Kala Patthar (5,545 m / 18,192 ft) and a flyover near Everest Base Camp (about 5,364 m / 17,598 ft), with views of the Khumbu Icefall and glacier.
+          - paragraph [ref=e356]: The return may include a short stop near Tengboche Monastery, surrounded by forest and high peaks, followed by views over Namche Bazaar and Lukla before landing in Kathmandu. A vehicle transfer returns you to your hotel. Stops and flight paths can change with weather and operating conditions.
+        - generic [ref=e357]:
+          - heading "Everest Base Camp Trek FAQ" [level=2] [ref=e358]
+          - heading "How high is Everest Base Camp?" [level=3] [ref=e359]
+          - paragraph [ref=e360]: Everest Base Camp is about 5,364 m (17,598 ft) above sea level.
+          - heading "What should I pack for the Everest Base Camp Trek?" [level=3] [ref=e361]
+          - paragraph [ref=e362]: Pack a backpack, hiking boots, down jacket, rain or windproof jacket, camp shoes, socks, trekking trousers, thermal wear, shirts or T-shirts, gloves, hat, sunglasses, sleeping bag, water bottle and purifier, trekking poles, gaiters, microspikes, map, other personal essentials, a medical kit, and clinic and health-post information.
+          - heading "How much money should I take on the Everest Base Camp Trek?" [level=3] [ref=e363]
+          - paragraph [ref=e364]: A standard all-inclusive 12- to 14-day guided Everest Base Camp trek package typically costs between $1,200 and $1,800 USD, or NPR 160,000 to NPR 240,000. Trekkers should also budget an extra $300 to $500 USD in physical cash for personal expenses on the trail.
+    - generic [ref=e365]:
+      - generic [ref=e366]:
+        - paragraph [ref=e367]: Monthly field notes
+        - heading "Get Nepal Route Notes" [level=2] [ref=e368]
+      - generic [ref=e369]:
+        - paragraph [ref=e370]: Monthly routes, seasonal advice and places worth taking slowly.
+        - generic [ref=e371]:
+          - generic [ref=e372]: Your email
+          - textbox "Your email" [ref=e373]
+          - button "Subscribe ↗" [ref=e374] [cursor=pointer]
+        - text: No spam. Unsubscribe any time.
+  - contentinfo [ref=e375]:
+    - generic [ref=e376]:
+      - link "Wanders Nepal home" [ref=e377] [cursor=pointer]:
+        - /url: /
+        - img "Wanders Nepal" [ref=e378]
+        - generic [ref=e379]: Discover Nepal beyond the obvious.
+      - generic [ref=e380]:
+        - generic [ref=e381]:
+          - strong [ref=e382]: Explore
+          - link "Destinations" [ref=e383] [cursor=pointer]:
+            - /url: /destinations
+          - link "Trekking" [ref=e384] [cursor=pointer]:
+            - /url: /trekking
+          - link "Routes" [ref=e385] [cursor=pointer]:
+            - /url: /routes
+          - link "Itineraries" [ref=e386] [cursor=pointer]:
+            - /url: /itineraries
+          - link "Experiences" [ref=e387] [cursor=pointer]:
+            - /url: /experiences
+        - generic [ref=e388]:
+          - strong [ref=e389]: Plan
+          - link "Travel guide" [ref=e390] [cursor=pointer]:
+            - /url: /travel-guide
+          - link "Transport" [ref=e391] [cursor=pointer]:
+            - /url: /travel-guide/nepal-transportation
+          - link "Cost calculator" [ref=e392] [cursor=pointer]:
+            - /url: /tools/nepal-trip-cost
+          - link "Packing" [ref=e393] [cursor=pointer]:
+            - /url: /travel-guide/nepal-packing-list
+          - link "Visa" [ref=e394] [cursor=pointer]:
+            - /url: /travel-guide/nepal-visa
+        - generic [ref=e395]:
+          - strong [ref=e396]: Discover
+          - link "Culture" [ref=e397] [cursor=pointer]:
+            - /url: /culture
+          - link "Food" [ref=e398] [cursor=pointer]:
+            - /url: /culture#food
+          - link "Wildlife" [ref=e399] [cursor=pointer]:
+            - /url: /wildlife
+          - link "Responsible travel" [ref=e400] [cursor=pointer]:
+            - /url: /responsible-travel
+        - generic [ref=e401]:
+          - strong [ref=e402]: Wanders
+          - link "About" [ref=e403] [cursor=pointer]:
+            - /url: /about
+          - link "Reviews" [ref=e404] [cursor=pointer]:
+            - /url: /reviews
+          - link "Editorial policy" [ref=e405] [cursor=pointer]:
+            - /url: /editorial-policy
+          - link "Contact" [ref=e406] [cursor=pointer]:
+            - /url: /contact
+          - link "Corrections" [ref=e407] [cursor=pointer]:
+            - /url: /corrections
+          - link "Privacy" [ref=e408] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e409] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=e410]:
+      - generic [ref=e411]: Independent Nepal travel planning
+      - generic [ref=e412]: "Last site update: September 2026"
+      - generic [ref=e413]: © 2026 Wanders Nepal

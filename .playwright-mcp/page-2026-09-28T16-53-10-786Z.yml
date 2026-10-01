@@ -1,0 +1,216 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - link "Wanders Nepal home" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img "Wanders Nepal" [ref=e5]
+    - navigation "Main navigation" [ref=e6]:
+      - link "Destinations" [ref=e7] [cursor=pointer]:
+        - /url: /destinations
+      - link "Trekking" [ref=e8] [cursor=pointer]:
+        - /url: /trekking
+      - link "Routes" [ref=e9] [cursor=pointer]:
+        - /url: /routes
+      - link "Itineraries" [ref=e10] [cursor=pointer]:
+        - /url: /itineraries
+      - link "Plan Nepal" [ref=e11] [cursor=pointer]:
+        - /url: /plan-nepal
+      - button "Search Wanders Nepal" [ref=e12] [cursor=pointer]
+      - link "Plan My Trip" [ref=e16] [cursor=pointer]:
+        - /url: /plan-my-trip
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - img "Everest Base Camp Trek landscape" [ref=e19]
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - link "Home" [ref=e22] [cursor=pointer]:
+            - /url: /
+          - text: /
+          - link "Trekking" [ref=e23] [cursor=pointer]:
+            - /url: /trekking
+          - text: /
+          - link "Everest Base Camp Trek" [ref=e24] [cursor=pointer]:
+            - /url: /treks/everest-base-camp
+        - paragraph [ref=e25]: Everest trek
+        - heading "Everest Base Camp Trek" [level=1] [ref=e26]
+        - paragraph [ref=e27]: A high-altitude journey through Sherpa country to the foot of the Khumbu Icefall, paced around acclimatisation rather than speed.
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: Duration
+            - strong [ref=e31]: 12–16 days
+          - generic [ref=e32]:
+            - generic [ref=e33]: Difficulty
+            - strong [ref=e34]: Challenging
+          - generic [ref=e35]:
+            - generic [ref=e36]: Max altitude
+            - strong [ref=e37]: 5,545 m (Kala Patthar)
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: Duration
+        - strong [ref=e41]: 12–16 days
+      - generic [ref=e42]:
+        - generic [ref=e43]: Difficulty
+        - strong [ref=e44]: Challenging
+      - generic [ref=e45]:
+        - generic [ref=e46]: Max altitude
+        - strong [ref=e47]: 5,545 m (Kala Patthar)
+      - generic [ref=e48]:
+        - generic [ref=e49]: Distance
+        - strong [ref=e50]: Approx. 130 km return
+      - generic [ref=e51]:
+        - generic [ref=e52]: Start
+        - strong [ref=e53]: Lukla
+      - generic [ref=e54]:
+        - generic [ref=e55]: Best season
+        - strong [ref=e56]: March–May · October–November
+    - generic [ref=e57]:
+      - complementary "On this page" [ref=e58]:
+        - paragraph [ref=e59]: On this page
+        - link "14-day itinerary" [ref=e60] [cursor=pointer]:
+          - /url: "#itinerary"
+      - article [ref=e61]:
+        - generic [ref=e62]:
+          - heading "14-Day Everest Base Camp Itinerary" [level=2] [ref=e63]
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - 'heading "Day 1: Arrival in Kathmandu (1,400 m / 4,593 ft)" [level=3] [ref=e66]'
+              - generic [ref=e67]: Easy
+            - paragraph [ref=e68]: Your journey starts with landing at Tribhuvan International Airport in Kathmandu, followed by a transfer to your hotel. Use this day to rest, meet your guide and get ready for the trek ahead. Overnight at a 3-star hotel in Kathmandu.
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - 'heading "Day 2: Kathmandu to Phakding via Lukla (2,610 m / 8,563 ft)" [level=3] [ref=e71]'
+              - generic [ref=e72]: Easy
+            - paragraph [ref=e73]: The trek officially begins with a 35-minute flight from Kathmandu to Lukla (2,840 m / 9,318 ft), the gateway to the Khumbu region. Alternatively, drive 5–6 hours by shared tourist vehicle to Manthali/Ramechhap (474 m / 1,555 ft), followed by a 20-minute flight to Lukla. From there, walk 3–4 hours to Phakding, passing Sherpa villages and mountain scenery. Overnight at a guesthouse in Phakding.
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - 'heading "Day 3: Phakding to Namche Bazaar (3,440 m / 11,286 ft)" [level=3] [ref=e76]'
+              - generic [ref=e77]: Hard
+            - paragraph [ref=e78]: Today's 5–6 hour walk takes you into Sagarmatha National Park and across several suspension bridges over the Dudh Koshi River, ending in Namche Bazaar, the busy trading town that serves as the hub of the Khumbu. Overnight at a guesthouse in Namche Bazaar.
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - 'heading "Day 4: Acclimatization Day in Namche Bazaar (3,440 m / 11,286 ft)" [level=3] [ref=e81]'
+              - generic [ref=e82]: Moderate
+            - paragraph [ref=e83]: This is a rest day built around altitude adjustment, with an optional 4–5 hour hike up to Hotel Everest View (3,880 m / 12,730 ft) for your first real look at Everest. Overnight at a guesthouse in Namche Bazaar.
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - 'heading "Day 5: Namche Bazaar to Tengboche (3,860 m / 12,664 ft)" [level=3] [ref=e86]'
+              - generic [ref=e87]: Moderate
+            - paragraph [ref=e88]: A 5–6 hour walk through rhododendron forest brings you to Tengboche, known for its monastery and mountain views, including Ama Dablam and Everest. Overnight at a guesthouse in Tengboche.
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - 'heading "Day 6: Tengboche to Dingboche (4,410 m / 14,469 ft)" [level=3] [ref=e91]'
+              - generic [ref=e92]: Moderate
+            - paragraph [ref=e93]: The trail climbs into more open terrain on this 5–6 hour stretch to Dingboche, a small village surrounded by some of the highest peaks in the world. Overnight at a guesthouse in Dingboche.
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - 'heading "Day 7: Acclimatization Day in Dingboche (4,410 m / 14,469 ft)" [level=3] [ref=e96]'
+              - generic [ref=e97]: Moderate
+            - paragraph [ref=e98]: Take a rest day, with the option to hike to Nangkartsang Peak (5,083 m / 16,676 ft) for views of Makalu, Lhotse and the Imja Valley. The round trip takes about 4–5 hours. Overnight at a guesthouse in Dingboche.
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - 'heading "Day 8: Dingboche to Lobuche (4,910 m / 16,109 ft)" [level=3] [ref=e101]'
+              - generic [ref=e102]: Hard
+            - paragraph [ref=e103]: This 5–6 hour day crosses rugged high-altitude terrain. Pass memorials for climbers who died attempting Everest, a quiet reminder of the mountain's scale. Overnight at a guesthouse in Lobuche.
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - 'heading "Day 9: Lobuche to Everest Base Camp (5,364 m / 17,598 ft) via Gorak Shep" [level=3] [ref=e106]'
+              - generic [ref=e107]: Hard
+            - paragraph [ref=e108]: This is the day many trekkers have been waiting for. Trek from Lobuche to Gorak Shep, continue to Everest Base Camp, then return to Gorak Shep for the night. Allow 8–9 hours for the trek and return. Overnight at a guesthouse in Gorak Shep.
+          - generic [ref=e109]:
+            - generic [ref=e110]:
+              - 'heading "Day 10: Kala Patthar (5,545 m / 18,192 ft) to Pheriche (4,240 m / 13,911 ft)" [level=3] [ref=e111]'
+              - generic [ref=e112]: Hard
+            - paragraph [ref=e113]: An early start takes you to Kala Patthar for sunrise, widely considered one of the best viewpoints of Everest's summit on the trek, before descending to Pheriche. Allow roughly 7–8 hours in total. Overnight at a guesthouse in Pheriche.
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - 'heading "Day 11: Pheriche to Namche Bazaar (3,440 m / 11,286 ft)" [level=3] [ref=e116]'
+              - generic [ref=e117]: Hard
+            - paragraph [ref=e118]: From here, the route is mostly downhill. Walk 7–8 hours back through familiar villages to Namche Bazaar. Overnight at a guesthouse in Namche Bazaar.
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - 'heading "Day 12: Namche Bazaar to Lukla (2,840 m / 9,318 ft)" [level=3] [ref=e121]'
+              - generic [ref=e122]: Hard
+            - paragraph [ref=e123]: The last full day of trekking covers 7–8 hours back to Lukla, where the walking part of the journey wraps up. Overnight at a guesthouse in Lukla.
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - 'heading "Day 13: Lukla to Kathmandu" [level=3] [ref=e126]'
+              - generic [ref=e127]: Moderate
+            - paragraph [ref=e128]: A 35-minute flight takes you from Lukla back to Kathmandu. Alternatively, take a 20-minute flight to Manthali/Ramechhap, followed by a 5–6 hour drive to Kathmandu by shared tourist vehicle. Overnight at a 3-star hotel in Kathmandu.
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - 'heading "Day 14: Final Departure" [level=3] [ref=e131]'
+              - generic [ref=e132]: Easy
+            - paragraph [ref=e133]: Transfer to Tribhuvan International Airport for your flight home, bringing the trip to a close.
+    - generic [ref=e134]:
+      - generic [ref=e135]:
+        - paragraph [ref=e136]: Monthly field notes
+        - heading "Get Nepal Route Notes" [level=2] [ref=e137]
+      - generic [ref=e138]:
+        - paragraph [ref=e139]: Monthly routes, seasonal advice and places worth taking slowly.
+        - generic [ref=e140]:
+          - generic [ref=e141]: Your email
+          - textbox "Your email" [ref=e142]
+          - button "Subscribe ↗" [ref=e143] [cursor=pointer]
+        - text: No spam. Unsubscribe any time.
+  - contentinfo [ref=e144]:
+    - generic [ref=e145]:
+      - link "Wanders Nepal home" [ref=e146] [cursor=pointer]:
+        - /url: /
+        - img "Wanders Nepal" [ref=e147]
+        - generic [ref=e148]: Discover Nepal beyond the obvious.
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - strong [ref=e151]: Explore
+          - link "Destinations" [ref=e152] [cursor=pointer]:
+            - /url: /destinations
+          - link "Trekking" [ref=e153] [cursor=pointer]:
+            - /url: /trekking
+          - link "Routes" [ref=e154] [cursor=pointer]:
+            - /url: /routes
+          - link "Itineraries" [ref=e155] [cursor=pointer]:
+            - /url: /itineraries
+          - link "Experiences" [ref=e156] [cursor=pointer]:
+            - /url: /experiences
+        - generic [ref=e157]:
+          - strong [ref=e158]: Plan
+          - link "Travel guide" [ref=e159] [cursor=pointer]:
+            - /url: /travel-guide
+          - link "Transport" [ref=e160] [cursor=pointer]:
+            - /url: /travel-guide/nepal-transportation
+          - link "Cost calculator" [ref=e161] [cursor=pointer]:
+            - /url: /tools/nepal-trip-cost
+          - link "Packing" [ref=e162] [cursor=pointer]:
+            - /url: /travel-guide/nepal-packing-list
+          - link "Visa" [ref=e163] [cursor=pointer]:
+            - /url: /travel-guide/nepal-visa
+        - generic [ref=e164]:
+          - strong [ref=e165]: Discover
+          - link "Culture" [ref=e166] [cursor=pointer]:
+            - /url: /culture
+          - link "Food" [ref=e167] [cursor=pointer]:
+            - /url: /culture#food
+          - link "Wildlife" [ref=e168] [cursor=pointer]:
+            - /url: /wildlife
+          - link "Responsible travel" [ref=e169] [cursor=pointer]:
+            - /url: /responsible-travel
+        - generic [ref=e170]:
+          - strong [ref=e171]: Wanders
+          - link "About" [ref=e172] [cursor=pointer]:
+            - /url: /about
+          - link "Reviews" [ref=e173] [cursor=pointer]:
+            - /url: /reviews
+          - link "Editorial policy" [ref=e174] [cursor=pointer]:
+            - /url: /editorial-policy
+          - link "Contact" [ref=e175] [cursor=pointer]:
+            - /url: /contact
+          - link "Corrections" [ref=e176] [cursor=pointer]:
+            - /url: /corrections
+          - link "Privacy" [ref=e177] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e178] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=e179]:
+      - generic [ref=e180]: Independent Nepal travel planning
+      - generic [ref=e181]: "Last site update: September 2026"
+      - generic [ref=e182]: © 2026 Wanders Nepal

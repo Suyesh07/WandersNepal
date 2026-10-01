@@ -41,7 +41,7 @@
 
 ## Before production launch
 
-- Confirm the final production domain and replace `https://www.elsewherenepal.com` if needed.
+- Confirm the final production domain is `https://www.wandersnepal.com`.
 - Configure Netlify form notification recipients and test both forms after deployment.
 - Reverify changing visa, permit, transport and protected-area information immediately before launch.
 - Connect analytics and Search Console, then submit `/sitemap.xml`.

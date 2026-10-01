@@ -61,6 +61,38 @@
     ?.querySelectorAll("a")
     .forEach((link) => link.addEventListener("click", closeMenu));
 
+  const itineraryOptions = document.querySelectorAll(
+    "[data-itinerary-show]"
+  );
+  itineraryOptions.forEach((option) =>
+    option.addEventListener("click", () => {
+      const target = document.getElementById(option.dataset.itineraryShow);
+      if (!target) return;
+      itineraryOptions.forEach((item) => {
+        const active = item === option;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      document.querySelectorAll(".itinerary-view").forEach((view) => {
+        view.hidden = view !== target;
+      });
+      const alternateItinerary = document.querySelector(
+        "#everest-view-itinerary"
+      );
+      if (alternateItinerary)
+        alternateItinerary.hidden = alternateItinerary !== target;
+      target.scrollIntoView({
+        behavior: reduceMotion ? "auto" : "smooth",
+        block: "start",
+      });
+    })
+  );
+  const hashTarget = document.getElementById(window.location.hash.slice(1));
+  const hashOption = [...itineraryOptions].find(
+    (option) => option.dataset.itineraryShow === hashTarget?.id
+  );
+  hashOption?.click();
+
   const dialog = document.querySelector("#site-search");
   const searchInput = dialog?.querySelector("#global-search-input");
   const results = dialog?.querySelector("#global-search-results");
@@ -275,7 +307,7 @@
         '<div class="hero-actions"><a href="/destinations">Explore Nepal</a><a href="/plan-my-trip">Plan My Trip</a></div>'
       );
   }
-  if (journey && routePath && window.ELSEWHERE_JOURNEY && !reduceMotion) {
+  if (journey && routePath && window.WANDERS_NEPAL_JOURNEY && !reduceMotion) {
     const intro = journey.querySelector(".journey-intro");
     const panel = journey.querySelector(".journey-panel");
     const scrollNote = journey.querySelector(".journey-scroll");
@@ -290,7 +322,7 @@
     function updateStage(index) {
       if (index === active) return;
       active = index;
-      const stage = window.ELSEWHERE_JOURNEY[index];
+      const stage = window.WANDERS_NEPAL_JOURNEY[index];
       layers.forEach((layer, i) =>
         layer.classList.toggle("active", i === index)
       );
@@ -328,7 +360,7 @@
         0.9999,
         Math.max(0, (progress - 0.035) / 0.965)
       );
-      const index = Math.floor(stageProgress * window.ELSEWHERE_JOURNEY.length);
+      const index = Math.floor(stageProgress * window.WANDERS_NEPAL_JOURNEY.length);
       intro.classList.toggle("departed", departed);
       panel.classList.toggle("active", departed);
       scrollNote.classList.toggle("hidden", departed);

@@ -65,7 +65,7 @@ This package is a deploy-ready static website. It preserves the existing Wanders
 
 These items depend on the final host, business accounts or real-world verification and cannot be completed inside the ZIP:
 
-1. Confirm the final production domain and replace `https://www.elsewherenepal.com` if necessary.
+1. Confirm the final production domain is `https://www.wandersnepal.com`.
 2. Deploy once so Netlify can register the newsletter and contact forms, then configure recipients and test live submissions.
 3. Reverify current visa, permit, guide, transport, park and restricted-area rules with the linked official authorities.
 4. Connect the chosen analytics service and Google Search Console.
