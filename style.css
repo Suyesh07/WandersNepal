@@ -1577,6 +1577,9 @@ button {
 .altitude-legend-point.acclimatization {
   background: #80691f;
 }
+.altitude-legend-point.summit {
+  background: var(--coral);
+}
 .altitude-data {
   width: 100%;
   min-width: 520px;
