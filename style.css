@@ -20,7 +20,7 @@
 html {
   scroll-behavior: smooth;
 }
-article img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 1.5rem; }
+article img { max-width: 100%; height: auto; border-radius: 14px; margin-bottom: 1.5rem; }
 body {
   margin: 0;
   background: var(--paper);
@@ -553,14 +553,16 @@ button {
   left: var(--pad);
   right: var(--pad);
   bottom: 7rem;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.2);
+  height: 2px;
+  background: transparent;
 }
 .journey-progress span {
   display: block;
   width: 0;
   height: 2px;
   background: #f2c7a2;
+  border-radius: 999px;
+  box-shadow: 0 0 10px rgba(242, 199, 162, 0.8);
 }
 .journey-stats {
   position: absolute;
@@ -572,15 +574,15 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 0;
 }
 .journey-stats > div {
   min-height: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 2rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  padding-left: 1.5rem;
+  border-left: 0;
 }
 .journey-stats > div:first-child {
   padding-left: 0;
@@ -588,19 +590,19 @@ button {
 }
 .journey-stats span {
   margin-bottom: 0.5rem;
-  color: rgba(255, 255, 255, 0.48);
-  font-size: 0.57rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.58rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.18em;
 }
 .journey-stats strong {
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   letter-spacing: 0.05em;
 }
 .journey-stats strong b {
   color: #f2c7a2;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 .journey-scroll {
   position: absolute;
@@ -632,7 +634,7 @@ button {
   padding: var(--section) var(--pad);
 }
 .section + .section {
-  border-top: 1px solid var(--rule);
+  border-top: 0;
 }
 .section-dark {
   background: var(--ink);
@@ -713,8 +715,8 @@ button {
 .home-search {
   padding: clamp(3.5rem, 6vw, 5.5rem) var(--pad);
   background: radial-gradient(circle at 80% 20%, rgba(229, 108, 76, 0.08) 0%, transparent 55%), radial-gradient(circle at 10% 85%, rgba(80, 122, 113, 0.1) 0%, transparent 50%), linear-gradient(135deg, #fbf7ee 0%, #f4e8d8 50%, #ecd9c2 100%);
-  border-top: 1px solid rgba(20, 37, 32, 0.08);
-  border-bottom: 1px solid rgba(20, 37, 32, 0.08);
+  border-top: 0;
+  border-bottom: 0;
 }
 .home-search-content {
   max-width: 860px;
@@ -855,10 +857,11 @@ button {
   isolation: isolate;
   padding: 1.35rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
   background: var(--ink);
   color: var(--white);
   text-decoration: none;
-  transition: transform 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
 .choice-card::before {
   content: "";
@@ -883,6 +886,7 @@ button {
 .choice-card:hover {
   transform: translateY(-5px);
   color: var(--white);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 .choice-card:hover::before {
   transform: scale(1.08);
@@ -942,9 +946,12 @@ button {
   grid-column: span 4;
   isolation: isolate;
   overflow: hidden;
+  border-radius: 16px;
   color: var(--white);
   text-decoration: none;
   background: var(--ink);
+  box-shadow: 0 4px 18px rgba(20, 37, 32, 0.08);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .destination-card:nth-child(7n + 1),
 .destination-card:nth-child(7n + 5) {
@@ -955,7 +962,9 @@ button {
   position: absolute;
   inset: 0;
   z-index: -2;
+  width: 100%;
   height: 100%;
+  border-radius: 16px;
   object-fit: cover;
   transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1), filter 0.5s;
 }
@@ -964,11 +973,16 @@ button {
   position: absolute;
   inset: 0;
   z-index: -1;
+  border-radius: 16px;
   background: linear-gradient(
     0deg,
     rgba(7, 20, 17, 0.87),
     rgba(7, 20, 17, 0.08) 70%
   );
+}
+.destination-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(20, 37, 32, 0.18);
 }
 .destination-card:hover img {
   transform: scale(1.045);
@@ -986,7 +1000,10 @@ button {
   left: 1.1rem;
   min-width: 42px;
   padding: 0.55rem;
-  background: rgba(243, 239, 228, 0.88);
+  background: rgba(243, 239, 228, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 8px;
   color: var(--ink);
   text-align: center;
   font-size: 0.61rem;
@@ -1021,9 +1038,12 @@ button {
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  border: 1px solid var(--rule);
+  border: 1px solid rgba(20, 37, 32, 0.1);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(20, 37, 32, 0.03);
   text-decoration: none;
-  transition: transform 0.25s, border-color 0.25s;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s, box-shadow 0.25s;
 }
 [data-filter-value][hidden] {
   display: none !important;
@@ -1032,6 +1052,7 @@ button {
 .guide-card:hover {
   transform: translateY(-5px);
   border-color: var(--coral);
+  box-shadow: 0 12px 28px rgba(20, 37, 32, 0.08);
 }
 .route-card .route-line-mini {
   position: relative;
@@ -1094,12 +1115,15 @@ button {
   justify-content: space-between;
   padding: 1.35rem;
   border-top: 3px solid var(--coral);
+  border-radius: 14px;
   background: var(--white);
+  box-shadow: 0 2px 10px rgba(20, 37, 32, 0.03);
   text-decoration: none;
-  transition: transform 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
 .time-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(20, 37, 32, 0.08);
 }
 .time-card strong {
   font: 600 2.7rem/1 var(--display);
@@ -1112,11 +1136,17 @@ button {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   min-height: 650px;
+  margin: clamp(2.5rem, 5vw, 4.5rem) var(--pad);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(20, 37, 32, 0.12);
 }
 .editorial-image {
   min-height: 560px;
+  overflow: hidden;
 }
 .editorial-image img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -1378,8 +1408,9 @@ button {
 .article figure img {
   width: 100%;
   height: clamp(180px, 38vw, 360px);
-  border-radius: 2px;
+  border-radius: 14px;
   object-fit: cover;
+  box-shadow: 0 4px 20px rgba(20, 37, 32, 0.06);
 }
 .article figcaption {
   margin-top: 0.55rem;
@@ -1392,6 +1423,8 @@ button {
 }
 .article li figure img {
   height: clamp(160px, 30vw, 300px);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(20, 37, 32, 0.06);
 }
 .faq-list {
   display: grid;
@@ -1494,6 +1527,7 @@ button {
   padding: 0.85rem 1rem;
   border: 1px solid var(--day-border);
   border-left: 4px solid var(--day-accent);
+  border-radius: 0 12px 12px 0;
   background: var(--day-wash);
 }
 .itinerary-day--easy {
@@ -1535,6 +1569,7 @@ button {
   margin-top: 2rem;
   border: 1px solid var(--rule);
   border-left: 4px solid var(--coral);
+  border-radius: 0 12px 12px 0;
   background: rgba(255, 253, 247, 0.72);
 }
 .itinerary-alternative summary {
@@ -1617,7 +1652,8 @@ button {
 .info-card {
   padding: 1.25rem;
   border: 1px solid var(--rule);
-  background: rgba(255, 255, 255, 0.28);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.45);
 }
 .info-card span {
   display: block;
@@ -1640,6 +1676,7 @@ button {
   margin: 1.5rem 0;
   padding: 1.2rem 1.3rem;
   border-left: 3px solid var(--coral);
+  border-radius: 0 10px 10px 0;
   background: var(--mist);
   color: #32463f;
   line-height: 1.65;
@@ -1689,6 +1726,7 @@ button {
   padding: clamp(1.5rem, 4vw, 3rem);
   background: var(--ink);
   color: var(--white);
+  border-radius: 16px;
 }
 .route-stops {
   position: relative;
@@ -1740,6 +1778,7 @@ button {
   margin: 1.5rem 0 2rem;
   padding: 1rem 1rem 0.75rem;
   border: 1px solid var(--rule);
+  border-radius: 14px;
   background: rgba(255, 253, 247, 0.72);
 }
 .altitude-chart-scroll,
@@ -1906,7 +1945,7 @@ button {
   min-height: 2.5rem;
   padding: 0.5rem 2rem 0.5rem 0.7rem;
   border: 1px solid var(--rule);
-  border-radius: 0;
+  border-radius: 8px;
   background: var(--white);
   color: var(--ink);
   font-size: 0.76rem;
@@ -1920,6 +1959,7 @@ button {
   margin: 1rem 0 1.5rem;
   padding: 0.8rem 0.8rem 0.6rem;
   border: 1px solid var(--rule);
+  border-radius: 14px;
   background: rgba(255, 253, 247, 0.72);
 }
 .weather-chart-scroll {
@@ -2330,6 +2370,7 @@ button {
   width: 110px;
   height: 100px;
   object-fit: cover;
+  border-radius: 10px;
 }
 .search-result small {
   color: var(--coral);
@@ -2558,8 +2599,8 @@ button {
   align-items: center;
   padding: clamp(3.5rem, 6vw, 5.5rem) var(--pad);
   background: radial-gradient(circle at 85% 20%, rgba(229, 108, 76, 0.10) 0%, transparent 55%), radial-gradient(circle at 15% 85%, rgba(80, 122, 113, 0.12) 0%, transparent 50%), linear-gradient(135deg, #fbf7ee 0%, #f3e7d5 50%, #ead7be 100%);
-  border-top: 1px solid rgba(20, 37, 32, 0.08);
-  border-bottom: 1px solid rgba(20, 37, 32, 0.08);
+  border-top: 0;
+  border-bottom: 0;
   position: relative;
   overflow: hidden;
 }
