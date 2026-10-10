@@ -299,82 +299,125 @@
 
   const journey = document.querySelector("#journey");
   const routePath = document.querySelector("#route-progress");
-  if (journey && !journey.querySelector(".hero-actions")) {
-    journey
-      .querySelector(".hero-support")
-      ?.insertAdjacentHTML(
-        "afterend",
-        '<div class="hero-actions"><a href="/destinations">Explore Nepal</a><a href="/plan-my-trip">Plan My Trip</a></div>'
-      );
-  }
+
   if (journey && routePath && window.WANDERS_NEPAL_JOURNEY && !reduceMotion) {
     const intro = journey.querySelector(".journey-intro");
     const panel = journey.querySelector(".journey-panel");
     const scrollNote = journey.querySelector(".journey-scroll");
     const layers = [...journey.querySelectorAll("[data-stage-bg]")];
     const markers = [...journey.querySelectorAll("[data-route-marker]")];
+    const traveler = journey.querySelector("#route-traveler");
+    const progressBar = journey.querySelector("#journey-progress-bar");
     const length = routePath.getTotalLength();
+
     routePath.style.strokeDasharray = length;
     routePath.style.strokeDashoffset = length;
+
+    const stageCount = window.WANDERS_NEPAL_JOURNEY.length;
+    const stageRatios = stageCount > 1
+      ? Array.from({ length: stageCount }, (_, i) => i / (stageCount - 1))
+      : [0];
+
+    // Align all markers with sub-pixel mathematical precision directly on the SVG curve
+    markers.forEach((marker, i) => {
+      if (i < stageRatios.length) {
+        const pt = routePath.getPointAtLength(stageRatios[i] * length);
+        marker.setAttribute("transform", `translate(${pt.x.toFixed(1)} ${pt.y.toFixed(1)})`);
+      }
+    });
+
     let active = -1;
     let ticking = false;
     const roman = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
+
     function updateStage(index) {
-      if (index === active) return;
+      if (index === active || index < 0 || index >= stageCount) return;
       active = index;
       const stage = window.WANDERS_NEPAL_JOURNEY[index];
+
       layers.forEach((layer, i) =>
         layer.classList.toggle("active", i === index)
       );
-      markers.forEach((marker, i) => {
-        marker.classList.toggle("reached", i <= index);
-        marker.classList.toggle("current", i === index);
-      });
-      panel.classList.add("switching");
+
+      panel?.classList.add("switching");
       window.setTimeout(
         () => {
-          panel.querySelector("#stage-roman").textContent = roman[index];
-          panel.querySelector("#stage-chapter").textContent = stage.chapter;
-          panel.querySelector("#stage-place").textContent = stage.place;
-          panel.querySelector("#stage-title").textContent = stage.title;
-          panel.querySelector("#stage-note").textContent = stage.note;
-          journey.querySelector("#stat-distance").textContent = stage.distance;
-          journey.querySelector("#stat-time").textContent = stage.elevation;
-          journey.querySelector("#stat-climate").textContent = stage.climate;
-          journey.querySelector("#stage-number").textContent = String(
-            index + 1
-          ).padStart(2, "0");
+          if (!panel) return;
+          const romanEl = panel.querySelector("#stage-roman");
+          const chapterEl = panel.querySelector("#stage-chapter");
+          const placeEl = panel.querySelector("#stage-place");
+          const titleEl = panel.querySelector("#stage-title");
+          const noteEl = panel.querySelector("#stage-note");
+          const distEl = journey.querySelector("#stat-distance");
+          const timeEl = journey.querySelector("#stat-time");
+          const climEl = journey.querySelector("#stat-climate");
+          const numEl = journey.querySelector("#stage-number");
+
+          if (romanEl) romanEl.textContent = roman[index] || "";
+          if (chapterEl) chapterEl.textContent = stage.chapter;
+          if (placeEl) placeEl.textContent = stage.place;
+          if (titleEl) titleEl.textContent = stage.title;
+          if (noteEl) noteEl.textContent = stage.note;
+          if (distEl) distEl.textContent = stage.distance;
+          if (timeEl) timeEl.textContent = stage.elevation;
+          if (climEl) climEl.textContent = stage.climate;
+          if (numEl) numEl.textContent = String(index + 1).padStart(2, "0");
+
           panel.classList.remove("switching");
         },
-        active === -1 ? 0 : 150
+        active === -1 ? 0 : 120
       );
     }
+
     function updateJourney() {
       const distance = Math.max(1, journey.offsetHeight - window.innerHeight);
-      const progress = Math.min(
-        1,
-        Math.max(0, (window.scrollY - journey.offsetTop) / distance)
-      );
-      const departed = progress > 0.025;
-      const stageProgress = Math.min(
-        0.9999,
-        Math.max(0, (progress - 0.035) / 0.965)
-      );
-      const index = Math.floor(stageProgress * window.WANDERS_NEPAL_JOURNEY.length);
-      intro.classList.toggle("departed", departed);
-      panel.classList.toggle("active", departed);
-      scrollNote.classList.toggle("hidden", departed);
-      routePath.style.strokeDashoffset = length * (1 - progress);
-      journey.querySelector("#journey-progress-bar").style.width = `${
-        progress * 100
-      }%`;
+      const rawProgress = (window.scrollY - journey.offsetTop) / distance;
+      const progress = Math.min(1, Math.max(0, rawProgress));
+
+      const departed = progress > 0.02;
+      intro?.classList.toggle("departed", departed);
+      panel?.classList.toggle("active", departed);
+      scrollNote?.classList.toggle("hidden", departed);
+
+      // 1. Draw line to exact progress distance
+      const drawDist = progress * length;
+      routePath.style.strokeDashoffset = length - drawDist;
+
+      // 2. Move glowing traveler beacon precisely at the tip of the line
+      if (traveler) {
+        const currentPt = routePath.getPointAtLength(drawDist);
+        traveler.setAttribute("transform", `translate(${currentPt.x.toFixed(1)} ${currentPt.y.toFixed(1)})`);
+      }
+
+      if (progressBar) {
+        progressBar.style.width = `${progress * 100}%`;
+      }
+
       header?.classList.toggle(
         "scrolled-past",
         window.scrollY > journey.offsetHeight - 90
       );
-      updateStage(index);
+
+      // 3. Determine active stage: activates right as the line reaches each marker
+      let activeIndex = 0;
+      for (let i = 0; i < stageRatios.length; i++) {
+        if (progress >= stageRatios[i] - 0.035) {
+          activeIndex = i;
+        }
+      }
+
+      // 4. Update marker classes: reached as soon as line touches point
+      markers.forEach((marker, i) => {
+        const isReached = progress >= stageRatios[i] - 0.015;
+        const isCurrent = (i === activeIndex);
+        marker.classList.toggle("reached", isReached);
+        marker.classList.toggle("current", isCurrent);
+      });
+
+      updateStage(activeIndex);
       ticking = false;
     }
+
     window.addEventListener(
       "scroll",
       () => {

@@ -222,12 +222,25 @@
           </div>
           <div class="journey-shade" aria-hidden="true"></div>
           <div class="journey-intro">
-            <p>Wanders Nepal presents</p>
+            <div class="hero-pill-badge">
+              <span>🏔</span> Hand-Verified Field Guides · October 2026 Edition
+            </div>
             <h1>Nepal, Off-the<br /><em>Beaten-Path.</em></h1>
-            <span class="hero-support"
-              >Independent destination guides, Himalayan trekking routes, and practical travel
-              insights curated to help you explore Nepal with confidence, depth, and zero guesswork.</span
-            >
+            <p class="hero-support">
+              Independent destination guides, Himalayan trekking routes, and practical travel
+              insights curated to help you explore Nepal with confidence, depth, and zero guesswork.
+            </p>
+            <div class="hero-actions">
+              <a href="/destinations" class="hero-btn-primary">Explore Destinations →</a>
+              <a href="/routes" class="hero-btn-secondary">View Mountain Routes ↗</a>
+            </div>
+            <div class="hero-trust-bar">
+              <div class="trust-item"><strong>24+</strong><span>Trek Routes</span></div>
+              <span class="trust-dot">·</span>
+              <div class="trust-item"><strong>79</strong><span>In-Depth Guides</span></div>
+              <span class="trust-dot">·</span>
+              <div class="trust-item"><strong>100%</strong><span>Independent</span></div>
+            </div>
           </div>
           <div class="journey-panel" aria-live="polite">
             <div class="stage-heading">
@@ -245,41 +258,76 @@
           </div>
           <div class="journey-map" aria-hidden="true">
             <svg viewBox="0 0 760 860" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="route-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#e56c4c" />
+                  <stop offset="45%" stop-color="#f2c7a2" />
+                  <stop offset="100%" stop-color="#ffffff" />
+                </linearGradient>
+                <filter id="route-glow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="3.5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Mountain Ridgeline & Elevation Contours -->
+              <g class="himalayan-contours" opacity="0.16">
+                <path d="M50 820 Q 220 740 380 760 T 720 720" fill="none" stroke="currentColor" stroke-dasharray="3 8" stroke-width="1.2" />
+                <path d="M120 640 Q 280 570 440 600 T 740 520" fill="none" stroke="currentColor" stroke-dasharray="3 8" stroke-width="1.2" />
+                <path d="M220 460 Q 420 370 560 410 T 750 310" fill="none" stroke="currentColor" stroke-dasharray="3 8" stroke-width="1.2" />
+                <path d="M340 280 Q 500 180 640 220 T 750 120" fill="none" stroke="currentColor" stroke-dasharray="3 8" stroke-width="1.2" />
+              </g>
+
+              <!-- Peak & Landmark Labels -->
+              <g class="peak-markers" opacity="0.75" font-family="var(--sans)" font-size="11">
+                <text x="96" y="794" fill="rgba(255,255,255,0.7)" font-size="10.5" letter-spacing="1">Kathmandu · 1,400m</text>
+                <text x="390" y="318" fill="rgba(255,255,255,0.75)" font-size="10.5" letter-spacing="1">▲ Annapurna · 8,091m</text>
+                <text x="568" y="246" fill="rgba(255,255,255,0.75)" font-size="10.5" letter-spacing="1">▲ Mustang · 3,840m</text>
+                <text x="565" y="32" fill="#f2c7a2" font-size="11" font-weight="600" letter-spacing="1.2">▲ Mt. Everest · 8,848.86m</text>
+              </g>
+
+              <!-- Base Ghost Route -->
               <path
                 class="route-ghost"
                 d="M80 770 C180 710 100 625 245 580 S455 545 390 440 S235 330 420 285 S620 235 550 145 S650 65 700 28"
               />
+              <!-- Animated Glowing Progress Route -->
               <path
                 class="route-progress"
                 id="route-progress"
                 d="M80 770 C180 710 100 625 245 580 S455 545 390 440 S235 330 420 285 S620 235 550 145 S650 65 700 28"
               />
+
+              <!-- Stage Markers with Exact Mathematical Coordinates on the Curve -->
               <g class="route-markers">
                 <g data-route-marker="0" transform="translate(80 770)">
                   <circle r="15" />
                   <text>Ⅰ</text>
                 </g>
-                <g data-route-marker="1" transform="translate(196 618)">
+                <g data-route-marker="1" transform="translate(175.2 617.1)">
                   <circle r="15" />
                   <text>Ⅱ</text>
                 </g>
-                <g data-route-marker="2" transform="translate(358 548)">
+                <g data-route-marker="2" transform="translate(346 551.7)">
                   <circle r="15" />
                   <text>Ⅲ</text>
                 </g>
-                <g data-route-marker="3" transform="translate(390 440)">
+                <g data-route-marker="3" transform="translate(375.7 418.8)">
                   <circle r="15" />
                   <text>Ⅳ</text>
                 </g>
-                <g data-route-marker="4" transform="translate(320 324)">
+                <g data-route-marker="4" transform="translate(372.5 297.4)">
                   <circle r="15" />
                   <text>Ⅴ</text>
                 </g>
-                <g data-route-marker="5" transform="translate(538 263)">
+                <g data-route-marker="5" transform="translate(550.9 248.9)">
                   <circle r="15" />
                   <text>Ⅵ</text>
                 </g>
-                <g data-route-marker="6" transform="translate(550 145)">
+                <g data-route-marker="6" transform="translate(534.5 99.5)">
                   <circle r="15" />
                   <text>Ⅶ</text>
                 </g>
@@ -287,6 +335,12 @@
                   <circle r="15" />
                   <text>Ⅷ</text>
                 </g>
+              </g>
+
+              <!-- Dynamic Luminous Traveler Beacon Pin -->
+              <g id="route-traveler" class="route-traveler" transform="translate(80 770)">
+                <circle class="traveler-pulse" r="16" />
+                <circle class="traveler-core" r="6" />
               </g>
             </svg>
           </div>
@@ -313,14 +367,28 @@
       </section>
 
       <section class="home-search">
-        <h2>Where do you want to explore in Nepal?</h2>
-        <button class="search-launch" type="button" data-search-open>
-          <span>Search destinations, treks, itineraries, permits…</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="10.7" cy="10.7" r="6.8" />
-            <path d="m16 16 5 5" />
-          </svg>
-        </button>
+        <div class="home-search-content">
+          <p class="kicker">Search the complete archive</p>
+          <h2>Where do you want to explore in Nepal?</h2>
+          <button class="search-launch" type="button" data-search-open aria-label="Open search dialog">
+            <div class="search-launch-left">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.7" cy="10.7" r="6.8" />
+                <path d="m16 16 5 5" />
+              </svg>
+              <span>Search destinations, treks, itineraries, permits…</span>
+            </div>
+            <kbd class="search-shortcut">⌘K</kbd>
+          </button>
+          <div class="search-quick-tags">
+            <span class="quick-label">Trending:</span>
+            <button type="button" data-search-open data-term="Everest Base Camp">Everest Base Camp</button>
+            <button type="button" data-search-open data-term="Annapurna Circuit">Annapurna Circuit</button>
+            <button type="button" data-search-open data-term="Pokhara">Pokhara</button>
+            <button type="button" data-search-open data-term="Mustang">Mustang</button>
+            <button type="button" data-search-open data-term="Trekking Permits">Permits</button>
+          </div>
+        </div>
       </section>
 
       <section class="section">
