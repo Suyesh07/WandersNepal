@@ -1000,7 +1000,7 @@ button {
 }
 .destination-card {
   position: relative;
-  min-height: 420px;
+  min-height: 380px;
   grid-column: span 4;
   isolation: isolate;
   overflow: hidden;
@@ -1014,7 +1014,7 @@ button {
 .destination-card:nth-child(7n + 1),
 .destination-card:nth-child(7n + 5) {
   grid-column: span 6;
-  min-height: 520px;
+  min-height: 380px;
 }
 .destination-card img {
   position: absolute;
@@ -1030,12 +1030,14 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 1;
   border-radius: 16px;
+  pointer-events: none;
   background: linear-gradient(
     0deg,
-    rgba(7, 20, 17, 0.87),
-    rgba(7, 20, 17, 0.08) 70%
+    rgba(7, 20, 17, 0.9) 0%,
+    rgba(7, 20, 17, 0.5) 45%,
+    rgba(7, 20, 17, 0.05) 85%
   );
 }
 .destination-card:hover {
@@ -1051,6 +1053,7 @@ button {
   right: 1.4rem;
   bottom: 1.4rem;
   left: 1.4rem;
+  z-index: 2;
 }
 .card-badges {
   position: absolute;
@@ -2932,11 +2935,12 @@ button {
   }
   .destination-card {
     grid-column: span 6;
+    min-height: 380px;
   }
   .destination-card:nth-child(7n + 1),
   .destination-card:nth-child(7n + 5) {
     grid-column: span 6;
-    min-height: 440px;
+    min-height: 380px;
   }
   .choice-card {
     grid-column: span 4;
@@ -3146,7 +3150,7 @@ button {
   }
   .destination-card {
     flex: 0 0 84vw;
-    min-height: 440px !important;
+    min-height: 380px !important;
     scroll-snap-align: start;
   }
   .choice-card,
