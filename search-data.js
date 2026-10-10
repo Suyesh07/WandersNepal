@@ -111,7 +111,7 @@ window.SEARCH_INDEX = [
       "Thani Mai area",
       "Dumre",
     ],
-    image: "/assets/nepal-pokhara.webp",
+    image: "/assets/bandipur-bazaar.webp",
   },
   {
     title: "Nagarkot Travel Guide",

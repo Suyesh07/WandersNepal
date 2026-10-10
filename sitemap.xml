@@ -47,6 +47,9 @@
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://wandersnepal.com/assets/bandipur-bazaar.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://wandersnepal.com/destinations/chitwan/</loc>
