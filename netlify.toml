@@ -40,14 +40,14 @@
     Cache-Control = "public, max-age=86400"
 
 [[redirects]]
-  from = "https://www.wandersnepal.com/"
-  to = "https://wandersnepal.com/"
+  from = "https://wandersnepal.com/"
+  to = "https://www.wandersnepal.com/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://www.wandersnepal.com/*"
-  to = "https://wandersnepal.com/:splat"
+  from = "https://wandersnepal.com/*"
+  to = "https://www.wandersnepal.com/:splat"
   status = 301
   force = true
 

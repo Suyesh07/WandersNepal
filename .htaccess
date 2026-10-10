@@ -1,22 +1,22 @@
 # ----------------------------------------------------------------------
-# 1. Enforce HTTPS & Canonical Domain (non-WWW) & Trailing Slash
+# 1. Enforce HTTPS & Canonical Domain (WWW) & Trailing Slash
 # ----------------------------------------------------------------------
 RewriteEngine On
 RewriteBase /
 
 # Force HTTPS
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://wandersnepal.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.wandersnepal.com/$1 [R=301,L]
 
-# Force non-WWW
-RewriteCond %{HTTP_HOST} ^www\.wandersnepal\.com$ [NC]
-RewriteRule ^(.*)$ https://wandersnepal.com/$1 [R=301,L]
+# Force WWW
+RewriteCond %{HTTP_HOST} ^wandersnepal\.com$ [NC]
+RewriteRule ^(.*)$ https://www.wandersnepal.com/$1 [R=301,L]
 
 # Enforce trailing slash on directories / extensionless URLs
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5})$
 RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*)$ https://wandersnepal.com/$1/ [R=301,L]
+RewriteRule ^(.*)$ https://www.wandersnepal.com/$1/ [R=301,L]
 
 # Custom 404 error page
 ErrorDocument 404 /404.html

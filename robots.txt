@@ -9,4 +9,4 @@ Disallow: /newsletter-success/
 Disallow: /review-success/
 Disallow: /404.html
 
-Sitemap: https://wandersnepal.com/sitemap.xml
+Sitemap: https://www.wandersnepal.com/sitemap.xml
