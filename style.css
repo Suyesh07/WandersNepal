@@ -453,40 +453,6 @@ button {
   font-size: 0.9rem;
   line-height: 1.65;
 }
-.stage-nav-strip {
-  display: flex;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-  margin-top: 1.25rem;
-}
-.stage-nav-pill {
-  padding: 0.3rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: rgba(255, 255, 255, 0.82);
-  font-family: var(--sans);
-  font-size: 0.64rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.stage-nav-pill:hover {
-  background: rgba(255, 255, 255, 0.22);
-  color: #ffffff;
-  border-color: rgba(242, 199, 162, 0.6);
-  transform: translateY(-1px);
-}
-.stage-nav-pill.active {
-  background: #f2c7a2;
-  color: var(--ink);
-  border-color: #f2c7a2;
-  font-weight: 700;
-  box-shadow: 0 0 14px rgba(242, 199, 162, 0.45);
-}
 .journey-map {
   position: absolute;
   z-index: 3;
