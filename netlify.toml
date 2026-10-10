@@ -52,18 +52,6 @@
   force = true
 
 [[redirects]]
-  from = "/destinations/bandipur/"
-  to = "/destinations/bandipur/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/travel-guide/"
-  to = "/travel-guide/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/treks/everest-view"
   to = "/treks/everest-base-camp/#everest-view-itinerary"
   status = 301
@@ -84,90 +72,6 @@
 [[redirects]]
   from = "/treks/three-passes/"
   to = "/treks/everest-base-camp/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/everest-region"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/everest-region/"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/annapurna-region"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/annapurna-region/"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/rara-lake"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/rara-lake/"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/langtang"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/langtang/"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/manaslu"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/manaslu/"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/gosaikunda"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/gosaikunda/"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/kanchenjunga"
-  to = "/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/destinations/kanchenjunga/"
-  to = "/destinations/"
   status = 301
   force = true
 

@@ -4,7 +4,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "Three historic cities, layered neighbourhoods and living ritual—best understood one courtyard at a time.",
-    url: "/destinations/kathmandu-valley",
+    url: "/destinations/kathmandu-valley/",
     tags: [
       "Kathmandu Valley",
       "Bagmati",
@@ -23,7 +23,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "A lakeside city where Himalayan mornings open into ridge walks, paddling, neighbourhood food and unhurried afternoons.",
-    url: "/destinations/pokhara",
+    url: "/destinations/pokhara/",
     tags: [
       "Pokhara",
       "Gandaki",
@@ -42,7 +42,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "Riverine forest and tall grasslands reveal a lowland Nepal of rhinos, birds, gharials and Tharu heritage.",
-    url: "/destinations/chitwan",
+    url: "/destinations/chitwan/",
     tags: [
       "Chitwan",
       "Madhesh–Bagmati lowlands",
@@ -61,7 +61,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "The birthplace of the Buddha is a quiet landscape of archaeology, gardens and living monastic traditions.",
-    url: "/destinations/lumbini",
+    url: "/destinations/lumbini/",
     tags: [
       "Lumbini",
       "Lumbini Province",
@@ -80,7 +80,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "A trans-Himalayan world of walled settlements, cave complexes, wind-carved cliffs and Tibetan Buddhist culture.",
-    url: "/destinations/upper-mustang",
+    url: "/destinations/upper-mustang/",
     tags: [
       "Upper Mustang",
       "Gandaki",
@@ -99,7 +99,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "A preserved hill bazaar turns the Kathmandu–Pokhara journey into a place worth pausing.",
-    url: "/destinations/bandipur",
+    url: "/destinations/bandipur/",
     tags: [
       "Bandipur",
       "Gandaki hills",
@@ -118,7 +118,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "A forested ridge gives the Kathmandu Valley breathing room—and, in clear weather, a long Himalayan horizon.",
-    url: "/destinations/nagarkot",
+    url: "/destinations/nagarkot/",
     tags: [
       "Nagarkot",
       "Kathmandu Valley rim",
@@ -137,7 +137,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "A sacred city of bright temple architecture, Mithila painting and the living story of Sita.",
-    url: "/destinations/janakpur",
+    url: "/destinations/janakpur/",
     tags: [
       "Janakpur",
       "Madhesh",
@@ -156,7 +156,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "Green ridges, tea gardens and misty market towns introduce Nepal’s quieter eastern hills.",
-    url: "/destinations/ilam",
+    url: "/destinations/ilam/",
     tags: [
       "Ilam",
       "Koshi hills",
@@ -175,7 +175,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "A sacred Himalayan site brings Hindu and Buddhist traditions together above the Kali Gandaki valley.",
-    url: "/destinations/muktinath",
+    url: "/destinations/muktinath/",
     tags: [
       "Muktinath",
       "Mustang, Gandaki",
@@ -194,7 +194,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "A steep, lived-in hill town of courtyards, metalwork, woven dhaka and far-reaching ridge views.",
-    url: "/destinations/tansen",
+    url: "/destinations/tansen/",
     tags: [
       "Tansen / Palpa",
       "Lumbini hills",
@@ -213,7 +213,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "Rolling high meadows, forest and sacred places form one of far-west Nepal’s least hurried landscapes.",
-    url: "/destinations/khaptad",
+    url: "/destinations/khaptad/",
     tags: [
       "Khaptad",
       "Far West",
@@ -232,7 +232,7 @@ window.SEARCH_INDEX = [
     category: "Destination",
     description:
       "Turquoise Phoksundo and the austere valleys beyond open one of Nepal’s most remote journeys.",
-    url: "/destinations/dolpo-phoksundo",
+    url: "/destinations/dolpo-phoksundo/",
     tags: [
       "Dolpo / Phoksundo",
       "Karnali Himal",
@@ -251,7 +251,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A high-altitude journey through Sherpa country to the foot of the Khumbu Icefall, paced around acclimatisation rather than speed.",
-    url: "/treks/everest-base-camp",
+    url: "/treks/everest-base-camp/",
     tags: [
       "Everest",
       "12–16 days",
@@ -276,7 +276,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A quieter high-valley route to turquoise lakes and a panoramic summit above the Ngozumpa Glacier.",
-    url: "/treks/gokyo-lakes",
+    url: "/treks/gokyo-lakes/",
     tags: [
       "Everest",
       "12–15 days",
@@ -298,7 +298,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A classic long-distance route across climate zones and Thorong La, now best planned around changing road sections.",
-    url: "/treks/annapurna-circuit",
+    url: "/treks/annapurna-circuit/",
     tags: [
       "Annapurna",
       "12–18 days",
@@ -321,7 +321,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A compact forest-and-ridge trek with striking Machhapuchhre views and rapid altitude gain that should not be rushed.",
-    url: "/treks/mardi-himal",
+    url: "/treks/mardi-himal/",
     tags: [
       "Annapurna",
       "5–8 days",
@@ -341,7 +341,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A steep-sided sanctuary route that climbs from village terraces into a close Himalayan amphitheatre.",
-    url: "/treks/annapurna-base-camp",
+    url: "/treks/annapurna-base-camp/",
     tags: [
       "Annapurna",
       "7–11 days",
@@ -363,7 +363,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "Stone stairways, rhododendron forest and a celebrated dawn panorama on a flexible first Nepal trek.",
-    url: "/treks/poon-hill",
+    url: "/treks/poon-hill/",
     tags: [
       "Annapurna",
       "3–6 days",
@@ -383,7 +383,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A community-lodge route to a broad ridge, often combined with a demanding day walk toward Khayar Lake.",
-    url: "/treks/khopra-danda",
+    url: "/treks/khopra-danda/",
     tags: [
       "Annapurna",
       "7–10 days",
@@ -404,7 +404,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A high side journey from Manang to a stark alpine lake, with exposed sections and serious altitude.",
-    url: "/treks/tilicho-lake",
+    url: "/treks/tilicho-lake/",
     tags: [
       "Annapurna",
       "10–16 days",
@@ -426,7 +426,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A road-accessible Himalayan valley trek with forest, rebuilt villages and flexible day hikes from Kyanjin.",
-    url: "/treks/langtang-valley",
+    url: "/treks/langtang-valley/",
     tags: [
       "Langtang",
       "7–10 days",
@@ -446,7 +446,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A sacred-lake trek with a fast climb and an optional high pass linking toward Helambu.",
-    url: "/treks/gosaikunda",
+    url: "/treks/gosaikunda/",
     tags: [
       "Langtang",
       "5–8 days",
@@ -466,7 +466,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A culturally rich ridge-and-village route close to Kathmandu, adaptable as a standalone trek or Langtang link.",
-    url: "/treks/helambu",
+    url: "/treks/helambu/",
     tags: [
       "Langtang",
       "5–8 days",
@@ -486,7 +486,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A long, restricted circuit from river gorges to Larkya La and the forested Marsyangdi side.",
-    url: "/treks/manaslu-circuit",
+    url: "/treks/manaslu-circuit/",
     tags: [
       "Manaslu",
       "14–18 days",
@@ -509,7 +509,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A quieter restricted valley known for monasteries, long village approaches and Tibetan Buddhist heritage.",
-    url: "/treks/tsum-valley",
+    url: "/treks/tsum-valley/",
     tags: [
       "Manaslu",
       "14–20 days",
@@ -532,7 +532,7 @@ window.SEARCH_INDEX = [
     category: "Trek",
     description:
       "A supported trek through wind-carved high desert to Lo Manthang and the cultural landscapes beyond.",
-    url: "/treks/upper-mustang",
+    url: "/treks/upper-mustang/",
     tags: [
       "Mustang",
       "10–14 days",
@@ -555,7 +555,7 @@ window.SEARCH_INDEX = [
     category: "Route",
     description:
       "Nepal’s classic intercity journey, made better by choosing the right transport—and better still by slowing down.",
-    url: "/routes/kathmandu-pokhara",
+    url: "/routes/kathmandu-pokhara/",
     tags: [
       "Kathmandu",
       "Trishuli corridor",
@@ -569,7 +569,7 @@ window.SEARCH_INDEX = [
     category: "Route",
     description:
       "The most balanced first Nepal route links heritage, lowland wildlife and the Annapurna gateway.",
-    url: "/routes/kathmandu-chitwan-pokhara",
+    url: "/routes/kathmandu-chitwan-pokhara/",
     tags: [
       "Kathmandu",
       "Chitwan",
@@ -583,7 +583,7 @@ window.SEARCH_INDEX = [
     category: "Route",
     description:
       "Turn the transfer west into a journey with a hill-town pause and time for ridge walking.",
-    url: "/routes/kathmandu-bandipur-pokhara",
+    url: "/routes/kathmandu-bandipur-pokhara/",
     tags: [
       "Kathmandu",
       "Dumre",
@@ -598,7 +598,7 @@ window.SEARCH_INDEX = [
     category: "Route",
     description:
       "A first-timer route that moves naturally from culture to lakeside recovery and a short village trek.",
-    url: "/routes/kathmandu-pokhara-ghandruk",
+    url: "/routes/kathmandu-pokhara-ghandruk/",
     tags: [
       "Kathmandu",
       "Pokhara",
@@ -613,7 +613,7 @@ window.SEARCH_INDEX = [
     category: "Route",
     description:
       "A complete door-to-door plan that includes flight buffers, acclimatisation and the return from Lukla.",
-    url: "/routes/everest-base-camp",
+    url: "/routes/everest-base-camp/",
     tags: [
       "Kathmandu",
       "Lukla",
@@ -630,7 +630,7 @@ window.SEARCH_INDEX = [
     category: "Route",
     description:
       "A modern circuit plan that accounts for road sections, acclimatisation and a finish in Pokhara.",
-    url: "/routes/annapurna-circuit",
+    url: "/routes/annapurna-circuit/",
     tags: [
       "Kathmandu",
       "Besisahar",
@@ -647,7 +647,7 @@ window.SEARCH_INDEX = [
     category: "Route",
     description:
       "A restricted high-desert journey built around permits, village stays and transport contingency.",
-    url: "/routes/mustang-route",
+    url: "/routes/mustang-route/",
     tags: [
       "Pokhara",
       "Jomsom",
@@ -664,7 +664,7 @@ window.SEARCH_INDEX = [
     category: "Route",
     description:
       "A dramatic road-or-air journey up the Kali Gandaki with pilgrimage, Thakali villages and high-desert scenery.",
-    url: "/routes/pokhara-jomsom-muktinath",
+    url: "/routes/pokhara-jomsom-muktinath/",
     tags: [
       "Pokhara",
       "Jomsom",
@@ -680,7 +680,7 @@ window.SEARCH_INDEX = [
     category: "Itinerary",
     description:
       "A compact Kathmandu Valley plan that avoids losing most of the trip to transfers.",
-    url: "/itineraries/3-days",
+    url: "/itineraries/3-days/",
     tags: ["A quick Nepal escape", "Kathmandu Valley", "3 day Nepal itinerary"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -689,7 +689,7 @@ window.SEARCH_INDEX = [
     category: "Itinerary",
     description:
       "Pair Kathmandu with Pokhara only if timings are realistic—or stay in the valley for a deeper, lower-impact trip.",
-    url: "/itineraries/5-days",
+    url: "/itineraries/5-days/",
     tags: [
       "Mountains + culture",
       "Kathmandu",
@@ -703,7 +703,7 @@ window.SEARCH_INDEX = [
     category: "Itinerary",
     description:
       "A week with two bases, strong contrast and enough weather flexibility to enjoy both.",
-    url: "/itineraries/7-days",
+    url: "/itineraries/7-days/",
     tags: ["Classic Nepal", "Kathmandu", "Pokhara", "7 day Nepal itinerary"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -712,7 +712,7 @@ window.SEARCH_INDEX = [
     category: "Itinerary",
     description:
       "Add Chitwan or Bandipur without turning every day into a transfer.",
-    url: "/itineraries/10-days",
+    url: "/itineraries/10-days/",
     tags: [
       "Nepal beyond the highlights",
       "Kathmandu",
@@ -727,7 +727,7 @@ window.SEARCH_INDEX = [
     category: "Itinerary",
     description:
       "Two weeks opens the door to a short trek or a quieter overland loop.",
-    url: "/itineraries/14-days",
+    url: "/itineraries/14-days/",
     tags: [
       "A deeper Nepal journey",
       "Kathmandu",
@@ -743,7 +743,7 @@ window.SEARCH_INDEX = [
     category: "Itinerary",
     description:
       "Three weeks supports real acclimatisation, a major trek and a meaningful cultural beginning and end.",
-    url: "/itineraries/21-days",
+    url: "/itineraries/21-days/",
     tags: [
       "Take the long way round",
       "Kathmandu",
@@ -758,7 +758,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "The practical framework for planning when to go, how to move, what to budget and how to travel responsibly.",
-    url: "/travel-guide/nepal-travel-guide",
+    url: "/travel-guide/nepal-travel-guide/",
     tags: ["Start here", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -767,7 +767,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "A transparent way to estimate daily costs without pretending one number fits every region.",
-    url: "/travel-guide/nepal-travel-cost",
+    url: "/travel-guide/nepal-travel-cost/",
     tags: ["Budget", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -776,7 +776,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "Month-by-month planning for visibility, heat, monsoon, festivals and trekking conditions.",
-    url: "/travel-guide/best-time-to-visit-nepal",
+    url: "/travel-guide/best-time-to-visit-nepal/",
     tags: ["Seasons", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -785,7 +785,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "How to compare flights, tourist buses, local buses, jeeps, taxis and private vehicles.",
-    url: "/travel-guide/nepal-transportation",
+    url: "/travel-guide/nepal-transportation/",
     tags: ["Getting around", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -794,7 +794,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "A plain-language planning guide with links to official immigration information.",
-    url: "/travel-guide/nepal-visa",
+    url: "/travel-guide/nepal-visa/",
     tags: ["Entry", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -803,7 +803,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "Cash, cards, ATMs, exchange and practical payment planning across Nepal.",
-    url: "/travel-guide/nepal-currency",
+    url: "/travel-guide/nepal-currency/",
     tags: ["Money", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -812,7 +812,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "How to choose mobile data and keep offline backups for travel days.",
-    url: "/travel-guide/nepal-sim-esim",
+    url: "/travel-guide/nepal-sim-esim/",
     tags: ["Connectivity", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -821,7 +821,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "Realistic expectations for Wi-Fi, mobile data, charging and remote work.",
-    url: "/travel-guide/nepal-internet",
+    url: "/travel-guide/nepal-internet/",
     tags: ["Connectivity", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -830,7 +830,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "Practical risk planning for altitude, roads, weather, crowds and everyday health.",
-    url: "/travel-guide/nepal-safety",
+    url: "/travel-guide/nepal-safety/",
     tags: ["Safety", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -839,7 +839,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "A layered, route-aware list for cities, treks, monsoon and shoulder seasons.",
-    url: "/travel-guide/nepal-packing-list",
+    url: "/travel-guide/nepal-packing-list/",
     tags: ["Packing", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -848,7 +848,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "What to check for trekking altitude, evacuation, delays and planned activities.",
-    url: "/travel-guide/nepal-travel-insurance",
+    url: "/travel-guide/nepal-travel-insurance/",
     tags: ["Safety", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -857,7 +857,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "How national parks, conservation areas and restricted regions fit together.",
-    url: "/travel-guide/nepal-trekking-permits",
+    url: "/travel-guide/nepal-trekking-permits/",
     tags: ["Trekking", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -866,7 +866,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "Weather, baggage, airport changes and realistic connection planning.",
-    url: "/travel-guide/nepal-domestic-flights",
+    url: "/travel-guide/nepal-domestic-flights/",
     tags: ["Transport", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -875,7 +875,7 @@ window.SEARCH_INDEX = [
     category: "Travel guide",
     description:
       "What “tourist bus” means, how to compare services and what the road day feels like.",
-    url: "/travel-guide/tourist-buses-in-nepal",
+    url: "/travel-guide/tourist-buses-in-nepal/",
     tags: ["Transport", "Nepal planning"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -884,7 +884,7 @@ window.SEARCH_INDEX = [
     category: "Transport guide",
     description:
       "Tourist bus, flight, private vehicle. Road travel usually takes most of a day; flights are short but disruption-prone.",
-    url: "/travel-guide/kathmandu-to-pokhara",
+    url: "/travel-guide/kathmandu-to-pokhara/",
     tags: ["Kathmandu", "Pokhara", "bus", "flight", "jeep", "private vehicle"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -893,7 +893,7 @@ window.SEARCH_INDEX = [
     category: "Transport guide",
     description:
       "Tourist bus, private vehicle, flight via Bharatpur. Road travel commonly takes half to most of a day depending on traffic and the final hotel transfer.",
-    url: "/travel-guide/kathmandu-to-chitwan",
+    url: "/travel-guide/kathmandu-to-chitwan/",
     tags: ["Kathmandu", "Chitwan", "bus", "flight", "jeep", "private vehicle"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -902,7 +902,7 @@ window.SEARCH_INDEX = [
     category: "Transport guide",
     description:
       "Tourist bus or private vehicle. A cross-country road day with variable journey time and a local transfer at the Chitwan end.",
-    url: "/travel-guide/pokhara-to-chitwan",
+    url: "/travel-guide/pokhara-to-chitwan/",
     tags: ["Pokhara", "Chitwan", "bus", "flight", "jeep", "private vehicle"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -911,7 +911,7 @@ window.SEARCH_INDEX = [
     category: "Transport guide",
     description:
       "Long-distance bus, flight to Bhairahawa, private vehicle. The road journey is long; flying shortens the approach but still needs a ground transfer.",
-    url: "/travel-guide/kathmandu-to-lumbini",
+    url: "/travel-guide/kathmandu-to-lumbini/",
     tags: ["Kathmandu", "Lumbini", "bus", "flight", "jeep", "private vehicle"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -920,7 +920,7 @@ window.SEARCH_INDEX = [
     category: "Transport guide",
     description:
       "Bus to Dumre plus local jeep, or private vehicle. The main road reaches Dumre; the final climb is on a smaller hill road.",
-    url: "/travel-guide/kathmandu-to-bandipur",
+    url: "/travel-guide/kathmandu-to-bandipur/",
     tags: ["Kathmandu", "Bandipur", "bus", "flight", "jeep", "private vehicle"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -929,7 +929,7 @@ window.SEARCH_INDEX = [
     category: "Transport guide",
     description:
       "Flight, bus or jeep. Flights are brief and weather-sensitive; the road is long, rough and seasonally affected.",
-    url: "/travel-guide/pokhara-to-jomsom",
+    url: "/travel-guide/pokhara-to-jomsom/",
     tags: ["Pokhara", "Jomsom", "bus", "flight", "jeep", "private vehicle"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -938,7 +938,7 @@ window.SEARCH_INDEX = [
     category: "Transport guide",
     description:
       "Scheduled flight, helicopter, or multi-day overland approach. Flights depend on visibility and may operate from a different Kathmandu-region airport; the overland option takes substantially longer.",
-    url: "/travel-guide/kathmandu-to-lukla",
+    url: "/travel-guide/kathmandu-to-lukla/",
     tags: ["Kathmandu", "Lukla", "bus", "flight", "jeep", "private vehicle"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -947,7 +947,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Walk village trails, forest paths and high Himalayan routes at the pace altitude allows.",
-    url: "/trekking",
+    url: "/trekking/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-annapurna.webp",
   },
@@ -956,7 +956,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Explore river and grassland habitats with trained naturalists and no elephant rides.",
-    url: "/wildlife",
+    url: "/wildlife/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-chitwan.webp",
   },
@@ -965,7 +965,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Fly only with licensed operators in suitable wind and weather.",
-    url: "/destinations/pokhara",
+    url: "/destinations/pokhara/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -974,7 +974,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Choose a river, season and operator around your experience—not just the photo.",
-    url: "/plan-nepal",
+    url: "/plan-nepal/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-chitwan.webp",
   },
@@ -983,7 +983,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Check operator credentials, equipment practice and insurance coverage.",
-    url: "/plan-nepal",
+    url: "/plan-nepal/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -992,7 +992,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Treat the flight as weather-dependent and protect onward connections.",
-    url: "/travel-guide/nepal-domestic-flights",
+    url: "/travel-guide/nepal-domestic-flights/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-everest.webp",
   },
@@ -1001,7 +1001,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Ride valley lanes and hill roads with route-aware local support.",
-    url: "/destinations/kathmandu-valley",
+    url: "/destinations/kathmandu-valley/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -1010,7 +1010,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Enter workshops, homes and rituals through respectful, community-led invitations.",
-    url: "/culture",
+    url: "/culture/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -1019,7 +1019,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Use food to understand season, migration, region and ritual—not only a dish list.",
-    url: "/culture#food",
+    url: "/culture#food/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-lumbini.webp",
   },
@@ -1028,7 +1028,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Stay longer, ask how money is shared and adapt to household rhythms.",
-    url: "/responsible-travel",
+    url: "/responsible-travel/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-annapurna.webp",
   },
@@ -1037,7 +1037,7 @@ window.SEARCH_INDEX = [
     category: "Experience",
     description:
       "Plan for light, permission and context before reaching for the camera.",
-    url: "/responsible-travel#photography",
+    url: "/responsible-travel#photography/",
     tags: ["Nepal experience"],
     image: "/assets/nepal-mustang.webp",
   },
@@ -1046,7 +1046,7 @@ window.SEARCH_INDEX = [
     category: "Culture",
     description:
       "People, festivals, food and heritage with context and respect.",
-    url: "/culture",
+    url: "/culture/",
     tags: [
       "Newar",
       "Sherpa",
@@ -1067,7 +1067,7 @@ window.SEARCH_INDEX = [
     category: "Wildlife",
     description:
       "Ethical wildlife travel in Chitwan, Bardia, Koshi Tappu, Parsa and Banke.",
-    url: "/wildlife",
+    url: "/wildlife/",
     tags: ["rhino", "tiger", "birds", "safari", "Chitwan", "Bardia"],
     image: "/assets/nepal-chitwan.webp",
   },
@@ -1076,7 +1076,7 @@ window.SEARCH_INDEX = [
     category: "Guide",
     description:
       "Practical choices for community benefit, less waste and respectful travel.",
-    url: "/responsible-travel",
+    url: "/responsible-travel/",
     tags: ["ethical", "plastic", "photography", "animal welfare", "homestay"],
     image: "/assets/nepal-rara.webp",
   },
@@ -1085,7 +1085,7 @@ window.SEARCH_INDEX = [
     category: "Tool",
     description:
       "Build a suggested itinerary from your days, interests and trekking ability.",
-    url: "/plan-my-trip",
+    url: "/plan-my-trip/",
     tags: ["trip planner", "route planner", "itinerary"],
     image: "/assets/nepal-pokhara.webp",
   },
@@ -1093,7 +1093,7 @@ window.SEARCH_INDEX = [
     title: "Nepal Trip Cost Calculator",
     category: "Tool",
     description: "Estimate budget, mid-range and premium Nepal trip costs.",
-    url: "/tools/nepal-trip-cost",
+    url: "/tools/nepal-trip-cost/",
     tags: ["budget", "travel cost", "NPR", "calculator"],
     image: "/assets/nepal-kathmandu.webp",
   },
@@ -1102,7 +1102,7 @@ window.SEARCH_INDEX = [
     category: "Community",
     description:
       "Share a moderated, independent review with route, timing and practical context.",
-    url: "/reviews",
+    url: "/reviews/",
     tags: ["reviews", "traveler feedback", "Nepal trip experience"],
     image: "/assets/nepal-annapurna.webp",
   },

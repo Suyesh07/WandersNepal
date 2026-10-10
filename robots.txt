@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /search?*
+Disallow: /*?*
+
+# Allow search page itself
+Allow: /search/
+
 Sitemap: https://wandersnepal.com/sitemap.xml

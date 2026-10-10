@@ -1,13 +1,25 @@
 # ----------------------------------------------------------------------
-# 1. Enforce HTTPS & Canonical Domain (non-WWW)
+# 1. Enforce HTTPS & Canonical Domain (non-WWW) & Trailing Slash
 # ----------------------------------------------------------------------
 RewriteEngine On
 RewriteBase /
 
-# Redirect WWW to non-WWW & HTTP to HTTPS
-RewriteCond %{HTTPS} off [OR]
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://wandersnepal.com/$1 [R=301,L]
+
+# Force non-WWW
 RewriteCond %{HTTP_HOST} ^www\.wandersnepal\.com$ [NC]
-RewriteRule ^(.*)$ https://wandersnepal.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://wandersnepal.com/$1 [R=301,L]
+
+# Enforce trailing slash on directories / extensionless URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5})$
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ https://wandersnepal.com/$1/ [R=301,L]
+
+# Custom 404 error page
+ErrorDocument 404 /404.html
 
 # ----------------------------------------------------------------------
 # 2. Prevent Access to Hidden Files & Version Control (.git)
@@ -31,7 +43,7 @@ RewriteRule ^__MACOSX - [F,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
-# 4. Browser Caching for Performance
+# 4. Browser Caching for Performance & Fast Crawling
 # ----------------------------------------------------------------------
 <IfModule mod_expires.c>
   ExpiresActive On
@@ -43,4 +55,6 @@ RewriteRule ^__MACOSX - [F,L]
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType application/xml "access plus 3600 seconds"
+  ExpiresByType text/plain "access plus 3600 seconds"
 </IfModule>
