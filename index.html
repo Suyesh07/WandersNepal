@@ -254,6 +254,16 @@
                 Start where courtyards, stupas, craft streets and everyday
                 rituals hold centuries of memory.
               </p>
+              <div class="stage-nav-strip" aria-label="Journey Chapters">
+                <button type="button" class="stage-nav-pill active" data-jump-stage="0">I Valley</button>
+                <button type="button" class="stage-nav-pill" data-jump-stage="1">II Highway</button>
+                <button type="button" class="stage-nav-pill" data-jump-stage="2">III Pokhara</button>
+                <button type="button" class="stage-nav-pill" data-jump-stage="3">IV Annapurna</button>
+                <button type="button" class="stage-nav-pill" data-jump-stage="4">V Mustang</button>
+                <button type="button" class="stage-nav-pill" data-jump-stage="5">VI Rara</button>
+                <button type="button" class="stage-nav-pill" data-jump-stage="6">VII Everest</button>
+                <button type="button" class="stage-nav-pill" data-jump-stage="7">VIII Summit</button>
+              </div>
             </div>
           </div>
           <div class="journey-map" aria-hidden="true">
@@ -368,11 +378,11 @@
           </button>
           <div class="search-quick-tags">
             <span class="quick-label">Trending:</span>
-            <button type="button" data-search-open data-term="Everest Base Camp">Everest Base Camp</button>
-            <button type="button" data-search-open data-term="Annapurna Circuit">Annapurna Circuit</button>
-            <button type="button" data-search-open data-term="Pokhara">Pokhara</button>
-            <button type="button" data-search-open data-term="Mustang">Mustang</button>
-            <button type="button" data-search-open data-term="Trekking Permits">Permits</button>
+            <button type="button" data-search-open data-term="Everest Base Camp">🏔️ Everest Base Camp</button>
+            <button type="button" data-search-open data-term="Annapurna Circuit">🥾 Annapurna Circuit</button>
+            <button type="button" data-search-open data-term="Pokhara">🛶 Pokhara</button>
+            <button type="button" data-search-open data-term="Mustang">🏜️ Mustang</button>
+            <button type="button" data-search-open data-term="Trekking Permits">📋 Permits</button>
           </div>
         </div>
       </section>
@@ -388,45 +398,46 @@
           </div>
         </div>
         <div class="choice-grid">
-          <a class="choice-card choice-mountains reveal" href="/trekking/"
-            ><small>01</small>
+          <a class="choice-card choice-mountains reveal" href="/trekking/">
+            <div class="choice-card-header"><small>01</small><span class="choice-tag">8,000m Peaks</span></div>
             <h3>Mountains</h3>
-            <span>↗</span></a
-          ><a class="choice-card choice-trekking reveal" href="/trekking/"
-            ><small>02</small>
+            <span>↗</span>
+          </a>
+          <a class="choice-card choice-trekking reveal" href="/trekking/">
+            <div class="choice-card-header"><small>02</small><span class="choice-tag">Alpine Trails</span></div>
             <h3>Trekking</h3>
-            <span>↗</span></a
-          ><a
-            class="choice-card choice-lakes reveal"
-            href="/destinations/dolpo-phoksundo/"
-            ><small>03</small>
+            <span>↗</span>
+          </a>
+          <a class="choice-card choice-lakes reveal" href="/destinations/dolpo-phoksundo/">
+            <div class="choice-card-header"><small>03</small><span class="choice-tag">Alpine Lakes</span></div>
             <h3>Lakes</h3>
-            <span>↗</span></a
-          ><a class="choice-card choice-wildlife reveal" href="/wildlife/"
-            ><small>04</small>
+            <span>↗</span>
+          </a>
+          <a class="choice-card choice-wildlife reveal" href="/wildlife/">
+            <div class="choice-card-header"><small>04</small><span class="choice-tag">Rhinos & Tigers</span></div>
             <h3>Wildlife</h3>
-            <span>↗</span></a
-          ><a class="choice-card choice-culture reveal" href="/culture/"
-            ><small>05</small>
+            <span>↗</span>
+          </a>
+          <a class="choice-card choice-culture reveal" href="/culture/">
+            <div class="choice-card-header"><small>05</small><span class="choice-tag">Newar Heritage</span></div>
             <h3>Culture</h3>
-            <span>↗</span></a
-          ><a
-            class="choice-card choice-spiritual reveal"
-            href="/destinations/lumbini/"
-            ><small>06</small>
+            <span>↗</span>
+          </a>
+          <a class="choice-card choice-spiritual reveal" href="/destinations/lumbini/">
+            <div class="choice-card-header"><small>06</small><span class="choice-tag">Sacred Shrines</span></div>
             <h3>Spiritual</h3>
-            <span>↗</span></a
-          ><a class="choice-card choice-food reveal" href="/culture/#food"
-            ><small>07</small>
+            <span>↗</span>
+          </a>
+          <a class="choice-card choice-food reveal" href="/culture/#food">
+            <div class="choice-card-header"><small>07</small><span class="choice-tag">Flavors & Dal Bhat</span></div>
             <h3>Food</h3>
-            <span>↗</span></a
-          ><a
-            class="choice-card choice-remote reveal"
-            href="/destinations/dolpo-phoksundo/"
-            ><small>08</small>
+            <span>↗</span>
+          </a>
+          <a class="choice-card choice-remote reveal" href="/destinations/dolpo-phoksundo/">
+            <div class="choice-card-header"><small>08</small><span class="choice-tag">High Wilderness</span></div>
             <h3>Remote Nepal</h3>
-            <span>↗</span></a
-          >
+            <span>↗</span>
+          </a>
         </div>
       </section>
 
@@ -456,7 +467,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">01</span>
+            ><div class="card-badges"><span class="index">01</span><span class="card-alt-badge">1,400m</span></div>
             <div class="destination-card-copy">
               <p>Bagmati · Living heritage</p>
               <h3>Kathmandu Valley</h3>
@@ -476,7 +487,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">02</span>
+            ><div class="card-badges"><span class="index">02</span><span class="card-alt-badge">822m</span></div>
             <div class="destination-card-copy">
               <p>Gandaki · Lakes & adventure</p>
               <h3>Pokhara</h3>
@@ -496,7 +507,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">03</span>
+            ><div class="card-badges"><span class="index">03</span><span class="card-alt-badge">150m</span></div>
             <div class="destination-card-copy">
               <p>Madhesh–Bagmati · Wildlife & Tharu culture</p>
               <h3>Chitwan</h3>
@@ -516,7 +527,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">04</span>
+            ><div class="card-badges"><span class="index">04</span><span class="card-alt-badge">150m</span></div>
             <div class="destination-card-copy">
               <p>Lumbini Province · Sacred heritage</p>
               <h3>Lumbini</h3>
@@ -536,7 +547,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">05</span>
+            ><div class="card-badges"><span class="index">05</span><span class="card-alt-badge">3,840m</span></div>
             <div class="destination-card-copy">
               <p>Gandaki · Restricted high desert</p>
               <h3>Upper Mustang</h3>
@@ -556,7 +567,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">06</span>
+            ><div class="card-badges"><span class="index">06</span><span class="card-alt-badge">1,030m</span></div>
             <div class="destination-card-copy">
               <p>Gandaki hills · Preserved hill bazaar</p>
               <h3>Bandipur</h3>
@@ -578,7 +589,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">07</span>
+            ><div class="card-badges"><span class="index">07</span><span class="card-alt-badge">2,175m</span></div>
             <div class="destination-card-copy">
               <p>Kathmandu Valley rim · Himalayan sunrise</p>
               <h3>Nagarkot</h3>
@@ -598,7 +609,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">08</span>
+            ><div class="card-badges"><span class="index">08</span><span class="card-alt-badge">74m</span></div>
             <div class="destination-card-copy">
               <p>Madhesh · Mithila culture & arts</p>
               <h3>Janakpur</h3>
@@ -618,7 +629,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">09</span>
+            ><div class="card-badges"><span class="index">09</span><span class="card-alt-badge">1,208m</span></div>
             <div class="destination-card-copy">
               <p>Koshi hills · Rolling tea estates</p>
               <h3>Ilam</h3>
@@ -638,7 +649,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">10</span>
+            ><div class="card-badges"><span class="index">10</span><span class="card-alt-badge">3,710m</span></div>
             <div class="destination-card-copy">
               <p>Mustang, Gandaki · Sacred pilgrimage</p>
               <h3>Muktinath</h3>
@@ -660,7 +671,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">11</span>
+            ><div class="card-badges"><span class="index">11</span><span class="card-alt-badge">1,372m</span></div>
             <div class="destination-card-copy">
               <p>Lumbini hills · Historic artisan town</p>
               <h3>Tansen / Palpa</h3>
@@ -680,7 +691,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">12</span>
+            ><div class="card-badges"><span class="index">12</span><span class="card-alt-badge">3,050m</span></div>
             <div class="destination-card-copy">
               <p>Far West · High moors & meditation</p>
               <h3>Khaptad</h3>
@@ -700,7 +711,7 @@
                 width="1600"
                 height="1067"
                 loading="lazy" /></picture
-            ><span class="index">13</span>
+            ><div class="card-badges"><span class="index">13</span><span class="card-alt-badge">3,611m</span></div>
             <div class="destination-card-copy">
               <p>Karnali Himal · Trans-Himalayan wilderness</p>
               <h3>Dolpo / Phoksundo</h3>
@@ -724,58 +735,54 @@
           <a class="text-link" href="/routes/">Explore all routes →</a>
         </div>
         <div class="card-grid">
-          <a class="route-card reveal" href="/routes/kathmandu-chitwan-pokhara/"
-            ><p class="card-label">7–10 days · Easy · Cultural & Wildlife</p>
+          <a class="route-card reveal" href="/routes/kathmandu-chitwan-pokhara/">
+            <div class="route-meta-badges"><span class="badge-difficulty easy">● Easy</span><span class="badge-elev">Max 1,400m</span><span class="badge-elev">7–10 days</span></div>
             <h3>Kathmandu → Chitwan → Pokhara</h3>
             <div class="route-line-mini">
               <span>Kathmandu</span><span>Chitwan</span><span>Pokhara</span>
             </div>
-            <span class="card-arrow">↗</span></a
-          ><a
-            class="route-card reveal"
-            href="/routes/kathmandu-bandipur-pokhara/"
-            ><p class="card-label">5–8 days · Easy · Heritage Trail</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="route-card reveal" href="/routes/kathmandu-bandipur-pokhara/">
+            <div class="route-meta-badges"><span class="badge-difficulty easy">● Easy</span><span class="badge-elev">Max 1,400m</span><span class="badge-elev">5–8 days</span></div>
             <h3>Kathmandu → Bandipur → Pokhara</h3>
             <div class="route-line-mini">
-              <span>Kathmandu</span><span>Dumre</span><span>Bandipur</span
-              ><span>Pokhara</span>
+              <span>Kathmandu</span><span>Dumre</span><span>Bandipur</span><span>Pokhara</span>
             </div>
-            <span class="card-arrow">↗</span></a
-          ><a
-            class="route-card reveal"
-            href="/routes/kathmandu-pokhara-ghandruk/"
-            ><p class="card-label">7–10 days · Moderate · Foothill Trek</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="route-card reveal" href="/routes/kathmandu-pokhara-ghandruk/">
+            <div class="route-meta-badges"><span class="badge-difficulty moderate">● Moderate</span><span class="badge-elev">Max 2,012m</span><span class="badge-elev">7–10 days</span></div>
             <h3>Kathmandu → Pokhara → Ghandruk</h3>
             <div class="route-line-mini">
-              <span>Kathmandu</span><span>Pokhara</span><span>Ghandruk</span
-              ><span>Pokhara</span>
+              <span>Kathmandu</span><span>Pokhara</span><span>Ghandruk</span><span>Pokhara</span>
             </div>
-            <span class="card-arrow">↗</span></a
-          ><a class="route-card reveal" href="/routes/everest-base-camp/"
-            ><p class="card-label">14–18 days · Challenging · High Altitude</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="route-card reveal" href="/routes/everest-base-camp/">
+            <div class="route-meta-badges"><span class="badge-difficulty hard">● High Altitude</span><span class="badge-elev">Max 5,364m</span><span class="badge-elev">14–18 days</span></div>
             <h3>Everest Base Camp Route</h3>
             <div class="route-line-mini">
-              <span>Kathmandu</span><span>Lukla</span><span>Namche Bazaar</span
-              ><span>Dingboche</span><span>Everest Base Camp</span>
+              <span>Kathmandu</span><span>Lukla</span><span>Namche Bazaar</span><span>Dingboche</span><span>Everest Base Camp</span>
             </div>
-            <span class="card-arrow">↗</span></a
-          ><a class="route-card reveal" href="/routes/annapurna-circuit/"
-            ><p class="card-label">14–20 days · Challenging · Mountain Pass</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="route-card reveal" href="/routes/annapurna-circuit/">
+            <div class="route-meta-badges"><span class="badge-difficulty hard">● High Altitude</span><span class="badge-elev">Max 5,416m</span><span class="badge-elev">14–20 days</span></div>
             <h3>Annapurna Circuit Route</h3>
             <div class="route-line-mini">
-              <span>Kathmandu</span><span>Besisahar</span><span>Manang</span
-              ><span>Thorong La</span><span>Muktinath</span>
+              <span>Kathmandu</span><span>Besisahar</span><span>Manang</span><span>Thorong La</span><span>Muktinath</span>
             </div>
-            <span class="card-arrow">↗</span></a
-          ><a class="route-card reveal" href="/routes/mustang-route/"
-            ><p class="card-label">10–16 days · Moderate · Trans-Himalaya</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="route-card reveal" href="/routes/mustang-route/">
+            <div class="route-meta-badges"><span class="badge-difficulty moderate">● Moderate</span><span class="badge-elev">Max 3,840m</span><span class="badge-elev">10–16 days</span></div>
             <h3>The Mustang Route</h3>
             <div class="route-line-mini">
-              <span>Pokhara</span><span>Jomsom</span><span>Kagbeni</span
-              ><span>Tsarang</span><span>Lo Manthang</span>
+              <span>Pokhara</span><span>Jomsom</span><span>Kagbeni</span><span>Tsarang</span><span>Lo Manthang</span>
             </div>
-            <span class="card-arrow">↗</span></a
-          >
+            <span class="card-arrow">↗</span>
+          </a>
         </div>
       </section>
 
@@ -790,24 +797,36 @@
           </div>
         </div>
         <div class="time-grid">
-          <a class="time-card reveal" href="/itineraries/3-days/"
-            ><strong>3 days</strong><span>Valley heritage & sunrise ridges</span
-            ><span>↗</span></a
-          ><a class="time-card reveal" href="/itineraries/5-days/"
-            ><strong>5 days</strong><span>Pokhara + Kathmandu highlights</span
-            ><span>↗</span></a
-          ><a class="time-card reveal" href="/itineraries/7-days/"
-            ><strong>7 days</strong><span>Classic Nepal golden triangle</span><span>↗</span></a
-          ><a class="time-card reveal" href="/itineraries/10-days/"
-            ><strong>10 days</strong><span>Short Himalayan treks + safari</span
-            ><span>↗</span></a
-          ><a class="time-card reveal" href="/itineraries/14-days/"
-            ><strong>14 days</strong><span>Everest or Annapurna Circuit journeys</span
-            ><span>↗</span></a
-          ><a class="time-card reveal" href="/itineraries/21-days/"
-            ><strong>21 days</strong><span>Deep wilderness & remote circuits</span
-            ><span>↗</span></a
-          >
+          <a class="time-card reveal" href="/itineraries/3-days/">
+            <div class="time-card-top"><strong>3 days</strong><span class="time-badge">Weekend</span></div>
+            <span>Valley heritage & sunrise ridges</span>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="time-card reveal" href="/itineraries/5-days/">
+            <div class="time-card-top"><strong>5 days</strong><span class="time-badge">Golden Pair</span></div>
+            <span>Pokhara + Kathmandu highlights</span>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="time-card reveal" href="/itineraries/7-days/">
+            <div class="time-card-top"><strong>7 days</strong><span class="time-badge">Classic Triangle</span></div>
+            <span>Classic Nepal golden triangle</span>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="time-card reveal" href="/itineraries/10-days/">
+            <div class="time-card-top"><strong>10 days</strong><span class="time-badge">Treks & Safari</span></div>
+            <span>Short Himalayan treks + safari</span>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="time-card reveal" href="/itineraries/14-days/">
+            <div class="time-card-top"><strong>14 days</strong><span class="time-badge">High Circuits</span></div>
+            <span>Everest or Annapurna Circuit journeys</span>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="time-card reveal" href="/itineraries/21-days/">
+            <div class="time-card-top"><strong>21 days</strong><span class="time-badge">Grand Traverse</span></div>
+            <span>Deep wilderness & remote circuits</span>
+            <span class="card-arrow">↗</span>
+          </a>
         </div>
       </section>
 

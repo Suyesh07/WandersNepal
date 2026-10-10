@@ -306,6 +306,7 @@
     const scrollNote = journey.querySelector(".journey-scroll");
     const layers = [...journey.querySelectorAll("[data-stage-bg]")];
     const markers = [...journey.querySelectorAll("[data-route-marker]")];
+    const stagePills = [...journey.querySelectorAll("[data-jump-stage]")];
     const traveler = journey.querySelector("#route-traveler");
     const progressBar = journey.querySelector("#journey-progress-bar");
     const length = routePath.getTotalLength();
@@ -318,12 +319,27 @@
       ? Array.from({ length: stageCount }, (_, i) => i / (stageCount - 1))
       : [0];
 
-    // Align all markers with sub-pixel mathematical precision directly on the SVG curve
+    function jumpToStage(index) {
+      const distance = Math.max(1, journey.offsetHeight - window.innerHeight);
+      const targetScroll = journey.offsetTop + stageRatios[index] * distance + 10;
+      window.scrollTo({ top: targetScroll, behavior: "smooth" });
+    }
+
+    // Align all markers with sub-pixel mathematical precision directly on the SVG curve and add click navigation
     markers.forEach((marker, i) => {
       if (i < stageRatios.length) {
         const pt = routePath.getPointAtLength(stageRatios[i] * length);
         marker.setAttribute("transform", `translate(${pt.x.toFixed(1)} ${pt.y.toFixed(1)})`);
+        marker.style.cursor = "pointer";
+        marker.addEventListener("click", () => jumpToStage(i));
       }
+    });
+
+    stagePills.forEach((pill) => {
+      pill.addEventListener("click", () => {
+        const stageIdx = parseInt(pill.getAttribute("data-jump-stage"), 10);
+        if (!isNaN(stageIdx)) jumpToStage(stageIdx);
+      });
     });
 
     let active = -1;
@@ -412,6 +428,10 @@
         const isCurrent = (i === activeIndex);
         marker.classList.toggle("reached", isReached);
         marker.classList.toggle("current", isCurrent);
+      });
+
+      stagePills.forEach((pill, i) => {
+        pill.classList.toggle("active", i === activeIndex);
       });
 
       updateStage(activeIndex);

@@ -10,7 +10,7 @@
   --display: "Cormorant Garamond", Georgia, serif;
   --sans: "DM Sans", Arial, sans-serif;
   --pad: clamp(1.1rem, 4vw, 4.5rem);
-  --section: clamp(5rem, 10vw, 9rem);
+  --section: clamp(2.5rem, 4.2vw, 3.8rem);
   --rule: rgba(20, 37, 32, 0.18);
 }
 
@@ -453,6 +453,40 @@ button {
   font-size: 0.9rem;
   line-height: 1.65;
 }
+.stage-nav-strip {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+.stage-nav-pill {
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: rgba(255, 255, 255, 0.82);
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.stage-nav-pill:hover {
+  background: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  border-color: rgba(242, 199, 162, 0.6);
+  transform: translateY(-1px);
+}
+.stage-nav-pill.active {
+  background: #f2c7a2;
+  color: var(--ink);
+  border-color: #f2c7a2;
+  font-weight: 700;
+  box-shadow: 0 0 14px rgba(242, 199, 162, 0.45);
+}
 .journey-map {
   position: absolute;
   z-index: 3;
@@ -633,25 +667,29 @@ button {
 .section {
   padding: var(--section) var(--pad);
 }
-.section + .section {
+.section + .section,
+.home-search + .section {
   border-top: 0;
+  padding-top: clamp(1.25rem, 2.5vw, 2.25rem);
 }
 .section-dark {
   background: var(--ink);
   color: var(--white);
+  padding: var(--section) var(--pad);
 }
 .section-mist {
   background: var(--mist);
+  padding: var(--section) var(--pad);
 }
 .section-head {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  gap: 3rem;
-  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+  gap: 2.5rem;
+  margin-bottom: clamp(1.4rem, 2.6vw, 2.2rem);
 }
 .kicker {
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
   color: var(--coral);
   font-size: 0.65rem;
   font-weight: 600;
@@ -661,15 +699,15 @@ button {
 .section h2,
 .display-title {
   margin: 0;
-  font: 500 clamp(3.5rem, 6.6vw, 7rem) / 0.86 var(--display);
-  letter-spacing: -0.048em;
+  font: 500 clamp(3.2rem, 5.8vw, 6.2rem) / 0.88 var(--display);
+  letter-spacing: -0.045em;
   text-wrap: balance;
 }
 .section-lede {
   max-width: 48ch;
-  margin: 1.5rem 0 0;
+  margin: 0.85rem 0 0;
   color: #4f625b;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 .section-dark .section-lede {
   color: rgba(255, 255, 255, 0.67);
@@ -713,7 +751,7 @@ button {
 }
 
 .home-search {
-  padding: clamp(3.5rem, 6vw, 5.5rem) var(--pad);
+  padding: clamp(2.2rem, 3.8vw, 3.2rem) var(--pad);
   background: radial-gradient(circle at 80% 20%, rgba(229, 108, 76, 0.08) 0%, transparent 55%), radial-gradient(circle at 10% 85%, rgba(80, 122, 113, 0.1) 0%, transparent 50%), linear-gradient(135deg, #fbf7ee 0%, #f4e8d8 50%, #ecd9c2 100%);
   border-top: 0;
   border-bottom: 0;
@@ -896,10 +934,30 @@ button {
   position: relative;
   z-index: 2;
 }
+.choice-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 .choice-card small {
   font-size: 0.58rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
+}
+.choice-tag {
+  display: inline-block;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #f2c7a2;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 .choice-card h3 {
   margin: 0;
@@ -994,21 +1052,40 @@ button {
   bottom: 1.4rem;
   left: 1.4rem;
 }
-.destination-card .index {
+.card-badges {
   position: absolute;
   top: 1.1rem;
   left: 1.1rem;
-  min-width: 42px;
-  padding: 0.55rem;
-  background: rgba(243, 239, 228, 0.92);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  z-index: 2;
+}
+.destination-card .index {
+  position: static;
+  min-width: 36px;
+  padding: 0.42rem 0.55rem;
+  background: rgba(243, 239, 228, 0.94);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 8px;
   color: var(--ink);
   text-align: center;
   font-size: 0.61rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.12em;
+}
+.card-alt-badge {
+  padding: 0.42rem 0.6rem;
+  background: rgba(14, 28, 24, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  color: #f2c7a2;
+  font-size: 0.61rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
 }
 .destination-card p {
   margin: 0 0 0.5rem;
@@ -1103,6 +1180,48 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.16em;
 }
+.route-meta-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+.badge-difficulty {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.badge-difficulty.easy {
+  background: rgba(80, 122, 113, 0.12);
+  color: var(--lake);
+  border: 1px solid rgba(80, 122, 113, 0.25);
+}
+.badge-difficulty.moderate {
+  background: rgba(230, 193, 75, 0.16);
+  color: #8b6b10;
+  border: 1px solid rgba(230, 193, 75, 0.32);
+}
+.badge-difficulty.hard {
+  background: rgba(229, 108, 76, 0.12);
+  color: var(--coral);
+  border: 1px solid rgba(229, 108, 76, 0.25);
+}
+.badge-elev {
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(20, 37, 32, 0.05);
+  border: 1px solid rgba(20, 37, 32, 0.08);
+  color: #556761;
+  font-size: 0.58rem;
+  font-weight: 600;
+}
 .card-arrow {
   margin-top: 1.2rem;
   font-size: 1.2rem;
@@ -1125,6 +1244,24 @@ button {
   transform: translateY(-5px);
   box-shadow: 0 10px 24px rgba(20, 37, 32, 0.08);
 }
+.time-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+.time-badge {
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(229, 108, 76, 0.09);
+  border: 1px solid rgba(229, 108, 76, 0.2);
+  color: var(--coral);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
 .time-card strong {
   font: 600 2.7rem/1 var(--display);
 }
@@ -1136,7 +1273,7 @@ button {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   min-height: 650px;
-  margin: clamp(2.5rem, 5vw, 4.5rem) var(--pad);
+  margin: clamp(1.75rem, 3.5vw, 3rem) var(--pad);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 14px 40px rgba(20, 37, 32, 0.12);
@@ -2597,7 +2734,7 @@ button {
   grid-template-columns: 1.05fr 1fr;
   gap: clamp(2.5rem, 5vw, 5.5rem);
   align-items: center;
-  padding: clamp(3.5rem, 6vw, 5.5rem) var(--pad);
+  padding: clamp(2.5rem, 4.2vw, 3.8rem) var(--pad);
   background: radial-gradient(circle at 85% 20%, rgba(229, 108, 76, 0.10) 0%, transparent 55%), radial-gradient(circle at 15% 85%, rgba(80, 122, 113, 0.12) 0%, transparent 50%), linear-gradient(135deg, #fbf7ee 0%, #f3e7d5 50%, #ead7be 100%);
   border-top: 0;
   border-bottom: 0;
